@@ -1,0 +1,26 @@
+{
+  "name": "grafiz-site",
+  "version": "1.0.0",
+  "description": "le site de grafiz",
+  "main": "sass/style.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/style.scss sass/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafiz-designer/grafiz-site.git"
+  },
+  "author": "grafiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grafiz-designer/grafiz-site/issues"
+  },
+  "homepage": "https://github.com/grafiz-designer/grafiz-site#readme",
+  "devDependencies": {
+    "bulma": "^0.8.1",
+    "node-sass": "^4.13.1"
+  }
+}
