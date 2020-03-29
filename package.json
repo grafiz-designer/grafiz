@@ -2,10 +2,10 @@
   "name": "grafiz-site",
   "version": "1.0.0",
   "description": "le site de grafiz",
-  "main": "sass/style.scss",
+  "main": "assets/sass/style.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css-build": "node-sass --omit-source-map-url sass/style.scss sass/style.css",
+    "css-build": "node-sass --omit-source-map-url assets/sass/style.scss assets/sass/style.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
@@ -22,5 +22,8 @@
   "devDependencies": {
     "bulma": "^0.8.1",
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "uglify-php": "^1.0.7"
   }
 }
