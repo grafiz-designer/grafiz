@@ -2,10 +2,16 @@
 
 // customize bulma here...
 
-$footer-background-color: red;	
 
+// $header-background-color: lighten(red, 10);	
+
+
+header.header{
+    h1, h2{
+        color: white;
+        
+    }
+}
 
 @import "../../node_modules/bulma/bulma.sass";
-
-
 
