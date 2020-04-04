@@ -1,3 +1,11 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule "^public/(.+)$" public/index.php?action=$1 [QSA,L]
+
+
+
+#-- Dès que l'URL commence par "public/" suivie de ce que l'utilisateur tape (ex: 'works'), Apache
+#-- se charge grace à la variable $1 dont celle-ci correspond à ce qui se trouve dans les paranthèse
+#-- de réécrire l'URL(rewriting) de cette manière : public/index.php?action=works,
+#-- ensuite le router(index.php) se charge de require le controller 'works'.
+
+    RewriteRule "^public/(.+)$" public/index.php?action=$1 [QSA,L]
