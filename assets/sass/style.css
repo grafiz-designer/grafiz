@@ -1,6 +1,3 @@
-header.header h1, header.header h2 {
-  color: white; }
-
 /*! bulma.io v0.8.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7117,3 +7114,11 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+header.header h1, header.header h2 {
+  color: white; }
+
+.footer {
+  background-color: #009e86; }
+  .footer p {
+    color: white; }

@@ -1,17 +1,23 @@
 @charset "utf-8";
 
-// customize bulma here...
+// customize variables bulma here...
 
 
-// $header-background-color: lighten(red, 10);	
+@import "../../node_modules/bulma/bulma.sass";
 
+$header-background-color: lighten($primary, 10);	
 
 header.header{
+    
     h1, h2{
         color: white;
         
     }
 }
 
-@import "../../node_modules/bulma/bulma.sass";
-
+.footer{
+    background-color: darken($primary, 10);;
+    p{
+        color: white;
+    }
+}
