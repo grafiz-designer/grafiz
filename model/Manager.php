@@ -3,11 +3,7 @@ namespace Grafiz;
 
 /**
  * Class Manager qui retourne un objet PDO
-<<<<<<< HEAD
  * @return PDO object
-=======
- * @return object 
->>>>>>> cd2f9ddb7429045d38c325268381b21530ae111e
  */
 
  class Manager {
