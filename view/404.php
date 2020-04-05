@@ -1,7 +1,4 @@
-
-
 <?php require VIEW . "/_head.php" ?>
-
 
 <section class="hero is-success is-fullheight">
   <div class="hero-body">
@@ -11,6 +8,5 @@
     </div>
   </div>
 </section>      
-
 
 <?php require VIEW . "/_footer.php" ?>

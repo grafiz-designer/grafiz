@@ -1,7 +1,12 @@
 {
-    "require": {
-        "matthiasmullie/minify": "^1.3",
-        "scssphp/scssphp": "^1.0",
-        "altorouter/altorouter": "^2.0"
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Grafiz\\": "model",
+            "src\\": "src"
+        }
+        
     }
 }
