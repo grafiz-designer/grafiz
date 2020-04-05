@@ -1,12 +1,20 @@
 {
-    "autoload": {
-        "files": [
-            "src/helpers.php"
-        ],
-        "psr-4": {
-            "Grafiz\\": "model",
-            "src\\": "src"
+    "name": "loicg/grafiz-site",
+    "authors": [
+        {
+            "name": "grafiz",
+            "email": "grafiz.creation@gmail.com"
         }
-        
-    }
+    ],
+        "autoload": {
+            "files": [
+                "src/helpers.php"
+            ],
+    
+            "psr-4": {
+                "Grafiz\\": "model",
+                "src\\": "src"
+            }
+            
+        }
 }

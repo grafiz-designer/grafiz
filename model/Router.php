@@ -1,17 +1,22 @@
 <?php
 namespace Grafiz;
 /**
- * Class Router pour trouver la bonne route selon la requete
- * @return router
+ * Class Router qui permet d'appeler le bon controller
+ * @return void
  */
 
  class Router {
 
     private $_request;
-    static $routes = ["home", "works", "about", "contact", "404"];
+    const ROUTES = ["home", "works", "about", "contact", "404"];
 
+    
     public function __construct($request){
-        $this->_request = $request;
+        if(isset($request) && $request !== "accueil"){
+            $this->_request = $request;
+        }else{
+            $this->_request = "home";
+        }
     }
 
     public function getRequest(){
@@ -19,7 +24,7 @@ namespace Grafiz;
     }
 
     public function render(){
-        if(in_array($this->_request, self::$routes)){
+        if(in_array($this->_request, self::ROUTES)){
             require CONTROLLER . "/" .  $this->_request . ".php";
         }else{
             require CONTROLLER . "/404.php";
