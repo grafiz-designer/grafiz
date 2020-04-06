@@ -12,13 +12,13 @@ namespace Grafiz;
 
     
     public function __construct($request){
-        if(isset($request) && $request !== "accueil"){
+        if($request !== "accueil"){
             $this->_request = $request;
         }else{
             $this->_request = "home";
         }
     }
-
+        
     public function getRequest(){
         return $this->_request;
     }

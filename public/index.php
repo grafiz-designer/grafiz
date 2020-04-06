@@ -10,9 +10,16 @@ require "../_config.php";
 // je charge "autoload" pour charger dynamiquement la classe que l'on souhaite.
 require ROOT . "/vendor/autoload.php";
 
+
 //appel du routeur
-$req = new Router($_GET['action']);
-$req->render();
+if(isset($_GET['action'])){
+    $router = new Router($_GET['action']);
+    $router->render();
+}else{
+    require CONTROLLER . "/home.php";
+}
+
+
 
 
 
