@@ -2,22 +2,23 @@
 
 // customize variables bulma here...
 
+$navbar-burger-color : #fff;
+$icon-dimensions-medium: 1.8rem;
+
+// POUR MODIFIER LA COULEUR DE LA NAVBAR
+// $navbar-background-color: ;	
+
 
 @import "../../node_modules/bulma/bulma.sass";
-
-$header-background-color: lighten($primary, 10);	
-
-header.header{
     
-    h1, h2{
-        color: white;
-        
-    }
-}
 
-.footer{
-    background-color: darken($primary, 10);;
-    p{
-        color: white;
-    }
+/***********************************
+
+NAVBAR
+
+************************************/
+.navbar-burger span {
+    width: 18px;
+    // height: 2px;
+   
 }
