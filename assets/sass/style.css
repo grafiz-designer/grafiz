@@ -2221,8 +2221,8 @@ a.box:active {
     height: 1rem;
     width: 1rem; }
   .icon.is-medium {
-    height: 1.8rem;
-    width: 1.8rem; }
+    height: 2rem;
+    width: 2rem; }
   .icon.is-large {
     height: 3rem;
     width: 3rem; }
@@ -7112,13 +7112,26 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #00d1b2;
   padding: 3rem 1.5rem 6rem; }
 
 /***********************************
-
-NAVBAR
-
+HEADER
 ************************************/
-.navbar-burger span {
-  width: 18px; }
+header .navbar-burger span {
+  height: 1px; }
+
+header .hero {
+  padding-bottom: 5%; }
+
+header h2 > span {
+  font-size: 1.5em; }
+
+/***********************************
+FOOTER
+************************************/
+footer.footer * {
+  color: #fff; }
+
+footer.footer li {
+  list-style-type: none; }

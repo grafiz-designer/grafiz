@@ -3,7 +3,8 @@
 // customize variables bulma here...
 
 $navbar-burger-color : #fff;
-$icon-dimensions-medium: 1.8rem;
+// $icon-dimensions-medium: 8rem;
+
 
 // POUR MODIFIER LA COULEUR DE LA NAVBAR
 // $navbar-background-color: ;	
@@ -11,14 +12,48 @@ $icon-dimensions-medium: 1.8rem;
 
 @import "../../node_modules/bulma/bulma.sass";
     
+/***********************************
+HEADER
+************************************/
+
+header{
+
+    // clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    .navbar-burger span {
+        height: 1px;
+    }
+    
+    .hero{
+    padding-bottom: 5%;
+
+        // border-bottom-left-radius: 30%;
+        // border-bottom-right-radius: 30%;
+    }
+
+    h2>span{
+    font-size: 1.5em;
+
+    }
+
+
+}   
 
 /***********************************
-
-NAVBAR
-
+FOOTER
 ************************************/
-.navbar-burger span {
-    width: 18px;
-    // height: 2px;
-   
+
+footer.footer {
+
+    // clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0 100%);
+    *{
+        color: #fff;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    
 }
+
+
+
