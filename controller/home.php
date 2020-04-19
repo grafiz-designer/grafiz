@@ -1,7 +1,8 @@
 <?php
-use Grafiz\postManager;
+use Grafiz\PostManager;
 
-$bdd = new postManager;
+
+$bdd = new PostManager;
 $bdd->dbConnect();
 $post = $bdd->getCategorie();
 

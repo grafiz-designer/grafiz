@@ -14,10 +14,13 @@ require ROOT . "/vendor/autoload.php";
 //appel du routeur
 if(isset($_GET['action'])){
     $router = new Router($_GET['action']);
+    
+    $router->getRequest();
     $router->render();
 }else{
     require CONTROLLER . "/home.php";
 }
+
 
 
 

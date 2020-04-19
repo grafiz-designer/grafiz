@@ -11,7 +11,7 @@ namespace Grafiz;
     protected $_dbConnect;
 
     const HOST = "localhost";
-    const DB_NAME = "Grafiz";
+    const DB_NAME = "grafiz";
     const USER_NAME = "root";
     const PASSWORD = "";
 
@@ -20,7 +20,7 @@ namespace Grafiz;
      * @return void
      */
     public function dbConnect(){
-
+        
         // On supprime la connexion précédente
         $this->_dbConnect = null;
         

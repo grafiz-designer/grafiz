@@ -1,20 +1,16 @@
 {
-    "name": "loicg/grafiz-site",
-    "authors": [
-        {
-            "name": "grafiz",
-            "email": "grafiz.creation@gmail.com"
+    "require": {
+        "fzaninotto/faker": "^1.9"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+
+        "psr-4": {
+            "Grafiz\\": "model",
+            "src\\": "src"
         }
-    ],
-        "autoload": {
-            "files": [
-                "src/helpers.php"
-            ],
-    
-            "psr-4": {
-                "Grafiz\\": "model",
-                "src\\": "src"
-            }
-            
-        }
+        
+    }
 }
