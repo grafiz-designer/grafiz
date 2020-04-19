@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     
     console.log("DOM entièrement chargé et analysé");
     
-    log(select('.navbar'));
+    select('.navbar');
 
 
     // nav-burger
