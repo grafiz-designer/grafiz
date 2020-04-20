@@ -18,7 +18,7 @@
                 
 
                 <!-- l'icone burger doit tjrs etre le dernier enfant de navbar-brand -->
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <a role="button" class="navbar-burger" data-target="menu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -26,7 +26,7 @@
             </div>
 
             <!-- le menu caché il doit etre un enfant direct de "navbar"-->
-            <div class="navbar-menu">
+            <div class="navbar-menu" id="menu">
                 <div class="navbar-end">
                     <a href="#" class="navbar-item is-size-4">Home</a>
                     <a href="#" class="navbar-item is-size-4">Works</a>
@@ -64,6 +64,6 @@
 
 
 <!-- <main> indique le contenu qui appartient exclusivement à cette page, il démarre après le <header> et le termine avant le <footer> -->
-<main>
+<main role="main">
 
 

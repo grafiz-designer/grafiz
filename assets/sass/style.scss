@@ -1,67 +1,23 @@
 @charset "utf-8";
 
 // customize variables bulma here...
+
+$primary: hsl(171, 100%, 41%);
 $footer-color: white;
 $navbar-burger-color : #fff;
-// $icon-dimensions-medium: 8rem;
-
-
+$footer-background-color: $primary;
 // POUR MODIFIER LA COULEUR DE LA NAVBAR
-// $navbar-background-color: ;	
+// $navbar-background-color: ;
+
+//*********************************************
 
 
 @import "../../node_modules/bulma/bulma.sass";
-    
-/***********************************
-HEADER
-************************************/
-
-header{
-
-    // clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    .navbar-burger span {
-        height: 1px;
-    }
-    
-    .hero{
-    padding-bottom: 5%;
-
-        // border-bottom-left-radius: 30%;
-        // border-bottom-right-radius: 30%;
-    }
-
-    h2>span{
-    font-size: 1.5em;
-
-    }
+@import "header";
+@import "footer";
 
 
-}   
-
-/***********************************
-FOOTER
-************************************/
-
-footer.footer {
-    // je réduis de la marge 
-    div.column:first-child{
-        height: 0;
-    }
-    // clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0 100%);
-    *{ color: #fff; }
-    ul{ padding-top: .5rem; }
-    li{ list-style-type: none; margin: 2%;}// display: inline-block; 
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
-    img.arrow {
-        width: 5rem;
-        // position: relative;
-        top: -4rem;
-    }
-    p.space-word{letter-spacing: 0.03em;}
-    .textarea{color: $grey-darker};
 
 
-}
 
 

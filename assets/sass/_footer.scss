@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/***********************************
+FOOTER
+************************************/
+
+footer.footer {
+    background-color: $primary;
+    padding-top: 1.5rem;
+    padding-bottom:15px;
+    
+    
+    *{ color:#fff; }
+    ul{ padding-top: .5rem; }
+    li{ list-style-type: none; margin: 2%;}// display: inline-block; 
+    
+    .arrow{
+        display: block;
+        position: relative;
+        
+    }
+    .arrow img{
+        position: absolute;
+        height: 14vw;
+        max-height: 83px;
+        top: -40px;
+        right: 5%;
+        
+
+    }
+    p.space-word{letter-spacing: 0.02em;}
+    .textarea{color: $grey-darker;}
+  
+
+}

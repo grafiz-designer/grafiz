@@ -6,37 +6,31 @@
     <footer class="footer">
 
 
-
-        <!-- la fleche a droite -->
-        <div class="columns has-text-right">
-
-            <div class="column">
-                <a href="#">
-                    <img class="arrow" src="<?=ASSETS;?>/icons/arrow-up-circle.svg" alt="arrow">
-                </a>
-            </div>
-            <div class="column is-1"></div>
-        </div>
+        <a class="arrow" href="#">
+            <img src="<?=ASSETS;?>/icons/arrow-up-circle.svg" alt="arrow">
+        </a>
 
 
 
 
-        <div class="columns has-text-centered is-vcentered">
+        <div class="columns is-vcentered">
           
             <!-- colonne vide -->
-            <div class="column is-1"></div>
-            <div class="column is-size-4">
-                <p class=""><a href="#">Accueil</a></p>
-                <p class=""><a href="#">Works</a></p>
-                <p class=""><a href="#">Services</a></p>
-                <p class=""><a href="#">Tutos</a></p>
-                <p class=""><a href="#">Contact</a></p>
+            <div class="column is-2"></div>
+            <div class="column is-size-4 has-text-centered">
+                    <p class=""><a href="#">Accueil</a></p>
+                    <p class=""><a href="#">Works</a></p>
+                    <p class=""><a href="#">Services</a></p>
+                    <p class=""><a href="#">Tutos</a></p>
+                    <p class=""><a href="#">Contact</a></p>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title is-2">LOGO</p>
             </div>
 
 
-
-
-            <div class="column">
+            <div class="column has-text-centered">
                 <p class="is-size-4-mobile is-size-4-tablet is-size-4-desktop">On se retrouve</p>
 
                 <ul>
@@ -56,15 +50,13 @@
             </div>
 
 
-
-
-
-            <div class="column">
-                <p class="title is-2">LOGO</p>
-            </div>
-
-            <div class="column is-1"></div>
+            <div class="column is-2"></div>
         </div>
+
+
+        <hr class="navbar-divider">
+
+
 
         <div class="columns">
             <div class="column">

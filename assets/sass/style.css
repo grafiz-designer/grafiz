@@ -7132,10 +7132,9 @@ header h2 > span {
 FOOTER
 ************************************/
 footer.footer {
+  background-color: #00d1b2;
   padding-top: 1.5rem;
-  padding-bottom: 3rem; }
-  footer.footer div.column:first-child {
-    height: 0; }
+  padding-bottom: 15px; }
   footer.footer * {
     color: #fff; }
   footer.footer ul {
@@ -7143,10 +7142,16 @@ footer.footer {
   footer.footer li {
     list-style-type: none;
     margin: 2%; }
-  footer.footer img.arrow {
-    width: 5rem;
-    top: -4rem; }
+  footer.footer .arrow {
+    display: block;
+    position: relative; }
+  footer.footer .arrow img {
+    position: absolute;
+    height: 14vw;
+    max-height: 83px;
+    top: -40px;
+    right: 5%; }
   footer.footer p.space-word {
-    letter-spacing: 0.03em; }
+    letter-spacing: 0.02em; }
   footer.footer .textarea {
     color: #363636; }
