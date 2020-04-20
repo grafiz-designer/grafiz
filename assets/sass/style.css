@@ -7113,7 +7113,8 @@ label.panel-block {
 
 .footer {
   background-color: #00d1b2;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1.5rem 6rem;
+  color: white; }
 
 /***********************************
 HEADER
@@ -7130,8 +7131,22 @@ header h2 > span {
 /***********************************
 FOOTER
 ************************************/
-footer.footer * {
-  color: #fff; }
-
-footer.footer li {
-  list-style-type: none; }
+footer.footer {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem; }
+  footer.footer div.column:first-child {
+    height: 0; }
+  footer.footer * {
+    color: #fff; }
+  footer.footer ul {
+    padding-top: .5rem; }
+  footer.footer li {
+    list-style-type: none;
+    margin: 2%; }
+  footer.footer img.arrow {
+    width: 5rem;
+    top: -4rem; }
+  footer.footer p.space-word {
+    letter-spacing: 0.03em; }
+  footer.footer .textarea {
+    color: #363636; }
