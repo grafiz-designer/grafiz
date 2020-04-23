@@ -1,5 +1,5 @@
-<?php require VIEW . "/_head.php" ?>
-<?php require VIEW . "/_header.php" ?>
+<?php require VIEW . "/commons/_head.php" ?>
+<?php require VIEW . "/commons/_header.php" ?>
 
 <section class="section">
     <div class="container">
@@ -10,4 +10,4 @@
 </section>       
 
 
-<?php require VIEW . "/_footer.php" ?>
+<?php require VIEW . "/commons/_footer.php" ?>

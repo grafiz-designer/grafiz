@@ -17,9 +17,11 @@ function debug($val){
 // $_SERVER["HTTP_HOST"]; // "localhost"
 // $_SERVER["DOCUMENT_ROOT"]; // "C:/xampp/htdocs"
 
+
 define('ROOT', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site" );
 define('CONTROLLER', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/controller" );
 define('MODEL', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/model" );
 define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/view" );
 define('ASSETS', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/assets" );
+define('DIST', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
 

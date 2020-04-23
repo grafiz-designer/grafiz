@@ -8,4 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 #-- de réécrire l'URL(rewriting) de cette manière : public/index.php?action=works,
 #-- ensuite le router(index.php) se charge de require le controller 'works'.
 
-    RewriteRule "^public/(.+)$" public/index.php?action=$1 [QSA,L]
+
+RewriteRule "^public/(.+)$" public/index.php?action=$1 [QSA,L]
+
+    

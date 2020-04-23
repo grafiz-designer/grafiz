@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/***********************************
+FOOTER
+************************************/
+
+footer.footer {
+    background-color: $primary;
+    padding-top: 1.5rem;
+    padding-bottom:15px;
+    
+    
+    *{ color:#fff; }
+
+    ul{ padding-top: .5rem; }
+
+    li{ 
+        list-style-type: none; 
+        margin: 2%;
+    }
+    
+    .arrow{
+        display: block;
+        position: relative;
+        
+    }
+    .arrow img{
+        &:hover, &:focus{
+            opacity: .8;
+            
+        }
+        position: absolute;
+        height: 12vw;
+        max-height: 71px;
+        top: -45px;
+        right: 1%;
+        opacity: .4;
+        transition: all .2s ease-in;
+    }
+
+    p.space-word{letter-spacing: 0.01em;}
+
+    .textarea{color: $grey-darker;}
+
+    hr.navbar-divider{
+        background-color:lighten($primary, 7);
+        margin: 1.4rem auto 1.4rem ;
+        width: 15%;
+    }
+
+}

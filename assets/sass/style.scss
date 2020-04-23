@@ -3,7 +3,7 @@
 // customize variables bulma here...
 
 $primary: hsl(171, 100%, 41%);
-$footer-color: white;
+// $footer-color: white;
 $navbar-burger-color : #fff;
 $footer-background-color: $primary;
 // POUR MODIFIER LA COULEUR DE LA NAVBAR
@@ -13,11 +13,8 @@ $footer-background-color: $primary;
 
 
 @import "../../node_modules/bulma/bulma.sass";
-@import "header";
-@import "footer";
-
-
-
+@import "partials/header";
+@import "partials/footer";
 
 
 

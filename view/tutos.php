@@ -4,10 +4,13 @@
 <section class="section">
     <div class="container">
         
-            <h1 class='title is-1'>Contactez-moi !</h1>
+        <h1 class='title is-3 is-primary'>Voici mes tutos !</h1>
+            
         
     </div>
+
 </section>       
+
 
 
 <?php require VIEW . "/commons/_footer.php" ?>
