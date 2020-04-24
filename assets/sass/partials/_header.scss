@@ -5,48 +5,26 @@ HEADER
 ************************************/
 
 header.header{
+    position: relative;
+  
 
+   
+       
     
-
-
-
-    .navbar-burger span {
-        height: 1px;
-    }
-    
-    .hero{
-    padding-bottom: 5%;
-
-        // border-bottom-left-radius: 30%;
-        // border-bottom-right-radius: 30%;
-    }
-
-    h2>span{
-    font-size: 1.5em;
-
-    }
-
-    hr{
-        margin: 0;
-    }
-    
-    
-    // .navbar-item:last-child{
-    //     padding-left: 0.1rem;
-    // }
+        
+    .hero{ padding-bottom: 5%;}
+    h2>span{ font-size: 1.5em;}
+    hr{ margin: 0;}
     .navbar-item a{ 
         // réajuste la hauteur des icones
         line-height: 0.8;
         color: #fff;
-        margin: 0 .2rem;
-        
-        
+        margin: 0 .2rem;  
     }
     .navbar-item.is-size-4{ 
         display: inline-block;
         position: relative;
     }
-
     // animation du soulignage des links
     .navbar-item.is-size-4:after{ 
         content: "";
@@ -66,9 +44,79 @@ header.header{
         opacity: 1;
        
     }
-   
-    .is-active{
-        transition: all 1s ease-in;
+ 
+    .is-active{transition: all 1s ease-in;}
+
+    
+    .navbar-menu.is-active{
+        height: 100vh;
     }
+
+    //le cercle
+    .chevron{
+        //flex me permet de centrer facilement son enfant(le chevron)
+        display: flex;
+        
+        width: 14vw;
+        height: 14vw;
+        max-width: 4rem;
+        max-height: 4rem;
+        position: absolute;
+        bottom: 0px;
+        left : 50%;
+        // background-color: $primary;
+        transform : translate(-50%, -5px);
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+
+    //le chevron
+    .chevron::before{
+        content: '';
+        //margin:auto est un raccourci pr centrer grace a son parent flex
+        margin: auto;
+        left: 50%;
+        display: inline-block;
+        border-color:#fff;
+        border-style: solid;
+        border-width: 0 0.22em 0.22em 0;
+        transform: rotate(45deg);
+        vertical-align: top;
+        height: 28%;
+        width: 28%;
+    }
+    .chevron:hover{
+        cursor: pointer;
+    }
+  
+    // @-webkit-keyframes pulse {
+    //     0% {
+    //       -webkit-transform: translate(0, 0);
+    //               transform: translate(0, 0); }
+    //     50% {
+    //       -webkit-transform: translate(0, 10px);
+    //               transform: translate(0, 10px); }
+    //     100% {
+    //       -webkit-transform: translate(0, 0);
+    //               transform: translate(0, 0); } }
+      
+    @keyframes pulse {
+        0%{ transform: translate(-50%, -5px);
+            background-color: none; 
+        }
+        25%{
+            transform: translate(-50%, -3px);
+        }
+        50%{ transform: translate(-50%, 10px);
+            background-color: $primary;
+        }
+        100%{ transform: translate(-50%, -5px);
+            background-color:none;
+        }
+        
+    }
+        
+        
+
 
 }   

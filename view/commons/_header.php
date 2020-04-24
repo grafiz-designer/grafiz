@@ -60,11 +60,14 @@
                     <span class="is-block">ILLUSTRATION</span>
                     <span class="is-block">GRAPHISME</span>
                 </h2>
-           
+
+                
+
             </div>
         </div>
+        
     </section>
-
+    <div class="chevron"></div>
 </header>
 
 

@@ -4743,7 +4743,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #fff;
+  color: #4a4a4a;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7112,85 +7112,5 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #00d1b2;
+  background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
-/***********************************
-HEADER
-************************************/
-header.header .navbar-burger span {
-  height: 1px; }
-
-header.header .hero {
-  padding-bottom: 5%; }
-
-header.header h2 > span {
-  font-size: 1.5em; }
-
-header.header hr {
-  margin: 0; }
-
-header.header .navbar-item a {
-  line-height: 0.8;
-  color: #fff;
-  margin: 0 .2rem; }
-
-header.header .navbar-item.is-size-4 {
-  display: inline-block;
-  position: relative; }
-
-header.header .navbar-item.is-size-4:after {
-  content: "";
-  height: 2px;
-  width: 90%;
-  margin: 0 auto;
-  display: block;
-  transform: translateY(-4px);
-  opacity: 0;
-  visibility: hidden;
-  background: #6bffe9;
-  transition: all .3s ease-in; }
-
-header.header .navbar-item.is-size-4:hover:after {
-  transform: translateY(-2px);
-  visibility: visible;
-  opacity: 1; }
-
-header.header .is-active {
-  transition: all 1s ease-in; }
-
-/***********************************
-FOOTER
-************************************/
-footer.footer {
-  background-color: #00d1b2;
-  padding-top: 1.5rem;
-  padding-bottom: 15px; }
-  footer.footer * {
-    color: #fff; }
-  footer.footer ul {
-    padding-top: .5rem; }
-  footer.footer li {
-    list-style-type: none;
-    margin: 2%; }
-  footer.footer .arrow {
-    display: block;
-    position: relative; }
-  footer.footer .arrow img {
-    position: absolute;
-    height: 12vw;
-    max-height: 71px;
-    top: -45px;
-    right: 1%;
-    opacity: .4;
-    transition: all .2s ease-in; }
-    footer.footer .arrow img:hover, footer.footer .arrow img:focus {
-      opacity: .8; }
-  footer.footer p.space-word {
-    letter-spacing: 0.01em; }
-  footer.footer .textarea {
-    color: #363636; }
-  footer.footer hr.navbar-divider {
-    background-color: #00f5d0;
-    margin: 1.4rem auto 1.4rem;
-    width: 15%; }
