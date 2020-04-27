@@ -1,17 +1,29 @@
 @charset "utf-8";
 
+
+// j'ai modifié cette valeur sinon
+// html,
+// body {
+//     &.has-navbar-fixed-top{
+//         padding-top: 0;
+//     }
+// }
+ 
+
+
 /***********************************
 HEADER
 ************************************/
 
 header.header{
     position: relative;
-  
+    background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
 
-   
-       
-    
-        
+
     .hero{ padding-bottom: 5%;}
     h2>span{ font-size: 1.5em;}
     hr{ margin: 0;}
@@ -47,10 +59,6 @@ header.header{
  
     .is-active{transition: all 1s ease-in;}
 
-    
-    .navbar-menu.is-active{
-        height: 100vh;
-    }
 
     //le cercle
     .chevron{
@@ -89,17 +97,6 @@ header.header{
         cursor: pointer;
     }
   
-    // @-webkit-keyframes pulse {
-    //     0% {
-    //       -webkit-transform: translate(0, 0);
-    //               transform: translate(0, 0); }
-    //     50% {
-    //       -webkit-transform: translate(0, 10px);
-    //               transform: translate(0, 10px); }
-    //     100% {
-    //       -webkit-transform: translate(0, 0);
-    //               transform: translate(0, 0); } }
-      
     @keyframes pulse {
         0%{ transform: translate(-50%, -5px);
             background-color: none; 
@@ -108,13 +105,22 @@ header.header{
             transform: translate(-50%, -3px);
         }
         50%{ transform: translate(-50%, 10px);
-            background-color: $primary;
+            background-color: rgba($primary, 0.4);
         }
         100%{ transform: translate(-50%, -5px);
             background-color:none;
         }
         
     }
+
+
+
+    // @media screen and (min-width: 1024px){
+    //     &{
+    //         //header est en position absolute, je décale le décalle vers le bas de la meme hauteur que la superspos
+    //         top: 2.1rem;
+    //     }
+    // }
         
         
 

@@ -8,9 +8,10 @@
         ],
 
         "psr-4": {
-            "Grafiz\\": "model",
+            "Models\\": "model",
+            "Classes\\": "classes",
             "src\\": "src"
         }
         
     }
-}
+}s

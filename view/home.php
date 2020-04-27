@@ -1,6 +1,3 @@
-<?php require VIEW . "/commons/_head.php" ?>
-<?php require VIEW . "/commons/_header.php" ?>
-
 <section class="section">
     <div class="container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         
@@ -66,12 +63,5 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas maiores quaerat ipsam natus fugiat consequatur esse obcaecati magni necessitatibus facilis corrupti, placeat omnis voluptates! Facilis quis voluptate dolore ducimus vitae cupiditate unde quibusdam fuga, incidunt nihil consequatur nobis fugit quaerat. Magnam accusantium modi quod vitae doloremque dolorum, cum autem ut velit dolores ipsam saepe culpa qui laborum possimus ullam? Quas blanditiis possimus eaque ullam magnam cum nemo enim? Placeat perferendis eaque modi cumque architecto asperiores veniam accusamus enim blanditiis? Reiciendis dolorum culpa quasi ipsa aut, ut vitae sed. At voluptatibus impedit magnam, reiciendis consequuntur voluptate dicta deleniti vitae delectus sed eligendi sint tempore accusantium odit fuga molestias adipisci praesentium molestiae fugiat, libero officia cumque deserunt? Ducimus, doloribus! Mollitia quibusdam fugiat repellat. Eveniet officia adipisci molestias quo libero excepturi eum tempore necessitatibus nemo, voluptate nesciunt corrupti impedit fugiat quam. Esse rem corporis harum, doloremque dolorum, pariatur cupiditate velit accusantium maxime omnis eveniet officia laboriosam! Distinctio molestias dignissimos dolor, velit sit ea officiis totam ut doloribus minus maiores dolorum aperiam pariatur consectetur asperiores quaerat unde facere quam animi harum perspiciatis eos incidunt hic. Officiis perferendis ullam vitae totam accusamus nisi adipisci dolorem molestiae architecto excepturi iure aliquid deleniti quibusdam asperiores placeat labore debitis pariatur, cupiditate nobis consequatur perspiciatis repellat blanditiis? Quam temporibus quidem doloribus neque deleniti, repudiandae non optio sit tempore cumque dicta. Corporis veniam pariatur commodi! Velit rem cupiditate quos. Ad, a nam necessitatibus amet eligendi quasi similique ut pariatur dicta? Assumenda eius corrupti non, optio nobis maiores quidem, earum delectus quisquam dolore doloribus libero. Maxime repellat optio eligendi expedita nulla? Corporis, consequatur aliquid a nulla explicabo accusamus sapiente, temporibus quis cumque qui dolorem voluptatem harum doloremque error perferendis atque id voluptas vero corrupti hic obcaecati? Suscipit, quaerat reprehenderit, commodi nam laboriosam minima optio animi possimus consectetur maxime provident ea fugiat assumenda architecto, culpa mollitia necessitatibus debitis cupiditate tempore sunt neque minus? Qui alias, expedita laboriosam hic praesentium voluptates, sit itaque ducimus repellat, cum inventore ab enim doloribus tempore eveniet temporibus voluptatum tempora? Voluptatem eveniet eius optio distinctio inventore dolores cumque asperiores illo suscipit et, labore delectus beatae ipsam, non modi harum itaque qui explicabo rerum, ipsa iusto aliquam veritatis possimus? Doloremque facilis debitis illum dolorem voluptates cum, dolore sequi nihil similique tenetur corrupti temporibus odio ipsam consequatur porro nam aperiam. Saepe perspiciatis officia doloribus quibusdam omnis, itaque eligendi animi, perferendis dolorem iste quos suscipit totam ducimus fugit veritatis cupiditate consequuntur.
     </div>
 
-   
-
-    
-
 </section>       
 
-
-
-<?php require VIEW . "/commons/_footer.php" ?>

@@ -1,10 +1,10 @@
 <?php
-namespace Grafiz;
+namespace Models;
 /**
  * Class PostManager pour récupérer les posts 
  * @return void 
  */
-use Grafiz\Manager;
+use Models\Manager;
 
 
 class PostManager extends Manager {

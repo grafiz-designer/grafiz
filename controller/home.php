@@ -1,9 +1,17 @@
 <?php
-use Grafiz\PostManager;
+use Models\PostManager;
+use Classes\View;
 
 
 $bdd = new PostManager;
-$bdd->dbConnect();
 $post = $bdd->getCategorie();
 
-require "../view/home.php";
+
+// on apelle la vue
+$home = new View('home');
+$home->render($post);
+
+
+
+
+

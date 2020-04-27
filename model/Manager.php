@@ -1,5 +1,5 @@
 <?php
-namespace Grafiz;
+namespace Models;
 
 /**
  * Class Manager qui retourne un objet PDO
@@ -25,7 +25,8 @@ namespace Grafiz;
         $this->_dbConnect = null;
         
         try {
-            $this->_dbConnect = new \PDO("mysql:host=" . self::HOST . ";dbname=" . self::DB_NAME, self::USER_NAME, self::PASSWORD);
+            // "\PDO" permet de preciser qu'il sagit de la classe global PDO car la ns sommes ds le namespace "Models"
+            $this->_dbConnect = new \PDO("mysql:host=" . self::HOST . ";dbname=" . self::DB_NAME, self::USER_NAME, self::PASSWORD, array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION));
             // avant de lire les données ds la BDD, on indique l'encodage à utiliser
             $this->_dbConnect->exec("set names utf8");
             

@@ -1,5 +1,5 @@
 <?php
-namespace Grafiz;
+namespace Models;
 /**
  * Class Router qui permet d'appeler le bon controller
  * @return void
@@ -8,6 +8,7 @@ namespace Grafiz;
  class Router {
 
     private $_request;
+    
     const ROUTES = ["home", "works", "services", "about", "tutos", "contact", "404"];
 
     
@@ -18,12 +19,8 @@ namespace Grafiz;
             $this->_request = "home";
         }
     }
-        
-    public function getRequest(){
-        return $this->_request;
-    }
 
-    public function render(){
+    public function renderController(){
         if(in_array($this->_request, self::ROUTES)){
             require CONTROLLER . "/" .  $this->_request . ".php";
         }else{

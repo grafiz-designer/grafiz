@@ -8,6 +8,21 @@ footer.footer {
     background-color: $primary;
     padding-top: 1.5rem;
     padding-bottom:15px;
+
+    background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 150pxx   ;
+        background: red;
+        top: 0;
+    }
     
     
     *{ color:#fff; }

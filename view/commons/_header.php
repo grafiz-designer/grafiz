@@ -1,11 +1,12 @@
 <header class="header">
     <!-- is-spaced rajoute par défaut une marge de 1rem pour top et bottom et 2rem pour left et right -->
-    <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation">
+    <!-- is-fixed-top pr fiwer la nav meme au scroll -->
+    <nav class="navbar is-primary is-spaced" role="navigation">
         
             <!-- c'est le menu coté gauche toujours visible  -->
             <div class="navbar-brand" data-aos="fade-down-right">
                 <a class="navbar-item has-text-left" href="index.php">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <img src="<?=ASSETS;?>/img/bulma-logo.png" with="112" height="28">
                 </a>
                 
                 <!-- l'icone burger doit tjrs etre le dernier enfant de navbar-brand -->

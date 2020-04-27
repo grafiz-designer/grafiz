@@ -1,5 +1,5 @@
 <?php
-use Grafiz\Router;
+use Models\Router;
 
 // Ce fichier c'est le 'FrontController' qui a pour but d'appeler le bon controleur.
  
@@ -14,11 +14,70 @@ require ROOT . "/vendor/autoload.php";
 //appel du routeur
 if(isset($_GET['action'])){
     $router = new Router($_GET['action']);
-    
-    $router->getRequest();
-    $router->render();
+    $router->renderController();
 }else{
-    require CONTROLLER . "/home.php";
+    $router = new Router('home');
+    $router->renderController();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 
 

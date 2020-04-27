@@ -2,10 +2,11 @@
 
 // customize variables bulma here...
 
-$primary: hsl(171, 100%, 41%);
+$primary: rgba(hsl(171, 100%, 41%), 0.7);
+
 // $footer-color: white;
 $navbar-burger-color : #fff;
-$footer-background-color: $primary;
+$footer-background-color: none;
 // POUR MODIFIER LA COULEUR DE LA NAVBAR
 // $navbar-background-color: ;
 

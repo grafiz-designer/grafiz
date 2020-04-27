@@ -1,5 +1,3 @@
-<?php require VIEW . "/_head.php" ?>
-<?php require VIEW . "/_header.php" ?>
 
 <section class="section">
     <div class="container">
@@ -9,5 +7,3 @@
     </div>
 </section>       
 
-
-<?php require VIEW . "/_footer.php" ?>

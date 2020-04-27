@@ -1,5 +1,3 @@
-<?php require VIEW . "/commons/_head.php" ?>
-<?php require VIEW . "/commons/_header.php" ?>
 
 <section class="section">
     <div class="container">
@@ -8,6 +6,3 @@
         
     </div>
 </section>       
-
-
-<?php require VIEW . "/commons/_footer.php" ?>

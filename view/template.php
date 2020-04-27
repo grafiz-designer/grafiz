@@ -1,6 +1,6 @@
-<?php require VIEW . "/_head.php" ?>
-<?php require VIEW . "/_header.php" ?>
+<?php require VIEW . "/commons/_head.php"; ?>
+<?php require VIEW . "/commons/_header.php"; ?>
 
 <?= $content; ?>
 
-<?php require VIEW . "/_footer.php" ?>
+<?php require VIEW . "/commons/_footer.php"; ?>
