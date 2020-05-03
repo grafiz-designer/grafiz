@@ -11,11 +11,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
      ***************/
 
     AOS.init();
+
+
+
+
+
+
+
     /***************
      * MENU BURGER
      ***************/
 
-     
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(selectAll('.navbar-burger'), 0);
     
@@ -37,7 +43,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
             });
         });
     }
-    
+
+
+    /***************
+     * SCROLL HEADER
+     ***************/
+    /*
+    let header = select('header.header');
+    log(header.style.backgroundColor);
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        log(value);
+      
+        
+    });
+
+    */
     
     
 });

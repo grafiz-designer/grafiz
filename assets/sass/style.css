@@ -4720,7 +4720,7 @@ a.list-item {
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
-  padding-top: 0; }
+  padding-top: 3.25rem; }
 
 html.has-navbar-fixed-bottom,
 body.has-navbar-fixed-bottom {
@@ -7101,7 +7101,7 @@ label.panel-block {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 0.5rem; }
+  padding: 3rem 1.5rem; }
 
 .section {
   padding: 3rem 1.5rem; }
@@ -7115,6 +7115,10 @@ label.panel-block {
   background-color: none;
   padding: 3rem 1.5rem 6rem; }
 
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+  padding-top: 0; }
+
 /***********************************
 HEADER
 ************************************/
@@ -7123,13 +7127,17 @@ header.header {
   background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover; }
-  header.header .hero {
-    padding-bottom: 5%; }
+  background-size: cover;
+  /**
+    clouds
+    ********/ }
   header.header h2 > span {
     font-size: 1.5em; }
   header.header hr {
     margin: 0; }
+  header.header .navbar-brand svg {
+    width: 25%;
+    height: auto; }
   header.header .navbar-item a {
     line-height: 0.8;
     color: #fff;
@@ -7154,28 +7162,32 @@ header.header {
     opacity: 1; }
   header.header .is-active {
     transition: all 1s ease-in; }
+  header.header .hero {
+    padding-bottom: 5%; }
+    header.header .hero svg {
+      width: 32%; }
   header.header .chevron {
     display: flex;
-    width: 14vw;
-    height: 14vw;
+    width: 8vw;
+    height: 8vw;
     max-width: 4rem;
     max-height: 4rem;
     position: absolute;
-    bottom: 0px;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -5px);
     border-radius: 50%;
-    animation: pulse 2s infinite; }
+    animation: pulse 2.3s infinite; }
   header.header .chevron::before {
     content: '';
     margin: auto;
     left: 50%;
     display: inline-block;
+    transform: translateY(-60%);
     border-color: #fff;
     border-style: solid;
-    border-width: 0 0.22em 0.22em 0;
+    border-width: 0 .3vw .3vw 0;
     transform: rotate(45deg);
-    vertical-align: top;
     height: 28%;
     width: 28%; }
   header.header .chevron:hover {
@@ -7184,15 +7196,88 @@ header.header {
 @keyframes pulse {
   0% {
     transform: translate(-50%, -5px);
-    background-color: none; }
+    border: 2px solid transparent; }
   25% {
     transform: translate(-50%, -3px); }
   50% {
-    transform: translate(-50%, 10px);
-    background-color: rgba(0, 209, 178, 0.4); }
+    transform: translate(-50%, 10px); }
   100% {
     transform: translate(-50%, -5px);
-    background-color: none; } }
+    border: 2px solid #fff; } }
+  header.header section:last-child {
+    overflow: hidden; }
+    header.header section:last-child .wave {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url("../img/wave.png");
+      background-size: 1000px 100px; }
+      header.header section:last-child .wave.wave1 {
+        animation: animate 15s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0px; }
+      header.header section:last-child .wave.wave2 {
+        animation: animate2 6s linear infinite;
+        z-index: 999;
+        opacity: 0.7;
+        animation-delay: 5s;
+        bottom: 15px; }
+      header.header section:last-child .wave.wave3 {
+        animation: animate 4s linear infinite;
+        z-index: 998;
+        opacity: 0.5;
+        animation-delay: -2s;
+        bottom: 20px; }
+      header.header section:last-child .wave.wave4 {
+        animation: animate2 5s linear infinite;
+        z-index: 997;
+        opacity: 0.3;
+        animation-delay: -5s;
+        bottom: 20px; }
+      @media screen and (max-width: 1024px) {
+        header.header section:last-child .wave {
+          background-size: 100% 9vw;
+          width: 100%;
+          height: 9vw;
+          bottom: 0px; }
+          header.header section:last-child .wave.wave1 {
+            bottom: -15px;
+            animation: animate2 30s linear infinite; }
+          header.header section:last-child .wave.wave2 {
+            bottom: -10px;
+            animation: animate2 30s linear infinite; }
+          header.header section:last-child .wave.wave3 {
+            bottom: 0px;
+            animation: animate 60s linear infinite; }
+          header.header section:last-child .wave.wave4 {
+            bottom: 0px;
+            animation: animate2 10s linear infinite; }
+        @keyframes animate {
+          0% {
+            background-position: 0; }
+          100% {
+            background-position: 100%; } }
+        @keyframes animate2 {
+          0% {
+            background-position: 0; }
+          100% {
+            background-position: 100%; } } }
+
+@keyframes animate {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: 1000px; } }
+
+@keyframes animate2 {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -1000px; } }
 
 /***********************************
 FOOTER

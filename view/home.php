@@ -1,4 +1,5 @@
 <section class="section">
+        
     <div class="container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         
             <h1 class='title is-3 is-primary'>Voici la Home !</h1>

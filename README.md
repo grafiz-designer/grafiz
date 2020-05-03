@@ -20,5 +20,7 @@ le site de grafiz
 
 *mettre en postion fixe le menu apres avoir cliqué sur le menu burger car celle-ci repousse la section .hero en bas*
 
+*lors du survol d'un menu les autres titres de menu deviennent moins opaque*
 
+*lors du hover sur les images d' une image work, celle-ci zoom et les autres dezoom*
 
