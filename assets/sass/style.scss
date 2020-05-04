@@ -1,8 +1,17 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+
+// my variables...
+
+$skills-font : 'Montserrat', sans-serif;
+
 // customize variables bulma here...
 
-$primary: rgba(hsl(171, 100%, 41%), 0.7);
+
+$logo-color:#FDF0CC;
+$primary: rgba(hsl(171, 100%, 41%), 0.8);
 
 // $footer-color: white;
 $navbar-burger-color : #fff;

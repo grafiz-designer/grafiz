@@ -1,15 +1,16 @@
 <?php
-use Models\PostManager;
+use Models\WorksManager;
 use Classes\View;
 
 
-$bdd = new PostManager;
-$post = $bdd->getCategorie();
+$bdd = new WorksManager();
+$works = $bdd->getAllWorks();
 
 
 // on apelle la vue
 $home = new View('home');
-$home->render($post);
+// j'envoie les données récupérées "$post" dans la vue
+$home->render($works);
 
 
 

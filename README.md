@@ -24,3 +24,12 @@ le site de grafiz
 
 *lors du hover sur les images d' une image work, celle-ci zoom et les autres dezoom*
 
+*le ciel s'obscurcit et des étoiles apparaissent dans le header lors du scroll*
+
+*metre les nuages en mouvements a chaques sections*
+
+*donner la sensation d'un livre qui s'ouvre pr les magazines claude monet, MIM, Michal Batory, Kaleido *
+
+*se servir des mockups pr mon book et mettre des coups de flou a certains endroit pr accentuer la focal*
+
+*animer en JS le scroll de la fleche pr remonter en haut de la page*
