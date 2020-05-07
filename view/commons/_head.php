@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>...</title>
+    
+    <link rel="stylesheet" href="<?= ROOT; ?>/node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="<?= ASSETS; ?>/sass/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

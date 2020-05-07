@@ -7,8 +7,10 @@
 
 $skills-font : 'Montserrat', sans-serif;
 
+$navbar-background-color: none;
 // customize variables bulma here...
 
+$title-spaced: 6rem;
 
 $logo-color:#FDF0CC;
 $primary: rgba(hsl(171, 100%, 41%), 0.8);
@@ -25,6 +27,7 @@ $footer-background-color: none;
 @import "../../node_modules/bulma/bulma.sass";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/main";
 
 
 

@@ -23,5 +23,5 @@ define('CONTROLLER', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/controller" );
 define('MODEL', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/model" );
 define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/view" );
 define('ASSETS', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/assets" );
-define('DIST', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
+define('HTTP_ROOT', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
 

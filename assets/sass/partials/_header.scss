@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-// j'ai modifié cette valeur sinon
+// j'ai modifié cette valeur sinon il y avait un emarge
 html,
 body {
     &.has-navbar-fixed-top{
@@ -18,12 +18,35 @@ HEADER
 
 header.header{
     position: relative;
+   
+   
     background-image: url("../img/Illustration/cartographie-margin-none.jpg");
-    background-position: top;
+   
     background-repeat: no-repeat;
     background-size: cover;
+
+    animation: transition-img 15s infinite;
     
     
+    @keyframes transition-img{
+        0% {
+           
+            background-position: 0 0;
+          
+        }
+        40% { 
+           
+            background-position: 100%;
+       
+          
+        }
+       
+        100%{
+          
+        }
+    }
+
+ 
     h2{
         font-family: $skills-font; // Montserrat bold
         font-weight: 800;
@@ -143,7 +166,7 @@ header.header{
         
     }
 
-
+    // la vague
     section:last-child{
        
         overflow: hidden;

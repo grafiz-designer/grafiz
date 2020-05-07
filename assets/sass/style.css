@@ -4246,7 +4246,7 @@ a.list-item {
   padding: 20px; }
 
 .navbar {
-  background-color: white;
+  background-color: none;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -4864,7 +4864,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: white;
+    background-color: none;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
@@ -7126,12 +7126,19 @@ HEADER
 header.header {
   position: relative;
   background-image: url("../img/Illustration/cartographie-margin-none.jpg");
-  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: transition-img 15s infinite;
   /**
     clouds
     ********/ }
+
+@keyframes transition-img {
+  0% {
+    background-position: 0 0; }
+  40% {
+    background-position: 100%; }
+  100% { } }
   header.header h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
@@ -7335,3 +7342,21 @@ footer.footer {
     background-color: rgba(0, 245, 208, 0.8);
     margin: 1.4rem auto 1.4rem;
     width: 30%; }
+
+main h3.title.title-category {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6rem;
+  color: rgba(0, 209, 178, 0.8);
+  position: relative; }
+  main h3.title.title-category:after, main h3.title.title-category:before {
+    content: '';
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: .3em;
+    width: .3em; }
+  main h3.title.title-category:before {
+    left: 35%; }
+  main h3.title.title-category:after {
+    right: 35%; }

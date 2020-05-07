@@ -32,12 +32,18 @@ class WorksManager extends Manager {
      * @return array
      */
     public function getAllWorks(){
-        $req = $this->_dbConnect->query('SELECT * FROM works ORDER BY DESC');
+        $works = [];
+        $req = $this->_dbConnect->query('SELECT * FROM works');
         while($row = $req->fetch(\PDO::FETCH_ASSOC)){
+        
             $work = new Work($row);
-            $works[] = $work;
+            
+           $works[] = $work;
         }
+        $req->closeCursor();
+        // un tableau d'objets
         return $works;
+        
     }
 
 
@@ -45,16 +51,17 @@ class WorksManager extends Manager {
      * indiquer en param le nombre limite de works a récupérer
      * @return array
      */
-    public function getAllWorksLimit(int $limit){
-        $req = $this->_dbConnect->prepare('SELECT * FROM works ORDER BY DESC LIMIT = ?');
-        $req->execute(array($limit));
-
+    public function getAllWorksLimit(){
+        $req = $this->_dbConnect->query('SELECT * FROM works LIMIT 0, 3');
+        
+   
         while($row = $req->fetch(\PDO::FETCH_ASSOC)){
+  
             $work = new Work($row);
             // tableau ddes objets works
             $works[] = $work;
         }
-
+        $req->closeCursor();
         return $works;
     }
 

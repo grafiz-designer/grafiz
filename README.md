@@ -33,3 +33,5 @@ le site de grafiz
 *se servir des mockups pr mon book et mettre des coups de flou a certains endroit pr accentuer la focal*
 
 *animer en JS le scroll de la fleche pr remonter en haut de la page*
+
+*mettre la balise title dans le head*

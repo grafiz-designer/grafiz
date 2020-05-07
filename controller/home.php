@@ -4,7 +4,8 @@ use Classes\View;
 
 
 $bdd = new WorksManager();
-$works = $bdd->getAllWorks();
+$works = $bdd->getAllWorksLimit();
+
 
 
 // on apelle la vue
