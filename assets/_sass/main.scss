@@ -1,19 +1,22 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
 // my variables...
 
 $skills-font : 'Montserrat', sans-serif;
 
-$navbar-background-color: none;
-// customize variables bulma here...
 
+// customize variables bulma here...
 $title-spaced: 6rem;
 
 $logo-color:#FDF0CC;
 $primary: rgba(hsl(171, 100%, 41%), 0.8);
+$primary2: rgba(hsl(171, 100%, 41%), 0.9);
+$navbar-background-color: #fff;
+
+
 
 // $footer-color: white;
 $navbar-burger-color : #fff;

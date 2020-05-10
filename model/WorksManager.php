@@ -20,6 +20,7 @@ class WorksManager extends Manager {
      * indiquer en param l'id a récupérer
      * @return array
      */
+    
     public function getWork(int $id){
         $req = $this->_dbConnect->prepare('SELECT * FROM works WHERE id = ?');
         $req->execute(array($id));
@@ -31,6 +32,7 @@ class WorksManager extends Manager {
      * récupère tous les works 
      * @return array
      */
+
     public function getAllWorks(){
         $works = [];
         $req = $this->_dbConnect->query('SELECT * FROM works');
@@ -51,8 +53,9 @@ class WorksManager extends Manager {
      * indiquer en param le nombre limite de works a récupérer
      * @return array
      */
+
     public function getAllWorksLimit(){
-        $req = $this->_dbConnect->query('SELECT * FROM works LIMIT 0, 3');
+        $req = $this->_dbConnect->query('SELECT * FROM works LIMIT 0, 8');
         
    
         while($row = $req->fetch(\PDO::FETCH_ASSOC)){

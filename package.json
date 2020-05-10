@@ -4,10 +4,14 @@
   "description": "le site de grafiz",
   "main": "assets/sass/style.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css-build": "node-sass --omit-source-map-url assets/sass/style.scss assets/sass/style.css",
+    "css-build": "node-sass assets/_sass/main.scss assets/css/main.css",
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-postcss": "postcss --use autoprefixer --output assets/css/main.css assets/css/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel assets/_javascript --out-dir assets/lib",
+    "js-watch": "npm run js-build -- --watch",
+    "start": "npm-run-all --parallel css-watch js-watch"
   },
   "repository": {
     "type": "git",
@@ -20,8 +24,14 @@
   },
   "homepage": "https://github.com/grafiz-designer/grafiz-site#readme",
   "devDependencies": {
-    "bulma": "^0.8.1",
-    "node-sass": "^4.13.1"
+    "autoprefixer": "^9.7.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.8.2",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   },
   "dependencies": {
     "animate.css": "^3.7.2",

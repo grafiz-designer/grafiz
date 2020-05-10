@@ -1,44 +1,17 @@
 <section class="section is-primary">
-
-        <div class="container is-widescreen">
-
-                <h3 class="title is-1 has-text-centered title-category">My works</h3>
-      
-                        <div class="columns is-desktop">
-                                <?php foreach($post as $work) { ?>   
-                                
-                                        <div class="column is-mobile-4">
-                                
-                                                <figure class="image is-fullwidth" width="150%" height="150%">
-                                                        <img src="<?= $work->getFirst_img();?>" alt="img">
-                                                </figure>
-                                        </div>
-                                <?php 
-                                } 
-                                ?>
-                        </div>
-                        
-                        <div class="columns is-desktop">
-                                <?php foreach($post as $work) { ?>   
-                                
-                                        <div class="column is-mobile-4">
-                                
-                                                <figure class="image is-fullwidth" width="150%" height="150%">
-                                                        <img src="<?= $work->getFirst_img();?>" alt="img">
-                                                </figure>
-                                        </div>
-                                <?php 
-                                } 
-                                ?>
-                        </div>
-
-        </div>
-
         
-                       
+        <h3 class="title is-size-3-mobile is-size-2-tablet is-size-1-desktop has-text-centered title-category">Works</h3>
        
-  
-              
-</section>       
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        </section>       
         
         

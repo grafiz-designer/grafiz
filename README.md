@@ -35,3 +35,5 @@ le site de grafiz
 *animer en JS le scroll de la fleche pr remonter en haut de la page*
 
 *mettre la balise title dans le head*
+
+*mettre en gras les menus de la navbar*

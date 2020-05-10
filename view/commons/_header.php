@@ -1,7 +1,7 @@
 <header class="header">
     <!-- is-spaced rajoute par défaut une marge de 1rem pour top et bottom et 2rem pour left et right -->
     <!-- is-fixed-top pr fiwer la nav meme au scroll -->
-    <nav class="navbar is-primary is-spaced" role="navigation">
+    <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation">
         
             <!-- c'est le menu coté gauche toujours visible  -->
             <div class="navbar-brand" data-aos="fade-down-right">
@@ -61,9 +61,9 @@
                     data-aos="fade-up" 
                     data-aos-anchor-placement="bottom-bottom">
                     
-                    <span class="is-block">MOTION</span>
-                    <span class="is-block">ILLUSTRATION</span>
-                    <span class="is-block">GRAPHISME</span>
+                    <span class="is-block">Motion</span>
+                    <span class="is-block">Illustration</span>
+                    <span class="is-block">Graphisme</span>
                 </h2>
 
                 

@@ -13,11 +13,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     AOS.init();
 
 
-
-
-
-
-
     /***************
      * MENU BURGER
      ***************/
@@ -48,18 +43,70 @@ window.addEventListener("DOMContentLoaded", (event) => {
     /***************
      * SCROLL HEADER
      ***************/
-    /*
+    
+
+
     let header = select('header.header');
-    log(header.style.backgroundColor);
+    let navbar = header.firstElementChild;
+    let menu = select('.navbar-menu');
+    let hero = navbar.nextElementSibling;
+
+
     window.addEventListener('scroll', function(){
+
         let value = window.scrollY;
-        log(value);
+
+        if(value >= 10){
+            hero.classList.add('is-black-1');
+
+        }else{
+            hero.classList.remove('is-black-1');
+            hero.classList.add('is-normal');
+        }
+
+        if(value >= 150){
+            hero.classList.add('is-black-2');
+            navbar.classList.add('is-scroll');
+            navbar.classList.remove('is-spaced');
+            menu.classList.add('is-scroll');
+         
+
+        }else{
+            hero.classList.remove('is-black-1');
+            navbar.classList.remove('is-scroll');
+            navbar.classList.add('is-spaced');
+        }
+
+
+        if(value >= 300){
+            hero.classList.add('is-black-3');
+            document.html.classList.add('is-scale');
+
+        }else{
+            hero.classList.remove('is-black-2');
+        }
+
+
+        if(value >= 400){
+            hero.classList.add('is-black-4');
+            
+        }else{
+            hero.classList.remove('is-black-3');
+        }
+
+
+
+        
+     
+
+     
+
+        
       
         
     });
 
-    */
-    
+
     
 });
 
