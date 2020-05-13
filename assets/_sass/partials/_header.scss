@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "@mixins/mixins";
 
 
 // j'ai modifié cette valeur sinon il y avait un emarge
@@ -10,8 +11,6 @@ body {
 }
  
 
-
-
 /***********************************
 HEADER
 ************************************/
@@ -19,7 +18,9 @@ HEADER
 header.header{
     position: relative;
     overflow: hidden;
-    background-color: darken(hsl(171, 100%, 41%), 10);
+    background-color: darken(hsl(171, 100%, 41%), 15);
+
+    
 
     &:before{
         content: "";
@@ -33,12 +34,27 @@ header.header{
         opacity: .2;
         background-repeat: no-repeat;
         background-size: cover;
-        animation: transition-img 10s infinite;
+        animation: transition-img 14s linear alternate infinite;
+        filter: blur(0px);
     }
 
     @keyframes transition-img{
-        0% {transform: scale(1);}
-        100%{transform: scale(1.3);}
+        0% {transform: scale(1);transform: translateY(-50px); }
+        4%{filter: blur(0px); opacity: .2; background-position: 4px 0;}
+        5%{filter: blur(20px); opacity: .5; background-position: -4px 0;}
+        6%{filter: blur(0px); opacity: .2; background-position: 0px 0;}
+
+        32%{filter: blur(0px); opacity: .2;}
+        33%{filter: blur(20px); opacity: .5; background-position: -2px 0;}
+        34%{filter: blur(0px); opacity: .2; background-position: 0px 0;}
+
+        65%{filter: blur(0px); opacity: .2; background-position: -2px 0;}
+        66%{filter: blur(20px); opacity: .5; background-position: 2px 0;}
+        67%{filter: blur(0px); opacity: .2; background-position: 0px 0;}
+        100%{filter: blur(0px);}
+
+
+        100%{transform: scale(1.3);filter: blur(0px);}
     }
     
     
@@ -72,9 +88,10 @@ header.header{
         z-index: 1001;
         // la navbar rajoute la class '.is-scroll' lors du scroll
         &.is-scroll{
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, .9);
         box-shadow: 0px 3px 4px 4px rgba(0, 0, 0, .2);
-        animation: top-in-basic 1 .6s 0s;
+        animation: top-in-basic 1 .2s 0s;
+       
         }
     }
     
@@ -83,23 +100,43 @@ header.header{
         100%{ transform: translateY(0px); }
     }
  
+    h1, h2{
+        font-family: $skills-font; // Montserrat bold
+        letter-spacing: $space;
+    }
+    h1{
+        // $size-1: 7rem;
+        font-size: 7rem;
+        font-weight: $larg;
+        &.separate:before{
+            content: '';
+            bottom: -10%;
+            @include is-X-centered;
+            
+            width: 8%;
+            height: 2px;
+            
+            
+            background-color: white;
+
+        }    
+    }
 
     h2{
-        font-family: $skills-font; // Montserrat bold
         font-weight: 700;
         margin-top: 2em;
         & span{
             font-size: 2.2em;
-
         }
+        
     }
 
     hr{ margin: 0;}
 
     .navbar-brand{
         svg{
-            width: 13vw;
-            max-width: 90px;
+            width: 20vw;
+            max-width: 100px;
             height: auto;
         }
  
@@ -108,7 +145,7 @@ header.header{
      // couleur du logo svg après le scroll
     .is-scroll{
         .cls-1{
-            fill: $primary;
+            fill: $grey-dark;
         }
         // couleur du menu burger après le scroll
         .navbar-burger{
@@ -117,14 +154,21 @@ header.header{
     }
     //les liens de la navbar deviennent noir après le scroll 
     @media screen and (min-width: 1024px){
+
         .navbar.is-primary.is-scroll .navbar-end > .navbar-item{
-            color: $grey-darker;
+
+            color: $grey-dark;
             &:hover{
                 color: #fff;
                 background-color: $primary;
             }
             
+
+        // la couleur au survol des liens sur desktop
+        }.navbar.is-primary .navbar-end > .navbar-item:hover{
+            background-color: darken($primary, 20);
         }
+
     }
 
     
@@ -149,14 +193,15 @@ header.header{
         padding-bottom: 5%;
         // "svg" et ".cls-1 "représentent tous les deux le logo svg mais il y a un bug quand je modifie la taille sur .cls-1
         svg{
-            width: 40%;
+            width: 45%;
             min-width: 150px;
-            filter: drop-shadow(0px 5px 5px darken($primary, 17));
+            filter: drop-shadow(0px 4px 4px darken($primary, 17));
             @media screen and (max-width: 768px){
-                &{
-                    width: 50%;
+            
+                    width: 40%;
+                    margin-top: 2rem;
                     filter: drop-shadow(0px 2px 2px darken($primary, 20));
-                }
+                
             }
         }
     
@@ -223,6 +268,18 @@ header.header{
        
         overflow: hidden;
 
+  
+        .wave.is-hidden{
+            
+       
+     
+            animation: all 1s ease;
+        }
+        @keyframes bou{
+            0%{ transform: translate(0px); }
+            100%{ transform: translate(-500px); }
+        }
+
         .wave {
             position: absolute;
             bottom: -15px;
@@ -231,6 +288,7 @@ header.header{
             height: 100px;
             background: url("../img/wave.png");
             background-size: 1000px 100px;
+            transition: all 2s;
 
             &.wave1{
                 animation: animate 15s linear infinite;
@@ -238,6 +296,7 @@ header.header{
                 opacity: 1;
                 animation-delay: 0s;
                 bottom: 0px;
+                
               
             }
             &.wave2{
@@ -264,6 +323,7 @@ header.header{
       
 
             @media screen and (max-width: 1024px){
+                
                 background-size: 100% 10vw;
                 width: 100%;
                 height: 10vw;
@@ -308,7 +368,7 @@ header.header{
 
 
             }
-
+            
 
 
         }

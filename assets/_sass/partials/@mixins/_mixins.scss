@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+
+@mixin is-X-centered{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

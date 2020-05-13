@@ -37,3 +37,9 @@ le site de grafiz
 *mettre la balise title dans le head*
 
 *mettre en gras les menus de la navbar*
+
+*utiliser font awesom*
+
+*voir pr utiliser des cdn ou pas*
+
+*mettre isactive quang on click sur un lien du menu*

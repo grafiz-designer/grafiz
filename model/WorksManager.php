@@ -5,7 +5,7 @@ use Models\Work;
 
 
 /**
- * Class PostManager pour récupérer les posts 
+ * Class PostManager pour récupérer les works 
  * 
  */
 
@@ -22,6 +22,7 @@ class WorksManager extends Manager {
      */
     
     public function getWork(int $id){
+        
         $req = $this->_dbConnect->prepare('SELECT * FROM works WHERE id = ?');
         $req->execute(array($id));
         $data = $req->fetch(\PDO::FETCH_ASSOC);
@@ -49,6 +50,7 @@ class WorksManager extends Manager {
     }
 
 
+
     /**
      * indiquer en param le nombre limite de works a récupérer
      * @return array
@@ -66,6 +68,17 @@ class WorksManager extends Manager {
         }
         $req->closeCursor();
         return $works;
+    }
+
+    
+     /**
+     * récupère tous les works avec les meilleurs imgs
+     * @return array
+     */
+
+    public function getAllWorksOptimized(){
+        $req = $this->_dbConnect->query('SELECT * FROM works');
+
     }
 
 

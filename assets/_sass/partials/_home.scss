@@ -1,13 +1,19 @@
 @charset "utf-8";
 
 main{
+  .is-translate{
+    transform: translate(400px);
+    top: 800px;
+      transition: all .3s ease;
+    }
 
   h3.title.title-category{
     font-family: $skills-font;
     margin-bottom: $title-spaced;
     color: $primary;
     position: relative;
-  
+    
+    
  }
 
 

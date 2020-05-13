@@ -10,6 +10,7 @@ class Work {
     private $_description;
     private $_icon_path;
     private $_imgs_path;
+    private $_img_show = false;
    
     
 
@@ -117,7 +118,7 @@ class Work {
     }
 
 
-     /**********************************************
+     /**
      * récupère la 1ère image
      */
     public function getFirst_img(){
@@ -149,48 +150,37 @@ class Work {
 
             $arr[] = $url . $paths;
             $this->_imgs_path = $arr;
-    
+
+        // sinon il y a plusieurs imgs   
         }else{
 
             $arrayImgs = (explode(', ', $paths));
 
             foreach($arrayImgs as $key => $values){
+                
+                // on recherche le mot 'show' pr déterminer si il existe une image de présentation
+                if(strpos($values, 'show')){
+
+                    $this->_img_show = $url . $values;
+                    
+                }
                 $arr[] = $url . $values;
             }
 
             $this->_imgs_path = $arr;
         }
-       
-        
-
-
-        
+      
     }
 
 
+    /**
+     * récupère l'image à afficher pr chaque projet
+     */
+    public function getImg_show(){
 
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
+        return $this->_img_show;
+    }
+        
 
 
 

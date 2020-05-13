@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Signika+Negative:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;615;700;800;900&display=swap");
+/********************************************** 
+pr les préférences des polices:
+
+- Signika Negative
+
+
+
+
+
+
+**********************************************/
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -385,13 +397,13 @@ table th {
   overflow: hidden !important; }
 
 .is-size-1 {
-  font-size: 3rem !important; }
+  font-size: 7rem !important; }
 
 .is-size-2 {
-  font-size: 2.5rem !important; }
+  font-size: 5.2rem !important; }
 
 .is-size-3 {
-  font-size: 2rem !important; }
+  font-size: 3rem !important; }
 
 .is-size-4 {
   font-size: 1.5rem !important; }
@@ -407,11 +419,11 @@ table th {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-mobile {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-mobile {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-mobile {
     font-size: 1.5rem !important; }
   .is-size-5-mobile {
@@ -423,11 +435,11 @@ table th {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-tablet {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-tablet {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-tablet {
     font-size: 1.5rem !important; }
   .is-size-5-tablet {
@@ -439,11 +451,11 @@ table th {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-touch {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-touch {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-touch {
     font-size: 1.5rem !important; }
   .is-size-5-touch {
@@ -455,11 +467,11 @@ table th {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-desktop {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-desktop {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-desktop {
     font-size: 1.5rem !important; }
   .is-size-5-desktop {
@@ -471,11 +483,11 @@ table th {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-widescreen {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-widescreen {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-widescreen {
     font-size: 1.5rem !important; }
   .is-size-5-widescreen {
@@ -487,11 +499,11 @@ table th {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 3rem !important; }
+    font-size: 7rem !important; }
   .is-size-2-fullhd {
-    font-size: 2.5rem !important; }
+    font-size: 5.2rem !important; }
   .is-size-3-fullhd {
-    font-size: 2rem !important; }
+    font-size: 3rem !important; }
   .is-size-4-fullhd {
     font-size: 1.5rem !important; }
   .is-size-5-fullhd {
@@ -2804,7 +2816,7 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.125; }
   .title strong {
@@ -2815,11 +2827,11 @@ a.tag:hover {
   .title:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
   .title.is-1 {
-    font-size: 3rem; }
+    font-size: 7rem; }
   .title.is-2 {
-    font-size: 2.5rem; }
+    font-size: 5.2rem; }
   .title.is-3 {
-    font-size: 2rem; }
+    font-size: 3rem; }
   .title.is-4 {
     font-size: 1.5rem; }
   .title.is-5 {
@@ -2840,11 +2852,11 @@ a.tag:hover {
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
   .subtitle.is-1 {
-    font-size: 3rem; }
+    font-size: 7rem; }
   .subtitle.is-2 {
-    font-size: 2.5rem; }
+    font-size: 5.2rem; }
   .subtitle.is-3 {
-    font-size: 2rem; }
+    font-size: 3rem; }
   .subtitle.is-4 {
     font-size: 1.5rem; }
   .subtitle.is-5 {
@@ -5416,7 +5428,7 @@ label.panel-block {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75rem; }
+  padding: 0.5rem; }
   .columns.is-mobile > .column.is-narrow {
     flex: none; }
   .columns.is-mobile > .column.is-full {
@@ -6230,13 +6242,13 @@ label.panel-block {
       margin-left: 100%; } }
 
 .columns {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  margin-top: -0.75rem; }
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-top: -0.5rem; }
   .columns:last-child {
-    margin-bottom: -0.75rem; }
+    margin-bottom: -0.5rem; }
   .columns:not(:last-child) {
-    margin-bottom: calc(1.5rem - 0.75rem); }
+    margin-bottom: calc(1.5rem - 0.5rem); }
   .columns.is-centered {
     justify-content: center; }
   .columns.is-gapless {
@@ -7124,7 +7136,7 @@ HEADER
 header.header {
   position: relative;
   overflow: hidden;
-  background-color: #009e86;
+  background-color: #008571;
   /**
     clouds
     ********/ }
@@ -7139,13 +7151,53 @@ header.header {
     opacity: .2;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: transition-img 10s infinite; }
+    animation: transition-img 14s linear alternate infinite;
+    filter: blur(0px); }
 
 @keyframes transition-img {
   0% {
-    transform: scale(1); }
+    transform: scale(1);
+    transform: translateY(-50px); }
+  4% {
+    filter: blur(0px);
+    opacity: .2;
+    background-position: 4px 0; }
+  5% {
+    filter: blur(20px);
+    opacity: .5;
+    background-position: -4px 0; }
+  6% {
+    filter: blur(0px);
+    opacity: .2;
+    background-position: 0px 0; }
+  32% {
+    filter: blur(0px);
+    opacity: .2; }
+  33% {
+    filter: blur(20px);
+    opacity: .5;
+    background-position: -2px 0; }
+  34% {
+    filter: blur(0px);
+    opacity: .2;
+    background-position: 0px 0; }
+  65% {
+    filter: blur(0px);
+    opacity: .2;
+    background-position: -2px 0; }
+  66% {
+    filter: blur(20px);
+    opacity: .5;
+    background-position: 2px 0; }
+  67% {
+    filter: blur(0px);
+    opacity: .2;
+    background-position: 0px 0; }
   100% {
-    transform: scale(1.3); } }
+    filter: blur(0px); }
+  100% {
+    transform: scale(1.3);
+    filter: blur(0px); } }
   header.header .is-normal {
     background-color: rgba(0, 209, 178, 0.8);
     transition: all .3s ease; }
@@ -7165,17 +7217,31 @@ header.header {
     background-color: transparent;
     z-index: 1001; }
     header.header .is-fixed-top.is-scroll {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0px 3px 4px 4px rgba(0, 0, 0, 0.2);
-      animation: top-in-basic 1 .6s 0s; }
+      animation: top-in-basic 1 .2s 0s; }
 
 @keyframes top-in-basic {
   0% {
     transform: translateY(-2000px); }
   100% {
     transform: translateY(0px); } }
+  header.header h1, header.header h2 {
+    font-family: "Signika Negative", sans-serif;
+    letter-spacing: 0rem; }
+  header.header h1 {
+    font-size: 7rem;
+    font-weight: 700; }
+    header.header h1.separate:before {
+      content: '';
+      bottom: -10%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8%;
+      height: 2px;
+      background-color: white; }
   header.header h2 {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     margin-top: 2em; }
     header.header h2 span {
@@ -7183,19 +7249,21 @@ header.header {
   header.header hr {
     margin: 0; }
   header.header .navbar-brand svg {
-    width: 13vw;
-    max-width: 90px;
+    width: 20vw;
+    max-width: 100px;
     height: auto; }
   header.header .is-scroll .cls-1 {
-    fill: rgba(0, 209, 178, 0.8); }
+    fill: #4a4a4a; }
   header.header .is-scroll .navbar-burger {
     background-color: rgba(0, 209, 178, 0.8); }
   @media screen and (min-width: 1024px) {
     header.header .navbar.is-primary.is-scroll .navbar-end > .navbar-item {
-      color: #363636; }
+      color: #4a4a4a; }
       header.header .navbar.is-primary.is-scroll .navbar-end > .navbar-item:hover {
         color: #fff;
-        background-color: rgba(0, 209, 178, 0.8); } }
+        background-color: rgba(0, 209, 178, 0.8); }
+    header.header .navbar.is-primary .navbar-end > .navbar-item:hover {
+      background-color: rgba(0, 107, 91, 0.8); } }
   header.header .navbar-item a {
     line-height: 0.8;
     margin: 0 .2rem; }
@@ -7207,12 +7275,13 @@ header.header {
   header.header .hero {
     padding-bottom: 5%; }
     header.header .hero svg {
-      width: 40%;
+      width: 45%;
       min-width: 150px;
-      filter: drop-shadow(0px 5px 5px rgba(0, 122, 104, 0.8)); }
+      filter: drop-shadow(0px 4px 4px rgba(0, 122, 104, 0.8)); }
       @media screen and (max-width: 768px) {
         header.header .hero svg {
-          width: 50%;
+          width: 40%;
+          margin-top: 2rem;
           filter: drop-shadow(0px 2px 2px rgba(0, 107, 91, 0.8)); } }
   header.header .chevron {
     display: flex;
@@ -7255,6 +7324,14 @@ header.header {
     border: 2px solid #fff; } }
   header.header section:last-child {
     overflow: hidden; }
+    header.header section:last-child .wave.is-hidden {
+      animation: all 1s ease; }
+
+@keyframes bou {
+  0% {
+    transform: translate(0px); }
+  100% {
+    transform: translate(-500px); } }
     header.header section:last-child .wave {
       position: absolute;
       bottom: -15px;
@@ -7262,7 +7339,8 @@ header.header {
       width: 100%;
       height: 100px;
       background: url("../img/wave.png");
-      background-size: 1000px 100px; }
+      background-size: 1000px 100px;
+      transition: all 2s; }
       header.header section:last-child .wave.wave1 {
         animation: animate 15s linear infinite;
         z-index: 1000;
@@ -7376,8 +7454,13 @@ footer.footer {
     margin: 1.4rem auto 1.4rem;
     width: 30%; }
 
+main .is-translate {
+  transform: translate(400px);
+  top: 800px;
+  transition: all .3s ease; }
+
 main h3.title.title-category {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Signika Negative", sans-serif;
   margin-bottom: 6rem;
   color: rgba(0, 209, 178, 0.8);
   position: relative; }

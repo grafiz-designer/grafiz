@@ -1,3 +1,16 @@
 <?php
+use Models\WorksManager;
+use Classes\View;
 
-require VIEW . "/services.php";
+
+$bdd = new WorksManager();
+$works = $bdd->getAllWorksLimit();
+
+
+
+// on apelle la vue
+$home = new View('services');
+// j'envoie les données récupérées "$post" dans la vue
+$home->render($works);
+
+
