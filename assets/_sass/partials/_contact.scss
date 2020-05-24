@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.section.title-form{
+padding: 0;
+
+  .container{
+    padding: 10% 0rem;
+    background-color: rgba($primary, .2);
+    h1{
+      font-family: $skills-font;
+      font-weight: 600;
+      color:$primary-opaque;
+      font-size: 1.8rem;
+      span{
+        display: block;
+        margin-top: .6rem;
+      }
+    }
+    @media #{$tablet-size}{
+      h1{ font-size: 2.8rem; }
+      h1 span{ margin-top: 1rem;}
+    }
+    @media #{$desktop-size}{
+      h1{ font-size: 4rem; }
+      h1 span{ margin-top: 1.8rem;}
+    } 
+
+  }
+
+}
+
+.section.form{
+  max-width: 950px;
+  margin: 5% auto;
+
+  label{
+    color: $grey-darker;
+    font-family: $skills-font3;
+    font-weight: 600;
+  }
+  input, textarea{
+    border-color: $black;
+  }
+  @media #{$tablet-size}{
+    label{ font-size: 1.4rem; }
+  }
+ 
+  
+
+  
+}

@@ -1,9 +1,14 @@
-
-<section class="section">
-    <div class="container">
+<section class="section is-primary">
         
-            <h1 class='title is-1'>A propos de moi</h1>
+        <h3 class="title is-size-3-mobile is-size-2-tablet is-size-1-desktop has-text-centered title-category">About</h3>
+       
+      
+                
+                
+                
+                
+                
+                
+                
+        </section>       
         
-    </div>
-</section>       
-

@@ -9,7 +9,7 @@ namespace Models;
 
     private $_request;
     
-    const ROUTES = ["home", "works", "services", "about", "tutos", "contact", "404"];
+    const ROUTES = ["home", "works", "about", "tutos", "contact", "404"];
 
     
     public function __construct($request){

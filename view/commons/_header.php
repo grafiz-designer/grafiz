@@ -10,7 +10,7 @@
                 </a>
                 
                 <!-- l'icone burger doit tjrs etre le dernier enfant de navbar-brand -->
-                <a role="button" class="navbar-burger" data-target="menu" aria-label="menu" aria-expanded="false">
+                <a role="button" class="navbar-burger is-large" data-target="menu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -22,11 +22,11 @@
             <div class="navbar-menu" id="menu">
                 
                 <div class="navbar-end">
-                    <a href="home" class="navbar-item is-size-4">Home</a><hr>
-                    <a href="works" class="navbar-item is-size-4">Works</a><hr>
-                    <a href="services" class="navbar-item is-size-4">Services</a><hr>
-                    <a href="tutos" class="navbar-item is-size-4">Tutos</a><hr>
-                    <a href="contact" class="navbar-item is-size-4">Contact</a><hr>
+                    <a href="home" class="navbar-item is-size-5">Home</a><hr>
+                    <a href="works" class="navbar-item is-size-5">Works</a><hr>
+                    <a href="about" class="navbar-item is-size-5">About</a><hr>
+                    <a href="tutos" class="navbar-item is-size-5">Tutos</a><hr>
+                    <a href="contact" class="navbar-item is-size-5">Contact</a><hr>
                     <div class="navbar-item has-text-centered-desktop">
                         <a href="#">
                             <img src="<?=ASSETS;?>/icons/logo-twitter.svg" class='txit icon is-medium' alt="logo-twitter">
@@ -47,21 +47,22 @@
     </nav>
   
 
-    <section class="hero has-text-centered is-large is-primary">
+    
+    <section class="hero has-text-centered <?= $heightHero;?>">
         <div class="hero-body">
             <div class='container'>
                 
                 <?= $heroTitle; ?>
-
+                
             </div>
         </div>
-        
-       
     </section>
+
+
     <div class="chevron"></div>
 
 
-  <section>
+  <section class="wave-container">
     <div class="wave wave1"></div> 
     <div class="wave wave2"></div> 
     <div class="wave wave3"></div> 

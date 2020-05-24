@@ -1,10 +1,9 @@
     <!-- on ferme le contenu principal </main> avant le footer -->
     </main>
 
-    <?php require VIEW . "/_contactComponent.php" ?>
+    <?php require VIEW . "/commons/_form-component.php"; ?>
 
     <footer class="footer">
-
 
         <a class="arrow" href="#">
             <img src="<?=ASSETS;?>/icons/arrow-up-circle.svg" alt="arrow">
@@ -63,7 +62,7 @@
             <div class="column is-12">
                 <div class="content">
                     <a href="https://bulma.io">
-                        <img src="<?=ASSETS;?>/img/bulma-white.png" alt="Made with Bulma" width="128" height="24">
+                        <img src="<?=ASSETS;?>/img/bulma-white.png" alt="Made with Bulma and me" width="128" height="24">
                     </a>
                 </div>
             </div>

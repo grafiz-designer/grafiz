@@ -17,6 +17,29 @@ window.addEventListener("DOMContentLoaded", (event) => {
      * MENU BURGER
      ***************/
 
+    // let links = selectAll('.navbar-end a.navbar-item');
+    // log(links);
+    // for(let i = 0; i < links.length; i++){
+    //     links[i].addEventListener('click'), (event) => {
+    //         event.preventDefault();
+    //         log(event.target);
+            
+    //     };
+    // }
+
+    
+
+
+
+
+
+
+
+
+    /***************
+     * MENU BURGER
+     ***************/
+
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(selectAll('.navbar-burger'), 0);
     
@@ -48,123 +71,56 @@ window.addEventListener("DOMContentLoaded", (event) => {
    
     let header = select('header.header');
     let navbar = header.firstElementChild;
-    let menu = select('.navbar-menu');
+    // let menu = select('.navbar-menu');
     let hero = navbar.nextElementSibling;
     let waves = select('.wave').parentElement;
     let main = select('main');
-    log(main);
-
+    let logo = select('.hero h1');
+    let scrollPlay = false;
+  
+ 
     window.addEventListener('scroll', function(){
 
-        let value = window.scrollY;
+  
+        let scrollY = window.scrollY;
         var largeur = window.innerWidth;
+    
 
         if(largeur < 769){
 
-            if(value >= 10){
-                hero.classList.add('is-black-1');
     
-            }else{
-                hero.classList.remove('is-black-1');
-                hero.classList.add('is-normal');
-            }
-    
-            if(value >= 70){
-                hero.classList.add('is-black-2');
+            if(scrollY >= 70){
                 navbar.classList.add('is-scroll');
                 navbar.classList.remove('is-spaced');
-                
-    
-
             }else{
-                hero.classList.remove('is-black-1');
                 navbar.classList.remove('is-scroll');
                 navbar.classList.add('is-spaced');
 
             }
-            if(value >= 240){
-                waves.classList.add('is-hidden');
-            }else{
-                waves.classList.remove('is-hidden');
-            }
-    
-    
-            if(value >= 150){
-                hero.classList.add('is-black-3');
+
+            if(scrollY >= 150){
                 document.html.classList.add('is-scale');
-                
-    
-            }else{
-                hero.classList.remove('is-black-2');
-                
-            }
-    
-    
-            if(value >= 300){
-                hero.classList.add('is-black-4');
-                
-            }else{
-                hero.classList.remove('is-black-3');
             }
 
         // sinon le viewport est tablet ou desktop
         }else{
 
-
-            if(value >= 10){
-                hero.classList.add('is-black-1');
+            if(scrollY >= 10){
                 navbar.classList.add('is-scroll');
                 navbar.classList.remove('is-spaced'); //réduis du margin sur la navbar fixe
-    
-            }else{
-                hero.classList.remove('is-black-1');
-                hero.classList.add('is-normal');
             }
     
-            if(value >= 150){
-                hero.classList.add('is-black-2');
-                
-
-            }else{
-                hero.classList.remove('is-black-2');
-                navbar.classList.remove('is-scroll');
-
-                
+            if(scrollY <= 150){
+                navbar.classList.remove('is-scroll');  
             }
     
     
-            if(value >= 300){
-                hero.classList.add('is-black-3');
-                
-                
-            }else{
-                hero.classList.remove('is-black-3');
-            
-            }
-    
-    
-            if(value >= 350){
-                hero.classList.add('is-black-4');
+            if(scrollY >= 350){
                 main.classList.add('is-translate');
-               
-            }else{
-                hero.classList.remove('is-black-4');
             }
-
-            if(value >= 780){
-                waves.classList.add('is-hidden');
-                
-            }else{
-                waves.classList.remove('is-hidden');
-            }
-
 
 
         }
-
-        
-
-        var largeur = window.innerWidth;
 
 
         
@@ -172,11 +128,60 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
       /***************
-     * ANIMATION 
+     * WORKS 
      ***************/
-    var largeur = window.innerWidth;
- 
+    
+    
+    //pour rajouter un background gris sur les imgs sauf celle qui est survolée
+    let item, 
+        itemsWork = selectAll('section.works .image'),
+        columns = select('.columns');
+   
+   
+    for(let i = 0; i < itemsWork.length; i++){
+
+        itemsWork[i].addEventListener('mouseenter', function(event){
+
+            item = event.target || event.srcElement;
+         
+            
+            for(let i = 0; i < itemsWork.length; i++){
+
+                    itemsWork[i].classList.add('is-gray');
+                    // itemsWork[i].style.transform = "scale(0.8)";
+                        
+            }
+            item.classList.remove('is-gray');
+            
+        }); 
+        
+    }
+
+    // enlève le background gris dès que la souris sort des images
+    columns.addEventListener('mouseleave', (event) => {
+
+        for(let i = 0; i < itemsWork.length; i++){
+
+            itemsWork[i].classList.remove('is-gray');
+            
+        }
+    })
 
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

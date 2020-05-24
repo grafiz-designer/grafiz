@@ -43,3 +43,5 @@ le site de grafiz
 *voir pr utiliser des cdn ou pas*
 
 *mettre isactive quang on click sur un lien du menu*
+
+*séparer le heroTitle, le header doit seulement inclure la navbar*
