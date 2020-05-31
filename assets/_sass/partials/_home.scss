@@ -1,29 +1,64 @@
 @charset "utf-8";
 
-main{
-  .is-translate{
-    transform: translate(400px);
-    top: 800px;
-      transition: all .3s ease;
-    }
+.section.home-works,
+.section.home-services,
+.section.home-tutos{
 
-  h3.title.title-category{
+  h2.title-category{
     font-family: $skills-font;
     margin-bottom: $title-spaced;
-    color: $primary;
     position: relative;
-    
-    
  }
-
-
-.tile{
-  overflow: hidden;
 }
 
-.trois img{
-  width: 150%;
-  overflow: hidden;
+.section.home-services{
+  position: relative;
+  background: rgba($primary, 10);
+  color: white;
+  &:before{
+      content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/Illustration/cartographie-margin-none.jpg");
+        opacity: .2;
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+
+  & >.container{
+    // background-color: $primary-opaque;
+  }
+
+  h2.title-category{ 
+    color: $black;
+    // background-color: #f2f7fc;
+  }
+ 
+ .bg-gray{
+   background-color: rgba($primary, 40);
+ 
+ }
+ 
+  h3{
+    color: $white;
+    font-family: $skills-font3;
+    font-weight: 600;
+    text-transform: uppercase;
+    // white-space: nowrap;
+  }
+ 
+  img{
+   
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  }
+
+
 
 }
 
@@ -32,4 +67,4 @@ main{
 
 
 
-}
+

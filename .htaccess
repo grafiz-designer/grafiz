@@ -9,6 +9,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 #-- ensuite le router(index.php) se charge de require le controller 'works'.
 
 
-RewriteRule "^public/(.+)$" public/index.php?action=$1 [QSA,L]
+RewriteRule "^public/(.+)$" public/index.php?controller=$1 [QSA,L]
 
     

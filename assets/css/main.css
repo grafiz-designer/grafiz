@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Signika+Negative:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;615;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -387,19 +388,19 @@ table th {
   overflow: hidden !important; }
 
 .is-size-1 {
-  font-size: 7rem !important; }
-
-.is-size-2 {
-  font-size: 5.2rem !important; }
-
-.is-size-3 {
   font-size: 3rem !important; }
 
-.is-size-4 {
+.is-size-2 {
+  font-size: 2.5rem !important; }
+
+.is-size-3 {
   font-size: 2rem !important; }
 
-.is-size-5 {
+.is-size-4 {
   font-size: 1.5rem !important; }
+
+.is-size-5 {
+  font-size: 1.25rem !important; }
 
 .is-size-6 {
   font-size: 1rem !important; }
@@ -409,15 +410,15 @@ table th {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 7rem !important; }
-  .is-size-2-mobile {
-    font-size: 5.2rem !important; }
-  .is-size-3-mobile {
     font-size: 3rem !important; }
-  .is-size-4-mobile {
+  .is-size-2-mobile {
+    font-size: 2.5rem !important; }
+  .is-size-3-mobile {
     font-size: 2rem !important; }
-  .is-size-5-mobile {
+  .is-size-4-mobile {
     font-size: 1.5rem !important; }
+  .is-size-5-mobile {
+    font-size: 1.25rem !important; }
   .is-size-6-mobile {
     font-size: 1rem !important; }
   .is-size-7-mobile {
@@ -425,15 +426,15 @@ table th {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 7rem !important; }
-  .is-size-2-tablet {
-    font-size: 5.2rem !important; }
-  .is-size-3-tablet {
     font-size: 3rem !important; }
-  .is-size-4-tablet {
+  .is-size-2-tablet {
+    font-size: 2.5rem !important; }
+  .is-size-3-tablet {
     font-size: 2rem !important; }
-  .is-size-5-tablet {
+  .is-size-4-tablet {
     font-size: 1.5rem !important; }
+  .is-size-5-tablet {
+    font-size: 1.25rem !important; }
   .is-size-6-tablet {
     font-size: 1rem !important; }
   .is-size-7-tablet {
@@ -441,15 +442,15 @@ table th {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 7rem !important; }
-  .is-size-2-touch {
-    font-size: 5.2rem !important; }
-  .is-size-3-touch {
     font-size: 3rem !important; }
-  .is-size-4-touch {
+  .is-size-2-touch {
+    font-size: 2.5rem !important; }
+  .is-size-3-touch {
     font-size: 2rem !important; }
-  .is-size-5-touch {
+  .is-size-4-touch {
     font-size: 1.5rem !important; }
+  .is-size-5-touch {
+    font-size: 1.25rem !important; }
   .is-size-6-touch {
     font-size: 1rem !important; }
   .is-size-7-touch {
@@ -457,15 +458,15 @@ table th {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 7rem !important; }
-  .is-size-2-desktop {
-    font-size: 5.2rem !important; }
-  .is-size-3-desktop {
     font-size: 3rem !important; }
-  .is-size-4-desktop {
+  .is-size-2-desktop {
+    font-size: 2.5rem !important; }
+  .is-size-3-desktop {
     font-size: 2rem !important; }
-  .is-size-5-desktop {
+  .is-size-4-desktop {
     font-size: 1.5rem !important; }
+  .is-size-5-desktop {
+    font-size: 1.25rem !important; }
   .is-size-6-desktop {
     font-size: 1rem !important; }
   .is-size-7-desktop {
@@ -473,15 +474,15 @@ table th {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 7rem !important; }
-  .is-size-2-widescreen {
-    font-size: 5.2rem !important; }
-  .is-size-3-widescreen {
     font-size: 3rem !important; }
-  .is-size-4-widescreen {
+  .is-size-2-widescreen {
+    font-size: 2.5rem !important; }
+  .is-size-3-widescreen {
     font-size: 2rem !important; }
-  .is-size-5-widescreen {
+  .is-size-4-widescreen {
     font-size: 1.5rem !important; }
+  .is-size-5-widescreen {
+    font-size: 1.25rem !important; }
   .is-size-6-widescreen {
     font-size: 1rem !important; }
   .is-size-7-widescreen {
@@ -489,15 +490,15 @@ table th {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 7rem !important; }
-  .is-size-2-fullhd {
-    font-size: 5.2rem !important; }
-  .is-size-3-fullhd {
     font-size: 3rem !important; }
-  .is-size-4-fullhd {
+  .is-size-2-fullhd {
+    font-size: 2.5rem !important; }
+  .is-size-3-fullhd {
     font-size: 2rem !important; }
-  .is-size-5-fullhd {
+  .is-size-4-fullhd {
     font-size: 1.5rem !important; }
+  .is-size-5-fullhd {
+    font-size: 1.25rem !important; }
   .is-size-6-fullhd {
     font-size: 1rem !important; }
   .is-size-7-fullhd {
@@ -1963,9 +1964,9 @@ a.box:active {
   .button.is-normal {
     font-size: 1rem; }
   .button.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .button.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .button[disabled],
   fieldset[disabled] .button {
     background-color: white;
@@ -2011,9 +2012,9 @@ a.box:active {
     border-radius: 2px;
     font-size: 0.75rem; }
   .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large) {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .buttons.has-addons .button:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
@@ -2209,10 +2210,10 @@ a.box:active {
   font-size: 0.75rem; }
 
 .content.is-medium {
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 .content.is-large {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .icon {
   align-items: center;
@@ -2500,9 +2501,9 @@ a.box:active {
   .progress.is-small {
     height: 0.75rem; }
   .progress.is-medium {
-    height: 1.5rem; }
+    height: 1.25rem; }
   .progress.is-large {
-    height: 2rem; }
+    height: 1.5rem; }
 
 @keyframes moveIndeterminate {
   from {
@@ -2655,7 +2656,7 @@ a.box:active {
   .tags.are-medium .tag:not(.is-normal):not(.is-large) {
     font-size: 1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium) {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .tags.is-centered {
     justify-content: center; }
     .tags.is-centered .tag {
@@ -2746,7 +2747,7 @@ a.box:active {
   .tag:not(body).is-medium {
     font-size: 1rem; }
   .tag:not(body).is-large {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
     margin-right: 0.1875em; }
@@ -2806,7 +2807,7 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
   .title strong {
@@ -2817,15 +2818,15 @@ a.tag:hover {
   .title:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
   .title.is-1 {
-    font-size: 7rem; }
-  .title.is-2 {
-    font-size: 5.2rem; }
-  .title.is-3 {
     font-size: 3rem; }
-  .title.is-4 {
+  .title.is-2 {
+    font-size: 2.5rem; }
+  .title.is-3 {
     font-size: 2rem; }
-  .title.is-5 {
+  .title.is-4 {
     font-size: 1.5rem; }
+  .title.is-5 {
+    font-size: 1.25rem; }
   .title.is-6 {
     font-size: 1rem; }
   .title.is-7 {
@@ -2833,7 +2834,7 @@ a.tag:hover {
 
 .subtitle {
   color: #4a4a4a;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25; }
   .subtitle strong {
@@ -2842,15 +2843,15 @@ a.tag:hover {
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
   .subtitle.is-1 {
-    font-size: 7rem; }
-  .subtitle.is-2 {
-    font-size: 5.2rem; }
-  .subtitle.is-3 {
     font-size: 3rem; }
-  .subtitle.is-4 {
+  .subtitle.is-2 {
+    font-size: 2.5rem; }
+  .subtitle.is-3 {
     font-size: 2rem; }
-  .subtitle.is-5 {
+  .subtitle.is-4 {
     font-size: 1.5rem; }
+  .subtitle.is-5 {
+    font-size: 1.25rem; }
   .subtitle.is-6 {
     font-size: 1rem; }
   .subtitle.is-7 {
@@ -2877,7 +2878,7 @@ a.tag:hover {
   background-color: whitesmoke;
   border-radius: 290486px;
   display: inline-flex;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   height: 2em;
   justify-content: center;
   margin-right: 1.5rem;
@@ -2988,9 +2989,9 @@ a.tag:hover {
     border-radius: 2px;
     font-size: 0.75rem; }
   .is-medium.input, .is-medium.textarea {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .is-large.input, .is-large.textarea {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .is-fullwidth.input, .is-fullwidth.textarea {
     display: block;
     width: 100%; }
@@ -3160,9 +3161,9 @@ a.tag:hover {
     border-radius: 2px;
     font-size: 0.75rem; }
   .select.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .select.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
   .select.is-fullwidth {
@@ -3178,9 +3179,9 @@ a.tag:hover {
   .select.is-loading.is-small:after {
     font-size: 0.75rem; }
   .select.is-loading.is-medium:after {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .select.is-loading.is-large:after {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .file {
   align-items: stretch;
@@ -3350,11 +3351,11 @@ a.tag:hover {
   .file.is-small {
     font-size: 0.75rem; }
   .file.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
   .file.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
     .file.is-large .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
@@ -3477,9 +3478,9 @@ a.tag:hover {
   .label.is-small {
     font-size: 0.75rem; }
   .label.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .label.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .help {
   display: block;
@@ -3613,10 +3614,10 @@ a.tag:hover {
     .field-label.is-normal {
       padding-top: 0.375em; }
     .field-label.is-medium {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       padding-top: 0.375em; }
     .field-label.is-large {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding-top: 0.375em; } }
 
 .field-body .field .field {
@@ -3654,11 +3655,11 @@ a.tag:hover {
   .control.has-icons-left .input.is-medium ~ .icon,
   .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .control.has-icons-left .input.is-large ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
     height: 2.5em;
@@ -3685,9 +3686,9 @@ a.tag:hover {
   .control.is-loading.is-small:after {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .control.is-loading.is-large:after {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .breadcrumb {
   font-size: 1rem;
@@ -3731,9 +3732,9 @@ a.tag:hover {
   .breadcrumb.is-small {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .breadcrumb.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
   .breadcrumb.has-bullet-separator li + li::before {
@@ -4010,9 +4011,9 @@ a.list-item {
   .menu.is-small {
     font-size: 0.75rem; }
   .menu.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .menu.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .menu-list {
   line-height: 1.25; }
@@ -4054,9 +4055,9 @@ a.list-item {
   .message.is-small {
     font-size: 0.75rem; }
   .message.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .message.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .message.is-white {
     background-color: white; }
     .message.is-white .message-header {
@@ -4229,7 +4230,7 @@ a.list-item {
   color: #363636;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1; }
 
 .modal-card-foot {
@@ -5042,9 +5043,9 @@ a.navbar-item,
   .pagination.is-small {
     font-size: 0.75rem; }
   .pagination.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .pagination.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .pagination.is-rounded .pagination-previous,
   .pagination.is-rounded .pagination-next {
     padding-left: 1em;
@@ -5409,9 +5410,9 @@ label.panel-block {
   .tabs.is-small {
     font-size: 0.75rem; }
   .tabs.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .tabs.is-large {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .column {
   display: block;
@@ -7122,7 +7123,6 @@ a, a:active {
 html {
   scroll-behavior: smooth; }
 
-@use "@mixins/mixins";
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
   padding-top: 0; }
@@ -7209,6 +7209,20 @@ header.header {
     transform: translateY(-2000px); }
   100% {
     transform: translateY(0px); } }
+  header.header h1.is-shakes {
+    animation: shakes 1.5s linear infinite; }
+  header.header h2 {
+    font-family: 'Patua One';
+    margin-top: 2.5em; }
+    header.header h2 ul li:nth-child(3) {
+      display: block;
+      animation-delay: .4s;
+      animation-duration: 2s; }
+    header.header h2 li {
+      display: inline-block;
+      font-size: 2.5em; }
+      header.header h2 li.is-shakes {
+        animation: shakes 1s linear infinite; }
   header.header .container-title {
     display: inline-flex;
     flex-direction: column; }
@@ -7220,8 +7234,6 @@ header.header {
       font-weight: 700;
       align-content: start;
       position: relative; }
-      header.header .container-title h1.is-shakes {
-        animation: shakes 1s linear infinite; }
     header.header .container-title span {
       position: relative;
       top: .3em;
@@ -7239,11 +7251,6 @@ header.header {
         width: 17%;
         height: 17%;
         background-color: rgba(255, 255, 255, 0.7); }
-  header.header h2 {
-    font-weight: 700;
-    margin-top: 2em; }
-    header.header h2 span {
-      font-size: 2.2em; }
   header.header hr {
     margin: 0; }
   header.header .navbar-brand svg {
@@ -7287,23 +7294,23 @@ header.header {
 
 @keyframes shakes {
   10% {
-    transform: translate(1px, 1px); }
+    transform: translate(2px, 2px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(3px, 1px); }
+    transform: translate(2px, 4px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(3px, 3px); }
+    transform: translate(1px, 5px); }
   100% {
     transform: translate(0, 0); }
   40% {
-    transform: translate(1px, 1px); }
+    transform: translate(4px, 3px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(1px, 3px); }
+    transform: translate(2px, 2px); }
   100% {
     transform: translate(0, 0); }
   60% {
@@ -7311,15 +7318,15 @@ header.header {
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(2px, 5px); }
+    transform: translate(2px, 4px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(1px, 4px); }
+    transform: translate(1px, 5px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(4px, 3px); }
+    transform: translate(3px, 5px); }
   100% {
     transform: translate(0, 0); } }
   header.header .chevron {
@@ -7445,23 +7452,41 @@ header.header {
   100% {
     background-position: -1000px; } }
 
-main .is-translate {
-  transform: translate(400px);
-  top: 800px;
-  transition: all .3s ease; }
-
-main h3.title.title-category {
+.section.home-works h2.title-category,
+.section.home-services h2.title-category,
+.section.home-tutos h2.title-category {
   font-family: "Signika Negative", sans-serif;
-  margin-bottom: 6rem;
-  color: rgba(0, 209, 178, 0.8);
+  margin-bottom: 5rem;
   position: relative; }
 
-main .tile {
-  overflow: hidden; }
-
-main .trois img {
-  width: 150%;
-  overflow: hidden; }
+.section.home-services {
+  position: relative;
+  background: #00d1b2;
+  color: white; }
+  .section.home-services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/Illustration/cartographie-margin-none.jpg");
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .section.home-services h2.title-category {
+    color: #0a0a0a; }
+  .section.home-services .bg-gray {
+    background-color: #00d1b2; }
+  .section.home-services h3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .section.home-services img {
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto; }
 
 .section.title-form {
   padding: 0; }

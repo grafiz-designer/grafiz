@@ -1,7 +1,7 @@
     <!-- on ferme le contenu principal </main> avant le footer -->
     </main>
 
-    <?php require VIEW . "/commons/_form-component.php"; ?>
+    <?php require VIEW . "/commons/_form-component.html.php"; ?>
 
     <footer class="footer">
 

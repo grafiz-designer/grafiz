@@ -19,9 +19,9 @@ function debug($val){
 
 
 define('ROOT', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site" );
-define('CONTROLLER', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/controller" );
-define('MODEL', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/model" );
-define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/view" );
+define('CONTROLLER', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/controllers/" );
+define('MODEL', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/models" );
+define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/view/" );
 define('ASSETS', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/assets" );
 define('HTTP_ROOT', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
 

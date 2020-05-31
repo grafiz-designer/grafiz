@@ -1,5 +1,6 @@
 <?php
-use Models\Router;
+use Classes\Router;
+
 
 // Ce fichier c'est le 'FrontController' qui a pour but d'appeler le bon controleur.
  
@@ -11,74 +12,21 @@ require "../_config.php";
 require ROOT . "/vendor/autoload.php";
 
 
+
+Router::process();
+
 //appel du routeur
-if(isset($_GET['action'])){
-    $router = new Router($_GET['action']);
-    $router->renderController();
-}else{
-    $router = new Router('home');
-    $router->renderController();
+// if(isset($_GET['action'])){
+//     $router = new Router($_GET['action']);
+//     $router->renderController();
+// }else{
+//     $router = new Router('home');
+//     $router->renderController();
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
 
 
 

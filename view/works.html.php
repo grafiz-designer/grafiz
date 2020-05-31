@@ -21,17 +21,14 @@
 
 
 
-
-
-
 <section class="section works">
     
-    
-    <div class="columns is-mobile is-gapless is-multiline has-text-centered">
+    <!-- is-variable is-0-mobile permettent d'enlever les gaps sur mobile -->
+    <div class="columns is-mobile is-variable is-0-mobile is-multiline has-text-centered">
         <?php
-        foreach($post as $key => $value){ ?>
+        foreach($data as $key => $value): ?>
             
-            <div class="column is-half-mobile is-one-third-tablet is-one-third-desktop is-one-fifth-widescreen">
+            <div class="column is-half-mobile is-half-tablet is-one-third-desktop is-one-third-widescreen is-one-fifth-fullhd">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-256x256"> 
@@ -49,7 +46,7 @@
                 </div>
             </div>
             
-            <?php } ?>
+            <?php endforeach ?>
             
             
             

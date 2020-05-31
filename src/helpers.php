@@ -1,5 +1,5 @@
 <?php
-namespace src;
+namespace Src;
 
 
 
