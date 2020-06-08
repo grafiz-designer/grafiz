@@ -34,10 +34,10 @@
                         <figure class="image is-256x256"> 
                             <a href="#">
                                
-                                <img src="<?= $value->getImg_show();?>" alt="<?= $value->getNom();?>">  
+                                <img src="<?= $value->get('img_show');?>" alt="<?= $value->get('nom');?>">  
                                 <figcaption>
-                                    <h2 class="title is-size-6-mobile is-size-5-tablet is-size-7-widescreen is-size-5-fullhd"><?= strtoupper($value->getNom());?></h2>         
-                                    <p class="title is-size-7 is-size-6-tablet is-primary"><?= strtoupper($value->getCategorie());?></p>         
+                                    <h2 class="title is-size-6-mobile is-size-5-tablet is-size-7-widescreen is-size-5-fullhd"><?= strtoupper($value->get('nom'));?></h2>         
+                                    <p class="title is-size-7 is-size-6-tablet"><?= strtoupper($value->get('categorie'));?></p>         
                                 </figcaption>
                            
                             </a> 

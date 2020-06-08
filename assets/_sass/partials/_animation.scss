@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@keyframes shakes{
+  @for $i from 1 through 9 {
+      #{10 * $i}%{
+          transform: translate(#{random(5)}px, #{random(5)}px);
+      }
+      100%{
+          transform: translate(0,0);
+      }
+  }
+  
+
+}

@@ -1,4 +1,6 @@
-import { log, select, selectAll, byId } from './_utilities.js';
+/* Global log(), select(), selectAll(), byId() */
+
+import { form } from './form-ajax.js';
 
 window.addEventListener("DOMContentLoaded", event => {
 
@@ -115,12 +117,12 @@ window.addEventListener("DOMContentLoaded", event => {
 
             item = event.target || event.srcElement;
 
-            for (let i = 0; i < itemsWork.length; i++) {
+            for (let i = 0; i < itemsWork.length; i++) {}
 
-                itemsWork[i].classList.add('is-gray');
-                // itemsWork[i].style.transform = "scale(0.8)";
-            }
-            item.classList.remove('is-gray');
+            // itemsWork[i].classList.add('is-gray');
+            // itemsWork[i].style.transform = "scale(0.8)";
+
+            // item.classList.remove('is-gray');
         });
     }
 
@@ -131,5 +133,13 @@ window.addEventListener("DOMContentLoaded", event => {
 
             itemsWork[i].classList.remove('is-gray');
         }
+    });
+
+    // formulaire
+
+    let myForm = document.getElementById('myForm');
+
+    myForm.addEventListener('submit', function (e) {
+        e.preventDefault();
     });
 });

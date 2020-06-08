@@ -1,185 +1,198 @@
 @charset "utf-8";
 
 
-.section.categorie{
-  padding-bottom: .5rem;
-  .centered{
-    align-items: flex-end;
-  }
-  
-}
+#page-works{
 
-
-.section.categorie .container{
-  display: flex;
-  justify-content: center;
-  // padding-top: .5rem 5rem;
-  
-  ul{
-    
-    font-size: 0;// correction d'un bug d'espace blanc
-    display: inline-block;
-    text-align: center;
+  .section.categorie{
+    padding-bottom: .5rem;
+    .centered{
+      align-items: flex-end;
+    }
     
   }
   
-  li{
-    display: inline-block;
-    position: relative;
-    transition: background-color, color .2s ease;
-    &:hover{
-      background-color: $primary;
-      color: white;
+  
+  .section.categorie .container{
+    display: flex;
+    justify-content: center;
+    // padding-top: .5rem 5rem;
+    
+    ul{
       
-    }
-    &:hover h2{
-      color: #fff;
-    }
-    // au survol des catégories, les barres verticales disparaissent
-    &:hover h2:before{
-      display: none;
-    }
-  }
-  
-  h2{
-    font-size: 1.2rem;
- 
-    &:before{
-      content: '';
-      position: absolute;
+      font-size: 0;// correction d'un bug d'espace blanc
       display: inline-block;
-      @include is-Y-centered;
-      right: -2px;
-      width: 2px;
-      height: 10px;
-      background-color: $primary;
+      text-align: center;
       
     }
-    // j'enlève la dernière barre
-    &.last:before{
-      display: none;
-    }
     
-  }
-  
-  a{
-    display: inline-block;
-    padding: 0.3rem .8rem;
-  }
-  
-  
-  
-  @media screen and (max-width: 521px){
-    
-    li{ padding: 0; }
-    h2{ font-size: .9rem; }
-    
-  }
-  
-  
-}
-
-
-/****** la gallerie d'images *********/ 
-
-
-.section.works{
-  
-  a{ 
-    display: block;
-    &:before{
-      content: '';
-      position: absolute;
-      border: 10px solid transparent;
-      top: 3%;
-      left: 3%;
-      right: 3%;
-      bottom: 3%;
-      background-color: rgba(10, 10, 10, .9);
-      transition: all .3s ease;
-      opacity: 0;
-      
-    }
-  }
-  @media #{$mobile-size}{
-    padding-top: 20px;
-  }
-
-  figure{
-    transition: transform .3s ease;
-    &:hover{
-      transform: scale(1.05);
-      z-index: 1100;
-      box-shadow: -3px 25px 53px -18px rgba(0,0,0,0.7);
-      cursor: pointer;
+    li{
+      display: inline-block;
+      position: relative;
+      transition: background-color, color .2s ease;
+      &:hover{
+        background-color: $primary;
+        color: white;
+        
       }
+      &:hover h2{
+        color: #fff;
+      }
+      // au survol des catégories, les barres verticales disparaissent
+      &:hover h2:before{
+        display: none;
+      }
+    }
+    
+    h2{
+      font-size: 1.2rem;
+      
+      &:before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        @include is-Y-centered;
+        right: -2px;
+        width: 2px;
+        height: 10px;
+        background-color: $primary;
+        
+      }
+      // j'enlève la dernière barre
+      &.last:before{
+        display: none;
+      }
+      
+    }
+    
+    a{
+      display: inline-block;
+      padding: 0.3rem .8rem;
+    }
+    
+    
+    
+    @media screen and (max-width: 521px){
+      
+      li{ padding: 0; }
+      h2{ font-size: .9rem; }
+      
+    }
+    
+    
+  }
+  
+  
+  /****** la gallerie d'images *********/ 
+  
+  
+  .section.works{
 
+    
+    a{ 
+     
+      display: block;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 10px solid rgba($black, .8);
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background-color: rgba(255, 255, 255, 1);
+        
+        transition: all .3s ease;
+        opacity: 0;
+      }
+    }
+    @media #{$mobile-size}{
+      padding-top: 20px;
+    }
+    
+    figure{
+      
+      transition: transform .3s ease;
+      &:hover{
+        transform: scale(1.05);
+        z-index: 1100;
+        box-shadow: -3px 25px 53px -18px rgba(0,0,0,0.7);
+        cursor: pointer;
+      }
+      
       &:hover a:before{
-        opacity: 1;
+        opacity: .5;
       }
-
+      
       &:hover figcaption{
         opacity: 1;
       }
       
       
+      
+      
+    }
     
-
-  }
-  
-  figcaption{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    opacity: 0;
-    
-    h2, p{
-      padding: 0 25px;
-    }
-
-    h2{
-      font-family: $skills-font3;
-      font-weight: 700;
-      margin-bottom: .5rem;
-      padding: 0 15px;
-      color: $primary;
-      line-height: 1.4rem;
-    }
-   
-    p{
-      letter-spacing: .2em;
-      line-height: 1.2rem;
-      color: #fff;
-    }
-
-    @media #{$tablet-size}{
+    figcaption{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      opacity: 0;
+      &.is-shakes{
+        animation: shakes 1.5s linear infinite;
+      }
+      
       h2, p{
-        line-height: 2rem;
-        padding: 0 20px;
+        padding: 0 25px;
+        
       }
+      
+      h2{
+        font-family: $skills-font3;
+        font-weight: 800;
+        margin-bottom: .5rem;
+        padding: 0 15px;
+        color: $black;
+        line-height: 1.4rem;
+
+       
+      }
+      
       p{
-        letter-spacing: .5rem;
- 
+        letter-spacing: .2em;
+        line-height: 1.2rem;
+        
+       
+        color: $grey-darker;
       }
-    
-    
+      
+      @media #{$tablet-size}{
+        h2, p{
+          line-height: 2rem;
+          padding: 0 20px;
+        }
+        p{
+          letter-spacing: .5rem;
+          
+        }
+        
+        
+      }
+      
+      
     }
- 
     
-  }
-
-
     
-
+    
+    
+    
+    
+  } // end of .section.works 
   
   
-} // end of .section.works 
-
-
-// class pour javascript pour mettre les vignettes en gris quand une <figure> est survolée
-.is-gray:after{
+  // class pour javascript pour mettre les vignettes en gris quand une <figure> est survolée
+  .is-gray:after{
     content: '';
     display: block;
     position: absolute;
@@ -188,7 +201,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba($black, .2);
- 
+    
   }
   
   
+}

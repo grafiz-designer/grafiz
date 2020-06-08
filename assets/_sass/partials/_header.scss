@@ -1,25 +1,12 @@
 @charset "utf-8";
 
 
-
-// j'ai modifié cette valeur sinon il y avait un emarge
-html,
-body {
-    &.has-navbar-fixed-top{
-        padding-top: 0;
-    }
-}
- 
-
-/***********************************
-HEADER
-************************************/
-
 header.header{
     position: relative;
     overflow: hidden;
-    // background-color: darken(hsl(171, 100%, 41%), 15);
+ 
     background: linear-gradient(to top, darken(hsl(171, 100%, 41%), 20), $primary);
+   
     color: #fff;
 
     &:before{
@@ -64,11 +51,12 @@ header.header{
         
         background-color: transparent;
         z-index: 1001;
+        
         // la navbar rajoute la class '.is-scroll' lors du scroll
         &.is-scroll{
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0px 3px 4px 4px rgba(0, 0, 0, .2);
-        animation: top-in-basic 1 .2s 0s;
+        animation: top-in-basic .3s;
        
         }
     }
@@ -83,35 +71,38 @@ header.header{
         }
     }
 
-    h2{
-        font-family: 'Patua One'; // Montserrat bold
-            // text-transform: uppercase;
-            // font-weight: 400;
-            margin-top: 2.5em;
+    
+        
             
-            ul li:nth-child(3){
-                display: block;
-                animation-delay: .4s;
-                animation-duration: 2s;
-            }
-            
-           
-            
-            & li{
-                &.is-shakes{
-                    animation: shakes 1s linear infinite;
-                }
-                display: inline-block;
-                font-size: 2.5em;
+            .titi {
+                font-family: 'Patua One'; 
+        margin-top: 1.5em;
+                text-align: center;
+                animation: type 4s steps(33) infinite;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 4em;
+                border-right: 5px solid $white;
                 
+               
             }
-            @media #{$mobile-size}{
-           
-    
-              }
+
+
+
+            @keyframes type{
+                0%{
+                    width: 0ch;
+                }100%{
+                    width: 26ch;
+                    
+                }
+            }
+            
+            
+          
             
     
-    }
+    
 
     
     // les titres des pages hors celle de la page d'acueil
@@ -244,74 +235,63 @@ header.header{
         }
     
     }
-    @keyframes shakes{
-        @for $i from 1 through 9 {
-            #{10 * $i}%{
-                transform: translate(#{random(5)}px, #{random(5)}px);
-            }
-            100%{
-                transform: translate(0,0);
-            }
-        }
-        
 
-    }
         
    
-    //le cercle
-    .chevron{
-        //flex me permet de centrer facilement son enfant(le chevron)
-        display: flex;
-        width: 8vw;
-        height: 8vw;
-        max-width: 78px;
-        max-height: 78px;
-        position: absolute;
-        bottom: 0;
-        left : 90%;
-        transform : translate(-50%, -5px);
-        border-radius: 50%;
-        margin-bottom: 13%;
-        animation: pulse 2.3s infinite;
+    // //le cercle
+    // .chevron{
+    //     //flex me permet de centrer facilement son enfant(le chevron)
+    //     display: flex;
+    //     width: 8vw;
+    //     height: 8vw;
+    //     max-width: 78px;
+    //     max-height: 78px;
+    //     position: absolute;
+    //     bottom: 0;
+    //     left : 90%;
+    //     transform : translate(-50%, -5px);
+    //     border-radius: 50%;
+    //     margin-bottom: 13%;
+    //     animation: pulse 2.3s infinite;
     
-    }
+    // }
 
-    //le chevron
-    .chevron::before{
-        content: '';
-        //margin:auto est un raccourci pr centrer grace a son parent flex
-        margin: auto;
-        left: 50%;
-        display: inline-block;
-        transform: translateY(-60%);
-        border-color:#fff;
-        border-style: solid;
-        border-width: 0 4px 4px 0;
-        transform: rotate(45deg);
-        height: 28%;
-        width: 28%;
+    // //le chevron
+    // .chevron::before{
+    //     content: '';
+    //     //margin:auto est un raccourci pr centrer grace a son parent flex
+    //     margin: auto;
+    //     left: 50%;
+    //     display: inline-block;
+    //     transform: translateY(-60%);
+    //     border-color:#fff;
+    //     border-style: solid;
+    //     border-width: 0 4px 4px 0;
+    //     transform: rotate(45deg);
+    //     height: 28%;
+    //     width: 28%;
         
-    }
-    .chevron:hover{
-        cursor: pointer;
-    }
+    // }
+    // .chevron:hover{
+    //     cursor: pointer;
+    // }
   
-    @keyframes pulse {
-        0%{ transform: translate(-50%, -5px);
-            border: 2px solid transparent;
-        }
-        25%{
-            transform: translate(-50%, -3px);
+    // @keyframes pulse {
+    //     0%{ transform: translate(-50%, -5px);
+    //         border: 2px solid transparent;
+    //     }
+    //     25%{
+    //         transform: translate(-50%, -3px);
            
-        }
-        50%{ transform: translate(-50%, 10px);
+    //     }
+    //     50%{ transform: translate(-50%, 10px);
             
-        }
-        100%{ transform: translate(-50%, -5px);
-            border: 2px solid #fff;
-        }
+    //     }
+    //     100%{ transform: translate(-50%, -5px);
+    //         border: 2px solid #fff;
+    //     }
         
-    }
+    // }
 
     // la vague
     section:last-child{

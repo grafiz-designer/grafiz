@@ -11,9 +11,10 @@ abstract class Controller
 
   public function __construct()
   {
+    // seulement si le controlleur a besoin d'un modèle alors on instancie un modèle au meme nom qui se trouve dans "$modelName"
     if(!$this->modelName == null){
-        $namespaceModel = "Models\\" . $this->modelName;
-        $this->model = new $namespaceModel();
+        $nameSpaceModel = "Models\\" . $this->modelName;
+        $this->model = new $nameSpaceModel();
     }
   }
 
@@ -26,16 +27,9 @@ abstract class Controller
    */
   public function setHeightHero(): string
   {
-      $view = $this->view;
-      
-      if($view !== 'home'){
-          $heightHero = 'is-medium';
-      }else{
-          $heightHero = 'is-large';
-      }
-      return $heightHero;
+        $view = $this->view;
+        return $heightHero = ($view !== 'home') ? 'is-medium' : 'is-large';
   }
-
 
 
 
@@ -44,7 +38,7 @@ abstract class Controller
    * 
    * @return string
    */
-  public function setHeroTitle()
+  public function setHeroTitle(): string
     {
         $view = $this->view;
 
@@ -79,16 +73,24 @@ abstract class Controller
             <h1 class="is-shakes is-spaced">
                 <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?>
             </h1>
-            <h2 class='subtitle has-text-white is-size-6-mobile is-size-4-desktop has-text-centered' data-aos='fade-up' data-aos-anchor-placement='bottom-bottom'>
+            <div class="columns">
+                <div class="column is-4 is-offset-3">
+
+                <h2 class='titi subtitle has-text-white has-text-centered'>
                 <!-- <span class='is-block'>Motion</span>
                 <span class='is-block'>Illustration</span>
                 <span class='is-block'>Graphisme</span> -->
-                <ul>
+                Motion - Graphisme - Illustration
+                <!-- <ul>
                     <li>Motion -</li>
+                    <li>Graphisme</li>
                     <li>Illustration</li>
-                    <li class="is-shakes">Graphisme</li>
-                </ul>
+                    
+                </ul> -->
             </h2>
+                </div>
+            </div>
+            
             <?php
             
             $heroTitle = ob_get_clean();

@@ -24,5 +24,3 @@ function byId(id) {
 
     return document.getElementById(id);
 }
-
-export { log, select, selectAll, byId };

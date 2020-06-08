@@ -5,12 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $pageTitle; ?></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Voici le site de Grafiz...">
+    <meta name="keywords" content="support@appseed.us"><!-- se renseigner sur cette balise -->
+    <link rel="icon" type="image/png" href="#">
+    <title></title>
     
     <link rel="stylesheet" href="<?= ROOT; ?>/node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="<?= ASSETS; ?>/css/main.css">
+
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://kit.fontawesome.com/7447399213.js" crossorigin="anonymous"></script>
+
+    <script src="<?= ASSETS; ?>/lib/utilities.js"></script>
     <script type="module" src="<?= ASSETS; ?>/lib/main.js"></script>
     
 </head>

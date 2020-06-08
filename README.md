@@ -45,3 +45,5 @@ le site de grafiz
 *mettre isactive quang on click sur un lien du menu*
 
 *séparer le heroTitle, le header doit seulement inclure la navbar*
+
+*remplacer les doules quotes(") par les simples quotes(') car plus lourde en performance*

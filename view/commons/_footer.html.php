@@ -1,7 +1,9 @@
+<?php require VIEW . "/commons/_form-component.html.php"; ?>
+    
     <!-- on ferme le contenu principal </main> avant le footer -->
     </main>
 
-    <?php require VIEW . "/commons/_form-component.html.php"; ?>
+    
 
     <footer class="footer">
 
@@ -82,6 +84,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 
+    
 
     </body>
     </html>

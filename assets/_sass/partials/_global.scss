@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 
-
-
-@media screen and (max-width: 768px){
-
-  // .section{
-  //    padding: 3rem .5rem;
-  // }
+// j'ai modifié cette valeur sinon il y avait un emarge
+html,
+body {
+    &.has-navbar-fixed-top{
+        padding-top: 0;
+    }
 }
+ 
 
 
 a, a:active{

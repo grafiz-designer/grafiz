@@ -3,7 +3,8 @@
     <!-- is-fixed-top pr fiwer la nav meme au scroll -->
     <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation">
         
-            <!-- c'est le menu coté gauche toujours visible  -->
+           <div class="container is-fluid">
+                <!-- c'est le menu coté gauche toujours visible  -->
             <div class="navbar-brand" data-aos="fade-down-right">
                 <a class="navbar-item has-text-left" href="index.php">
                     <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?>
@@ -27,36 +28,49 @@
                     <a href="about" class="navbar-item is-size-5">About</a><hr>
                     <a href="tutos" class="navbar-item is-size-5">Tutos</a><hr>
                     <a href="contact" class="navbar-item is-size-5">Contact</a><hr>
+
                     <div class="navbar-item has-text-centered-desktop">
                         <a href="#">
-                            <img src="<?=ASSETS;?>/icons/logo-twitter.svg" class='txit icon is-medium' alt="logo-twitter">
-                            
+                            <span class="icon is-medium">
+                                <i class="fab fa-lg fa-facebook-square"></i>
+                            </span>
                         </a>
-        
+                        
                         <a href="#">
-                            <img src="<?=ASSETS;?>/icons/logo-facebook.svg" class='icon is-medium' alt="logo-facebook">
-                        </a>  
-        
+                            <span class="icon is-medium">
+                                <i class="fab fa-lg fa-instagram"></i>
+                            </span>
+                        </a>
+
                         <a href="#">
-                            <img src="<?=ASSETS;?>/icons/logo-dribbble.svg" class='icon is-medium' alt="logo-dribble">
-                        </a>  
+                            <span class="icon is-medium">
+                                <i class="fab fa-lg fa-twitter-square"></i>
+                            </span>
+                        </a>
                     </div>
                     
                 </div>
             </div>
+           </div>
     </nav>
   
 
     
-    <section class="hero has-text-centered <?= $heightHero;?>">
-        <div class="hero-body">
-            <div class='container'>
+        
+            <section class="hero has-text-centered <?= $heightHero;?>">
+                <div class="hero-body">
+                    <div class='container'>
+                            
+
+                                <?= $heroTitle; ?>
+                    
                 
-                <?= $heroTitle; ?>
-                
-            </div>
-        </div>
-    </section>
+                    </div>
+                </div>
+             </section>
+        
+    
+
 
 
     <div class="chevron"></div>
@@ -75,7 +89,7 @@
 
 
 
-<!-- <main> indique le contenu qui appartient exclusivement à cette page, il démarre après le <header> et le termine avant le <footer> -->
-<main role="main">
+<!-- <main> indique le contenu qui appartient exclusivement à cette page, il doit démarrer après le <header> et le terminer avant le <footer>, elle a un id de manière dynamique afin de styliser chaque pages-->
+<main role="main" id="page-<?= $this->view;?>">
 
 
