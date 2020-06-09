@@ -23,7 +23,9 @@
             <div class="navbar-menu" id="menu">
                 
                 <div class="navbar-end">
-                    <a href="home" class="navbar-item is-size-5">Home</a><hr>
+                    <a href="home" class="navbar-item is-size-5">
+                        <i class="fas fa-lg fa-home"></i>
+                    </a><hr>
                     <a href="works" class="navbar-item is-size-5">Works</a><hr>
                     <a href="about" class="navbar-item is-size-5">About</a><hr>
                     <a href="tutos" class="navbar-item is-size-5">Tutos</a><hr>

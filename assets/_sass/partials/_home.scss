@@ -15,7 +15,7 @@
   
   .section.home-services{
     position: relative;
-    background: rgba($primary, 10);
+   
     color: white;
     &:before{
       content: "";
@@ -25,16 +25,16 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url("../img/Illustration/cartographie-margin-none.jpg");
+      // background: url("../img/Illustration/cartographie-margin-none.jpg");
       opacity: .2;
       background-repeat: no-repeat;
       background-size: cover;
     }
-    
+
     
     h2.title-category{ 
       color: $black;
-      // background-color: #f2f7fc;
+      margin-bottom: 10rem;
     }
     
     .bg-gray{
@@ -43,7 +43,7 @@
     }
     
     h3{
-      color: $white;
+
       font-family: $skills-font3;
       font-weight: 600;
       text-transform: uppercase;
@@ -57,6 +57,17 @@
       margin: 0 auto;
     }
     
+    i{
+      color: $black;
+    }
+    p{
+      line-height: 2rem;
+    }
+    hr{
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     
     
   }

@@ -9,74 +9,69 @@
 
 
 
-<section class="section home-services">
+<section class="section home-services has-text-centered">
         
-        <div class="container is-fullhd">
-                <h2 class="title is-size-2-mobile is-size-2-tablet is-size-1-desktop has-text-centered title-category">- Services -</h2>
+        <div class="container">
+                <h2 class="title is-size-2-mobile is-size-2-tablet is-size-1-desktop title-category">Services</h2>
         </div>
         
         
         
         <div class="container">
-                <div class="columns is-centered">
-                        <div class="column is-10">
-                                <div class="columns is-vcentered">
-                                        <div class="column is-4 is-offset-1">
-                                                <h3 class="title is-size-4">Design graphique</h3>
-                                                <p class="is-size-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie...</p>
-                                        </div>
-                                        <div class="column is-7 has-text-left">
-                                                <figure class="image">
-                                                        <img class="" src="<?php echo ASSETS;?>/icons/services/design-graphique.svg">
-                                                </figure>
-                                        </div>
-                                </div>
+                <div class="columns">
+                        <div class="column is-4">
+                                
+                                <span class="icon is-large">
+                                        <i class="fas fa-7x fa-bezier-curve"></i>
+                                </span>
+                                <hr>
+                                <h3 class="title is-4 is-spaced mt-6">Design graphique</h3>
+                                <p class="subtitle is-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie... </p>
+                                <button class="button is-primary is-outlined">Découvrir</button>
+                                
+                                
                         </div>
-                </div>
+                        <div class="column is-4">
+                                
+                                <span class="icon is-large">
+                                        <i class="fas fa-7x fa-pencil-alt"></i>
+                                </span>
+                                <hr>
+                                <h3 class="title is-4 is-spaced mt-6">ILLUSTRATION</h3>
+                                <p class="subtitle is-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie...</p>
+                                <button class="button is-primary is-outlined">Découvrir</button>
+                                
+                                
+                        </div>
+                        <div class="column is-4">
+                                
+                                <span class="icon is-large">
+                                        <i class="fas fa-7x fa-mobile-alt"></i>
+                                </span>
+                                <hr>
+                                <h3 class="title is-4 is-spaced mt-6">Web</h3>
+                                <p class="subtitle is-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie...</p>
+                                <button class="button is-primary is-outlined">Découvrir</button>
+                                
+                                
+                        </div>
+                        <!-- <div class>
+                                
+                                <p class="is-size-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie...</p>
+                        </div> -->
+                        
+                        
+                        
+                        
+                </div> 
         </div>
-
+        
         
         <!-- *************************************** -->
-
-        <div class="container">
-                <div class="columns is-centered">
-                        <div class="column is-10">
-                                <div class="columns is-vcentered">
-                                        
-                                        <div class="column is-7">
-                                                <figure class="image">
-                                                        <img class="" src="<?php echo ASSETS;?>/icons/services/pencil.svg">
-                                                </figure>
-                                        </div>
-                                        <div class="column is-4 is-offset-1 has-text-left">
-                                                <h3 class="title is-size-4">Illustration</h3>
-                                                <p class="is-size-5">Identité visuelle, affiches publicitaire, lettrage, packaging, édition, papeterie...</p>
-                                        </div>
-                                        
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <!-- *************************************** -->
-        <div class="container">
-                <div class="columns is-centered">
-                        <div class="column is-10">
-                                <div class="columns is-vcentered">
-                                        <div class="column is-4 is-offset-1">
-                                                <h3 class="title is-size-4">Web Design</h3>
-                                <p class="is-size-5">maquette, prototype, bannière web, newsletter & intégration HTML, CSS, JS</p>
-                                        </div>
-                                        <div class="column is-7 has-text-left">
-                                                <figure class="image">
-                                                        <img class="" src="<?php echo ASSETS;?>/icons/services/design-graphique.svg">
-                                                </figure>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </div>
         
-      
+        
+        
+        
         
         
         
