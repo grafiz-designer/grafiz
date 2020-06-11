@@ -65,9 +65,12 @@ header.header{
         0%{ transform: translateY(-2000px); }
         100%{ transform: translateY(0px); }
     }
+
+    //LE LOGO PRINCIPAL
     h1{
         &.is-shakes{
-            animation: shakes 1.5s linear infinite;
+            animation: bounce linear 4s infinite;
+            transform-origin: 50% 50%;
         }
     }
 

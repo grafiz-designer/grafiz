@@ -3,7 +3,7 @@
     <!-- is-fixed-top pr fiwer la nav meme au scroll -->
     <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation">
         
-           <div class="container is-fluid">
+           <div class="container">
                 <!-- c'est le menu coté gauche toujours visible  -->
             <div class="navbar-brand" data-aos="fade-down-right">
                 <a class="navbar-item has-text-left" href="index.php">

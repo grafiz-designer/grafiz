@@ -17,3 +17,7 @@ a, a:active{
 html{
   scroll-behavior: smooth;
 }
+
+.curved{
+  font-size: 0; // me permet de résoudre un bug d'espacement en dessous la wave
+}

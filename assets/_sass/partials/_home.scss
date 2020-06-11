@@ -10,16 +10,21 @@
       font-family: $skills-font;
       margin-bottom: $title-spaced;
       position: relative;
+      font-size: 5rem;
+      font-weight: 700;
+      color: darken($primary, 60);
+      margin-bottom: 10rem;
     }
   }
-  
+
   .section.home-services{
     position: relative;
-   
+    background-color: rgba($primary, .2);
     color: white;
+    padding-top: 1rem;
+
     &:before{
       content: "";
-      
       position: absolute;
       top: 0;
       left: 0;
@@ -31,23 +36,20 @@
       background-size: cover;
     }
 
-    
-    h2.title-category{ 
-      color: $black;
-      margin-bottom: 10rem;
-    }
+
     
     .bg-gray{
-      background-color: rgba($primary, 40);
+      background-color: rgba($primary, 50);
       
     }
     
     h3{
 
-      font-family: $skills-font3;
-      font-weight: 600;
-      text-transform: uppercase;
-      // white-space: nowrap;
+      font-family: $skills-font;
+      font-weight: 700;
+      // text-transform: uppercase;
+      // color: darken($primary, 40);
+      color:darken($primary, 60);
     }
     
     img{
@@ -59,19 +61,44 @@
     
     i{
       color: $black;
+      .button span{
+        color: $white;
+      }
     }
+ 
     p{
       line-height: 2rem;
+      color: darken($primary, 25);
     }
-    hr{
-      width: 30%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+   .box{
     
+      margin-bottom: 5rem;
+      padding: 4rem 1rem;
+      background-color: rgba($primary, .2);
+      border-radius: .2rem;
+     
+      
+   }
+   hr{
+    width: 15%;
+    background:darken($primary, 60);
+    margin: 3rem auto 2rem;
+
+    }
+   
+    .curved-2{
+      margin-top: 4rem;
+      background-color: #fff;
+    }
     
   }
-  
+
+
+
+
+  // TUTOS
+
+
   
   
   

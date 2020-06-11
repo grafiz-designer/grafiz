@@ -86,7 +86,13 @@
   
   
   .section.works{
-
+    .card{
+      
+    }
+    .card:hover{
+      transform: translateY(-.4em);
+      transition: transform .3s ease-in-out;
+    }
     
     a{ 
      
@@ -120,7 +126,7 @@
       }
       
       &:hover a:before{
-        opacity: .9;
+        opacity: 1;
       }
       
       &:hover figcaption{

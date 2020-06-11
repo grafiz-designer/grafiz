@@ -7486,41 +7486,51 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @keyframes shakes {
   10% {
-    transform: translate(4px, 5px); }
+    transform: translate(4px, 3px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(3px, 5px); }
+    transform: translate(3px, 4px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(2px, 5px); }
+    transform: translate(5px, 5px); }
   100% {
     transform: translate(0, 0); }
   40% {
-    transform: translate(3px, 5px); }
+    transform: translate(5px, 2px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(4px, 5px); }
+    transform: translate(2px, 2px); }
   100% {
     transform: translate(0, 0); }
   60% {
-    transform: translate(5px, 4px); }
+    transform: translate(3px, 5px); }
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(1px, 5px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(4px, 2px); }
+    transform: translate(2px, 5px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(5px, 2px); }
+    transform: translate(1px, 2px); }
   100% {
     transform: translate(0, 0); } }
+
+@keyframes bounce {
+  20%, 100% {
+    transform: translate(0px, -15px); }
+  0% {
+    transform: translate(0px, -25px); }
+  0% {
+    transform: translate(0px, 0px); }
+  5% {
+    transform: translate(0px, -25px); } }
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
@@ -7531,6 +7541,9 @@ a, a:active {
 
 html {
   scroll-behavior: smooth; }
+
+.curved {
+  font-size: 0; }
 
 header.header {
   position: relative;
@@ -7612,7 +7625,8 @@ header.header {
   100% {
     transform: translateY(0px); } }
   header.header h1.is-shakes {
-    animation: shakes 1.5s linear infinite; }
+    animation: bounce linear 4s infinite;
+    transform-origin: 50% 50%; }
   header.header .titi {
     font-family: 'Patua One';
     margin-top: 1.5em;
@@ -7785,11 +7799,17 @@ header.header {
 #page-home .section.home-tutos h2.title-category {
   font-family: "Signika Negative", sans-serif;
   margin-bottom: 5rem;
-  position: relative; }
+  position: relative;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10rem; }
 
 #page-home .section.home-services {
   position: relative;
-  color: white; }
+  background-color: rgba(0, 209, 178, 0.2);
+  color: white;
+  padding-top: 1rem; }
   #page-home .section.home-services:before {
     content: "";
     position: absolute;
@@ -7800,27 +7820,35 @@ header.header {
     opacity: .2;
     background-repeat: no-repeat;
     background-size: cover; }
-  #page-home .section.home-services h2.title-category {
-    color: #0a0a0a;
-    margin-bottom: 10rem; }
   #page-home .section.home-services .bg-gray {
     background-color: #00d1b2; }
   #page-home .section.home-services h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase; }
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8); }
   #page-home .section.home-services img {
     max-width: 250px;
     height: auto;
     margin: 0 auto; }
   #page-home .section.home-services i {
     color: #0a0a0a; }
+    #page-home .section.home-services i .button span {
+      color: white; }
   #page-home .section.home-services p {
-    line-height: 2rem; }
+    line-height: 2rem;
+    color: rgba(0, 82, 69, 0.8); }
+  #page-home .section.home-services .box {
+    margin-bottom: 5rem;
+    padding: 4rem 1rem;
+    background-color: rgba(0, 209, 178, 0.2);
+    border-radius: .2rem; }
   #page-home .section.home-services hr {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto; }
+    width: 15%;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 3rem auto 2rem; }
+  #page-home .section.home-services .curved-2 {
+    margin-top: 4rem;
+    background-color: #fff; }
 
 main#page-contact {
   background-color: #fafafa; }
@@ -7828,7 +7856,7 @@ main#page-contact {
 .section.title-form {
   padding: 0; }
   .section.title-form .container {
-    padding: 10% 0rem;
+    padding: 5% 0rem 10%;
     background-color: rgba(0, 209, 178, 0.2); }
     .section.title-form .container h1 {
       font-family: "Signika Negative", sans-serif;
@@ -7913,6 +7941,9 @@ main#page-contact {
         padding: 0; }
       #page-works .section.categorie .container h2 {
         font-size: .9rem; } }
+  #page-works .section.works .card:hover {
+    transform: translateY(-0.4em);
+    transition: transform .3s ease-in-out; }
   #page-works .section.works a {
     display: block; }
     #page-works .section.works a:before {
@@ -7937,7 +7968,7 @@ main#page-contact {
       box-shadow: -3px 25px 53px -18px rgba(0, 0, 0, 0.7);
       cursor: pointer; }
     #page-works .section.works figure:hover a:before {
-      opacity: .9; }
+      opacity: 1; }
     #page-works .section.works figure:hover figcaption {
       opacity: 1; }
   #page-works .section.works figcaption {
