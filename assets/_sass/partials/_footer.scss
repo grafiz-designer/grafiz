@@ -2,9 +2,12 @@
 
 
 footer.footer {
+    clear: both;
     background-color: $primary;
-    padding-top: 1.5rem;
+    // padding-top: 1.5rem;
     padding-bottom:15px;
+    // padding-left: 30%;
+    // padding-right: 30%;
     
     background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
     background-position: center;
@@ -21,7 +24,36 @@ footer.footer {
         top: 0;
     }
     
-    
+    .columns.map {
+        // background-color: red;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        // margin-left: 20%;
+        // margin-right: 20%;
+
+        // @media #{$tablet-size}{
+        //     margin-left: 6rem;
+        //     margin-right: 6rem;
+        // }
+        // @media #{$desktop-size}{
+        //     margin-left: 12rem;
+        //     margin-right: 12em;
+        // }
+        // @media #{$widescreen-size}{
+        //     margin-left: 18rem;
+        //     margin-right: 18rem;
+        // }
+        // @media #{$fullhd-size}{
+        //     margin-left: 22rem;
+        //     margin-right: 22rem;
+        // }
+    }
+    // le text s'aligne verticalement à partir de la tablette
+    p.is-inline-tablet, .badge{
+        vertical-align: middle;
+    }
+
     *{ color:#fff; }
     
     ul{ padding-top: .5rem; }
@@ -58,6 +90,11 @@ footer.footer {
         background-color:lighten($primary, 7);
         margin: 1.4rem auto 1.4rem ;
         width: 30%;
+    }
+
+    // Le logo dans le footer
+    svg{
+        width: 10rem;
     }
     
 }

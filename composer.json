@@ -4,14 +4,14 @@
     },
     "autoload": {
         "files": [
-            "src/helpers.php"
+            "App/helpers.php"
         ],
 
         "psr-4": {
-            "Models\\": "models",
-            "Controllers\\": "controllers",
-            "Classes\\": "classes",
-            "Src\\": "src"
+            "Models\\": "Models",
+            "Controllers\\": "Controllers",
+            "Views\\": "Views",
+            "App\\": "App"
         }
         
     }

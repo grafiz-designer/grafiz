@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+
+%card-component{
+  .card{
+    overflow: hidden;
+  }
+
+  figure{
+    position: relative;
+    animation: zoom 9s ease infinite;
+    
+  }
+
+  figcaption{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    h3{
+      transition: transform .8s ease;
+      font-family: $skills-font4;
+      text-transform: uppercase;
+      color: $grey-dark;
+      font-weight: 700;
+    }
+    p{
+      color: $white;
+      font-weight: 600;
+      letter-spacing: .08rem;
+      text-transform: uppercase;
+    }
+    a{
+      display: block;
+      border: 5px solid red;
+    }
+  }
+
+
+  a:hover{
+    figcaption{
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba($primary, .9);
+        width: 101%;
+        height: 101%;
+    }
+    h3, p{
+     animation: legende .3s;
+    }
+    figure{
+      // transform: scale(1.1);
+      // transition: .5s ease-in-out;
+     
+    }
+   
+    
+  }
+  @keyframes zoom{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.04);
+    }  
+  }
+  
+  @keyframes legende {
+    0%{
+      transform: translate(0px, 50px);
+    }100%{
+      transform: translate(0px, 0px);
+    }
+  }
+
+  
+}

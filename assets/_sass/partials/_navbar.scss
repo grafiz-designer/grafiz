@@ -1,0 +1,101 @@
+@charset "utf-8";  
+    
+    
+    // la navbar par défaut
+    nav.is-fixed-top{
+        
+      background-color: transparent;
+      z-index: 1001;
+      
+      // la navbar rajoute la class '.is-scroll' lors du scroll
+      &.is-scroll{
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0px 3px 4px 4px rgba(0, 0, 0, .2);
+      animation: top-in-basic .3s;
+      }
+
+      hr{ 
+          margin: 0;
+      }
+  
+  
+  @keyframes top-in-basic{
+      0%{ transform: translateY(-2000px); }
+      100%{ transform: translateY(0px); }
+
+  }
+
+    // le logo en haut à gauche
+    .navbar-brand{
+        svg{
+            width: 20vw;
+            max-width: 100px;
+            height: auto;
+        }
+ 
+    }
+
+         // couleur du logo svg après le scroll
+         .is-scroll{
+            .cls-1{
+                fill: $grey-dark;
+            }
+            // couleur du menu burger après le scroll
+            .navbar-burger{
+                background-color: $primary;
+            }
+        }
+
+
+    //les liens de la navbar deviennent noir après le scroll 
+    @media screen and (min-width: 1024px){
+
+        // agit sur la navbar lors du scroll
+        .navbar.is-primary.is-scroll .navbar-end > .navbar-item{
+            color: $grey-dark;
+            &:hover{
+                color: #fff;
+                background-color: $primary;
+            
+            }
+            
+
+        // la couleur au survol des liens sur desktop
+        }.navbar.is-primary .navbar-end > .navbar-item:hover{
+            background-color: darken($primary, 20);
+            border-bottom: 3px solid lighten($primary, 30);
+        }
+
+    }
+
+
+
+        // navbar-item c'est les liens des menu 
+        .navbar-item{
+        
+            a{
+                // réajuste la hauteur des icones
+                line-height: 0.8;
+                margin: 0 .2rem; 
+            }
+            &.is-size-4{ 
+                display: inline-block;
+                position: relative;
+            }
+            &:active{
+                border-bottom: 2px solid red;
+            }
+    
+        }
+
+
+        .is-active{transition: all 1s ease-in;}
+
+
+        
+
+
+
+
+
+  }

@@ -2,7 +2,7 @@
 
 function debug($val){
     echo "<pre>";
-    var_dump($val);
+    print_r($val);
     echo "</pre>";
 }
 // On définie la racine du site dans une constante 'ROOT' ici la racine du site est dans le dossier 'public'
@@ -18,10 +18,14 @@ function debug($val){
 // $_SERVER["DOCUMENT_ROOT"]; // "C:/xampp/htdocs"
 
 
+// define('ROOT', dirname(__DIR__) . "/grafiz-site" );
+
 define('ROOT', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site" );
+
 define('CONTROLLER', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/controllers/" );
 define('MODEL', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/models" );
-define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/view/" );
+define('VIEW', $_SERVER["DOCUMENT_ROOT"] . "/grafiz-site/Views/" );
 define('ASSETS', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/assets" );
-define('HTTP_ROOT', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
+// define('HTTP_ROOT', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site/public" );
+define('HTTP_ROOT', "http://" . $_SERVER["HTTP_HOST"] . "/grafiz-site" );
 

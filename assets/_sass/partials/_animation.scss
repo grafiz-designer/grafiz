@@ -15,25 +15,38 @@
 
 
 
-
-
-
-
 @keyframes bounce{
-    20%, 100% {
-      transform:  translate(0px,-15px)  ;
-    }
-    0% {
-      transform:  translate(0px,-25px)  ;
-    }
-    0% {
-      transform:  translate(0px,0px)  ;
-    }
-    5% {
-      transform:  translate(0px,-25px)  ;
-    }
-   
+  from {transform: translate(0%, 15%)}
+  // 50% {transform: translate(0%, 40%)}
+  to {transform: translate(0%, -15%)}
 }
+
+
+
+@keyframes shadow-translate{
+  0%{transform: translateX(-50%);}
+  33%{transform: translateX(-52%);}
+  66%{transform: translateX(-47%)}
+  100%{transform: translateX(-50%)}
+}
+
+
+@keyframes shadow-translate2{
+  0%{transform: translateX(-0%)}
+  33%{transform: translateX(-1%)}
+  66%{transform: translateX(1%)}
+  100%{transform: translateX(0%)}
+}
+
+
+@keyframes blink{
+  20%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+
   
 
   

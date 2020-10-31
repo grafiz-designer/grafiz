@@ -1,15 +1,17 @@
 /* Global log(), select(), selectAll(), byId() */
 
-import { form } from './form-ajax.js';
+import { contact } from './contact.js';
 
 
 
 window.addEventListener("DOMContentLoaded", (event) => {
 
-
-
-   
     console.log("DOM entièrement chargé et analysé");
+
+
+    contact();
+
+
     
     /***************
      * SCROLL ANIMATION
@@ -17,26 +19,56 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     AOS.init();
 
+       /***************
+     * SCROLL NAVBAR
+     ***************/
+    let header = select('header.header');
+    
+    let navbar = header.firstElementChild;
+    log(navbar);
+    let scrollY = window.scrollY;
+    window.addEventListener('scroll', function(e){
+        
+        if(this.scrollY >= 70){
+          
+    //   navbar.classList.remove('is-fixed-top');
+         navbar.classList.add('is-scroll');
+        }else{
+            navbar.classList.remove('is-scroll');
+        }
+    });
+   
+
+
+
+
+
 
     /***************
      * MENU BURGER
      ***************/
 
-    // let links = selectAll('.navbar-end a.navbar-item');
-    // log(links);
-    // for(let i = 0; i < links.length; i++){
-    //     links[i].addEventListener('click'), (event) => {
-    //         event.preventDefault();
-    //         log(event.target);
+    let links = selectAll('.navbar-end a.navbar-item');
+    log(links);
+    for(let i = 0; i < links.length; i++){
+        links[i].addEventListener('click', (event) => {
+            // event.preventDefault();
+
             
-    //     };
-    // }
+        });
+    }
 
-    
+    let headers = selectAll('.accordion-header');
+   
 
-
-
-
+    headers.forEach(function(header){
+        log(headers);
+        header.addEventListener('click', (ev) => {
+            event = ev.target || ev.srcElement;
+            header.nextElementSibling.classList.toggle('is-active');
+        
+        })
+    })
 
 
 
@@ -68,68 +100,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
 
 
-    /***************
-     * SCROLL HEADER
-     ***************/
-    
 
-   
-    let header = select('header.header');
-    let navbar = header.firstElementChild;
-    // let menu = select('.navbar-menu');
-    let hero = navbar.nextElementSibling;
-    let waves = select('.wave').parentElement;
-    let main = select('main');
-    let logo = select('.hero h1');
-    let scrollPlay = false;
-  
- 
-    window.addEventListener('scroll', function(){
-
-  
-        let scrollY = window.scrollY;
-        var largeur = window.innerWidth;
-    
-
-        if(largeur < 769){
-
-    
-            if(scrollY >= 70){
-                navbar.classList.add('is-scroll');
-                navbar.classList.remove('is-spaced');
-            }else{
-                navbar.classList.remove('is-scroll');
-                navbar.classList.add('is-spaced');
-
-            }
-
-            if(scrollY >= 150){
-                document.html.classList.add('is-scale');
-            }
-
-        // sinon le viewport est tablet ou desktop
-        }else{
-
-            if(scrollY >= 10){
-                navbar.classList.add('is-scroll');
-                navbar.classList.remove('is-spaced'); //réduis du margin sur la navbar fixe
-            }
-    
-            if(scrollY <= 150){
-                navbar.classList.remove('is-scroll');  
-            }
-    
-    
-            if(scrollY >= 350){
-                main.classList.add('is-translate');
-            }
-
-
-        }
-
-
-        
-    });
 
 
       /***************
@@ -139,8 +110,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
     
     //pour rajouter un background gris sur les imgs sauf celle qui est survolée
     let item, 
-        itemsWork = selectAll('section.works .image'),
-        columns = select('.columns');
+        itemsWork = selectAll('section.works a'),
+        cards = selectAll('section.works .card'),
+        columns = selectAll('section.works .columns')[0];
+        
+        log(columns);
    
    
     for(let i = 0; i < itemsWork.length; i++){
@@ -148,29 +122,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
         itemsWork[i].addEventListener('mouseenter', function(event){
 
             item = event.target || event.srcElement;
-         
+            log(item.firstElementChild);
             
             for(let i = 0; i < itemsWork.length; i++){
-
-                    // itemsWork[i].classList.add('is-gray');
-                    // itemsWork[i].style.transform = "scale(0.8)";
+                itemsWork[i].firstElementChild.classList.add('scale');
+                
                         
             }
-            // item.classList.remove('is-gray');
+            item.firstElementChild.classList.remove('scale');
             
         }); 
         
     }
 
-    // enlève le background gris dès que la souris sort des images
-    columns.addEventListener('mouseleave', (event) => {
-
-        for(let i = 0; i < itemsWork.length; i++){
-
-            itemsWork[i].classList.remove('is-gray');
-            
-        }
-    })
 
 
 
@@ -178,14 +142,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-    // formulaire
 
-    let myForm = document.getElementById('myForm');
-    
-    myForm.addEventListener('submit', function(e){
-        e.preventDefault();
-    })
-    
+
+
+
+
+
+
+
+
+
 
 
     

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+#page-User{
+
+  .section.login{
+    
+    .container.form{
+      max-width: 450px;
+      &.is-connected{
+        display: none;
+      }
+    }
+    
+  }
+  
+  .section.contact{
+    span{
+      font-weight: lighter;
+      color: $primary-opaque;
+    }
+  }
+}
+
+
+  
+  
