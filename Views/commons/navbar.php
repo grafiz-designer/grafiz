@@ -1,6 +1,6 @@
     <!-- is-spaced rajoute par défaut une marge de 1rem pour top et bottom et 2rem pour left et right -->
     <!-- is-fixed-top pr fiwer la nav meme au scroll -->
-    <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation">
+    <nav class="navbar is-spaced is-fixed-top" role="navigation">
       
       <div class="container">
         <!-- c'est le menu coté gauche toujours visible  -->
@@ -22,9 +22,7 @@
         <div class="navbar-menu" id="menu">
           
           <div class="navbar-end">
-            <a href="/grafiz-site/accueil" class="navbar-item is-size-5">
-              <i class="fas fa-lg fa-home"></i>
-            </a><hr>
+            <a href="/grafiz-site/accueil" class="navbar-item is-size-5">Accueil</a><hr>
             <a href="/grafiz-site/works" class="navbar-item is-size-5">Works</a><hr>
             <a href="/grafiz-site/about" class="navbar-item is-size-5">About</a><hr>
             <a href="/grafiz-site/tutos" class="navbar-item is-size-5">Tutos</a><hr>

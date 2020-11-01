@@ -69,7 +69,7 @@ abstract class Controller
             
             // je ne rajoute pas de span 'my' sur le titre 'about' et 'contact'
             if(($this->page == 'Works') || ($this->page == 'Tutos')){
-                $span = "<span class='is-size-4-mobile'>my</span>";
+                $span = "<span>my</span>";
             }else{
                 $span = null;
                 
@@ -99,26 +99,25 @@ abstract class Controller
             
             ?>
             <div class="columns">
-            <div class="column">
-            <h1 class="is-shakes is-spaced mb-6">
+            <div class="column container-logo has-text-centered is-7-tablet">
+            <h1 class="is-shakes is-spaced">
             <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?>
             </h1>
             </div>
             
-            <div class="column">
-            <h2 class='jobs subtitle'>
-            <!-- <span class='is-block'>Motion</span>
-            <span class='is-block'>Illustration</span>
-            <span class='is-block'>Graphisme</span> -->
-            <span>Motion</span>Illustration<span>Graphisme & Web</span>
-            <!-- <ul>
-            <li>Motion -</li>
-            <li>Graphisme</li>
-            <li>Illustration</li>
-            
-            </ul> -->
-            </h2>
-            </div>
+                <div class="column">
+                    <div class="columns container-jobs is-multiline is-gapless">
+                        <div class="column is-12 mb-1">
+                            <h2 class="jobs subtitle">Motion</h2>
+                        </div>
+                        <div class="column is-12 mb-1">
+                            <h2 class="jobs subtitle">Graphisme</h2>
+                        </div>
+                        <div class="column is-12 mb-4">
+                            <h2 class="jobs subtitle">Illustration</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <?php

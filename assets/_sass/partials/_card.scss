@@ -26,12 +26,22 @@
       text-transform: uppercase;
       color: $grey-dark;
       font-weight: 700;
+      @media #{$fullhd-size}{
+        font-size: 2.2rem !important;
+      }
     }
+
     p{
       color: $white;
       font-weight: 600;
       letter-spacing: .08rem;
       text-transform: uppercase;
+      @media #{$desktop-size}{
+        font-size: .9rem !important;
+      }
+      @media #{$fullhd-size}{
+        font-size: 1.2rem !important;
+      }
     }
     a{
       display: block;
@@ -42,7 +52,6 @@
 
   a:hover{
     figcaption{
-      
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,10 +62,12 @@
     h3, p{
      animation: legende .3s;
     }
-    figure{
-      // transform: scale(1.1);
-      // transition: .5s ease-in-out;
-     
+    // corrige un bug car :after s'affichait au survol de figcaption
+    .retouche:after{
+      display: none;
+    }
+    img{
+      filter: blur(2px);
     }
    
     

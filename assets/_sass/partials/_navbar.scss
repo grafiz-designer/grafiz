@@ -1,10 +1,10 @@
 @charset "utf-8";  
-    
-    
+
     // la navbar par défaut
     nav.is-fixed-top{
         
-      background-color: transparent;
+    //   background-color: transparent;
+    background-color: rgba(#ffffff, 0);
       z-index: 1001;
       
       // la navbar rajoute la class '.is-scroll' lors du scroll
@@ -51,7 +51,7 @@
     @media screen and (min-width: 1024px){
 
         // agit sur la navbar lors du scroll
-        .navbar.is-primary.is-scroll .navbar-end > .navbar-item{
+        .navbar.is-scroll .navbar-end > .navbar-item{
             color: $grey-dark;
             &:hover{
                 color: #fff;
@@ -61,7 +61,7 @@
             
 
         // la couleur au survol des liens sur desktop
-        }.navbar.is-primary .navbar-end > .navbar-item:hover{
+        }.navbar .navbar-end > .navbar-item:hover{
             background-color: darken($primary, 20);
             border-bottom: 3px solid lighten($primary, 30);
         }
@@ -69,27 +69,43 @@
     }
 
 
+    .navbar-menu{
+        padding: 0;
+    }
+
 
         // navbar-item c'est les liens des menu 
         .navbar-item{
-        
+            color: $white;
+            &:hover{
+   
+                background: $primary-opaque;
+            }
             a{
                 // réajuste la hauteur des icones
                 line-height: 0.8;
-                margin: 0 .2rem; 
+                margin: 0 .2rem;
+               
             }
             &.is-size-4{ 
                 display: inline-block;
                 position: relative;
             }
-            &:active{
-                border-bottom: 2px solid red;
+            &:last-child{
+                background-color: transparent;
+                a:hover{
+                    color: $primary-opaque;
+                }
             }
     
         }
 
 
-        .is-active{transition: all 1s ease-in;}
+
+        .is-active{
+            transition: all 1s ease-in;
+
+        }
 
 
         

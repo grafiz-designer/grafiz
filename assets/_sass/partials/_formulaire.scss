@@ -24,13 +24,19 @@
 
   p{
     color:$white;
+    // color:$primary-opaque;
     // line-height: 3.8rem;
     font-weight: 600;
+    span.color{
+      display: inline-block;
+      color: $primary-opaque;
+    }
   }
   // contactez-moi
   span{
     display: block;
     margin-top: .8rem;
+    // color: $primary-opaque;
     i{
       margin-left: .7rem;
       font-size: 2rem;
@@ -53,7 +59,7 @@
 
     
     @media #{$tablet-size}{
-      span{
+      span.contact{
         margin-top: 1.8rem;
       }
       .arrow{
@@ -63,13 +69,13 @@
       }
     }
     @media #{$desktop-size}{
-      span{
+      span.contact{
         margin-top: 2.6rem;
       }
       .arrow{
         bottom: 20px;
-        font-size: 3.4rem;
-        left: calc(50% - 1.7rem);
+        font-size: 3rem;
+        left: calc(50% - 1.5rem);
       }
     } 
   

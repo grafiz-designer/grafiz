@@ -3,9 +3,12 @@
 
   <?php require VIEW. "commons/navbar.php"; ?>
     
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- <div id='galaxy'></div> -->
 
-
-    <section class="hero mt-5 has-text-centered">
+    <section class="hero is-medium has-text-centered">
       <div class="hero-body">
         <div class='container'>
           
@@ -18,7 +21,7 @@
     
     
     <div class="arrow has-text-centered">
-      <i class="fas fa-3x fa-angle-down"></i>
+      <i class="fas fa-angle-down"></i>
     </div>
     
     <!-- <div class="curved">

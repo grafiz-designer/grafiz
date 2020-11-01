@@ -4,7 +4,7 @@
 <!-- SECTION TITRE DU FORMULAIRE -->
 <section class="section title-form is-medium has-background-dark">
     <!-- <div class="container is-fluid"> -->
-        <p class="is-size-4-mobile is-size-3-tablet is-size-2-desktop is-size-2-widescreen is-size-2-fullhd has-text-centered">Un projet, une idée<span>Contactez-moi <i class="fas fa-envelope"></i></span>
+        <p class="is-size-4-mobile is-size-3-tablet is-size-2-desktop is-size-2-widescreen is-size-2-fullhd has-text-centered">Un projet, <span class="color">une idée ?</span><span class="contact">Contactez-moi<i class="fas fa-envelope"></i></span>
         </p>
     <!-- </div> -->
     <!-- <i class="arrow fas fa-4x fa-angle-down"></i> -->

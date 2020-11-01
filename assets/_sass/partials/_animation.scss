@@ -16,9 +16,9 @@
 
 
 @keyframes bounce{
-  from {transform: translate(0%, 15%)}
+  from {transform: translate(0%, 12%)}
   // 50% {transform: translate(0%, 40%)}
-  to {transform: translate(0%, -15%)}
+  to {transform: translate(0%, -12%)}
 }
 
 
@@ -45,7 +45,11 @@
   100%{opacity: 1;}
 }
 
-
+@keyframes galaxy{
+  20%{opacity: 1;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
 
   
 
