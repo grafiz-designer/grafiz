@@ -1,11 +1,14 @@
 <header class="header">
 
-
+    <!-- je wrappe les stars pr les centré sur grands écrans -->
+    <div id="stars-container">
+    <div id='stars1'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+  </div>
   <?php require VIEW. "commons/navbar.php"; ?>
-    
-  <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
+  
+
   <!-- <div id='galaxy'></div> -->
 
     <section class="hero is-medium has-text-centered">

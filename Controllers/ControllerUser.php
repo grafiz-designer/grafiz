@@ -22,9 +22,9 @@ class ControllerUser extends Controller
   public function __construct(){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
-    $this->description = 'toto le beau';
-    $this->heightHero = $this->generateHeightHero();
-    $this->heroTitle = $this->generateHeroTitle();
+    // $this->description = 'toto le beau';
+    // $this->heightHero = $this->generateHeightHero();
+    // $this->heroTitle = $this->generateHeroTitle();
 
     if (isset($url) && count($url) > 1) {
       throw new \Exception("Page introuvable", 1);
@@ -52,8 +52,8 @@ class ControllerUser extends Controller
     && isset($_POST['pass']) && !empty($_POST['pass']))
     {
       $this->_loginManager = new UserManager();
-      $admin = $this->_loginManager-> getUser();
-   
+      $admin = $this->_loginManager->getUser();
+      // debug($admin[0]);
       extract($admin[0]);
 
       $isPseudoCorrect = ($_POST['pseudo'] === $pseudo) ? true : false;

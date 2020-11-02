@@ -1,29 +1,10 @@
-<?php if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){ 
-        $msg = "Bonjour <strong>". strtoupper($_SESSION['pseudo']). " </strong> vous êtes connecté !" ; 
-        $class = 'is-connected';
-      }; ?>
 
-<section class="section login">
-  <div class="container">
-  <div class="columns has-text-centered is-vcentered">
 
-    <div class="column is-6">
-      <h2>
-        <?php if(isset($msg)) echo $msg;  ?>
-      </h2>
-    </div>
-    <div class="column has-text-right">
-      <div class="field">
-          <a class="control" href="user/logout">
-            <button class="button is-primary" type="submit">Déconnexion</button>
-          </a>
-      </div>
-    </div>
-  </div>
-  </div>
+<section class="section is-medium login">
+
 
   <!-- <hr>  -->
-
+  
   <p class='title is-size-2-mobile is-size-1-tablet has-text-centered'>Espace Admin</p>
 
   
@@ -51,12 +32,21 @@
           </span>
         </p>
       </div>
-      <!-- ******* SUBMIT ********** -->
-      <div class="field">
+      <!-- ******* BUTTON ********** -->
+      <!-- <div class="field is-grouped">
         <p class="control">
           <button class="button is-primary" type="submit">Connexion</button>
         </p>
-      </div>
+        <p class="control">
+          <button class="button is-danger">Déconnexion</button>
+        </p>
+      </div> -->
+
+      <div class="buttons">
+        <button class="button is-success is-fullwidth">Connexion</button>
+        <button class="button is-danger is-fullwidth">Déconnexion</button>
+  
+</div>
       
     </form>
   </div>

@@ -13,6 +13,8 @@ class Router
   
   public function start(){
     
+    // On démarre la session
+    session_start();
 
     try{
       //on crée une variable $url

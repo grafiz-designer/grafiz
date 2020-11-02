@@ -10,6 +10,12 @@
       &.is-connected{
         display: none;
       }
+
+      button{
+        @media #{$tablet-size}{
+          width: auto !important;
+        }
+      }
     }
     
   }

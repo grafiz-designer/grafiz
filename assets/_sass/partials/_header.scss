@@ -10,6 +10,15 @@ header.header{
     // background-color: #1B0C25;
     background: radial-gradient(#4C2251, #1B0C25);
    
+    // règle pr corriger un bug des étoiles qui ne se centrent pas
+    #stars-container{
+        @media screen and (min-width: 2012px){
+            width: 100%;
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+    }
     color: #fff;
 
     &:before{
