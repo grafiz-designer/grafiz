@@ -7812,23 +7812,23 @@ hr.small {
 
 @keyframes shakes {
   10% {
-    transform: translate(5px, 1px); }
+    transform: translate(5px, 4px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(4px, 1px); }
-  100% {
-    transform: translate(0, 0); }
-  30% {
     transform: translate(2px, 2px); }
   100% {
     transform: translate(0, 0); }
+  30% {
+    transform: translate(1px, 5px); }
+  100% {
+    transform: translate(0, 0); }
   40% {
-    transform: translate(1px, 2px); }
+    transform: translate(5px, 3px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(4px, 3px); }
+    transform: translate(3px, 1px); }
   100% {
     transform: translate(0, 0); }
   60% {
@@ -7836,15 +7836,15 @@ hr.small {
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(3px, 2px); }
+    transform: translate(3px, 4px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(4px, 5px); }
+    transform: translate(5px, 3px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(5px, 2px); }
+    transform: translate(4px, 4px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -8054,25 +8054,6 @@ nav.is-fixed-top {
   height: 3px;
   background: transparent;
   box-shadow: 368px 1983px #FFF , 1181px 1286px #FFF , 770px 1280px #FFF , 1318px 1600px #FFF , 656px 1457px #FFF , 1828px 1332px #FFF , 583px 274px #FFF , 1680px 1627px #FFF , 525px 39px #FFF , 819px 1347px #FFF , 284px 277px #FFF , 290px 1127px #FFF , 352px 1483px #FFF , 654px 1200px #FFF , 229px 1857px #FFF , 723px 321px #FFF , 1453px 949px #FFF , 1619px 1070px #FFF , 1145px 327px #FFF , 662px 1629px #FFF , 1147px 1951px #FFF , 221px 1094px #FFF , 352px 1374px #FFF , 827px 1141px #FFF , 698px 997px #FFF , 1308px 1222px #FFF , 1899px 936px #FFF , 1104px 233px #FFF , 984px 635px #FFF , 1522px 1825px #FFF , 1854px 1422px #FFF , 973px 627px #FFF , 1127px 1523px #FFF , 243px 227px #FFF , 304px 1956px #FFF , 968px 464px #FFF , 570px 757px #FFF , 50px 439px #FFF , 616px 1773px #FFF , 1646px 953px #FFF , 1604px 142px #FFF , 1405px 373px #FFF , 1032px 1876px #FFF , 1806px 584px #FFF , 1571px 1200px #FFF , 1763px 1078px #FFF , 403px 728px #FFF , 679px 358px #FFF , 51px 804px #FFF , 996px 1755px #FFF , 448px 1320px #FFF , 404px 674px #FFF , 1524px 1740px #FFF , 1866px 640px #FFF , 1059px 967px #FFF , 869px 650px #FFF , 1657px 662px #FFF , 796px 1142px #FFF , 799px 1575px #FFF , 1699px 1421px #FFF , 1762px 1527px #FFF , 1450px 998px #FFF , 1255px 431px #FFF , 1277px 1434px #FFF , 1034px 1946px #FFF , 857px 349px #FFF , 877px 701px #FFF , 441px 256px #FFF , 513px 130px #FFF , 1034px 966px #FFF , 765px 1469px #FFF , 948px 1873px #FFF , 1292px 28px #FFF , 411px 1311px #FFF , 994px 1108px #FFF , 570px 896px #FFF , 1497px 500px #FFF , 1998px 1085px #FFF , 727px 666px #FFF , 828px 1272px #FFF , 1719px 566px #FFF , 629px 1893px #FFF , 1965px 1029px #FFF , 1600px 1907px #FFF , 26px 1020px #FFF , 1143px 752px #FFF , 1867px 785px #FFF , 1893px 297px #FFF , 30px 661px #FFF , 1224px 493px #FFF , 495px 1696px #FFF , 1019px 1612px #FFF , 116px 503px #FFF , 1344px 284px #FFF , 542px 173px #FFF , 873px 956px #FFF , 272px 1932px #FFF , 1168px 1694px #FFF , 1687px 303px #FFF , 1636px 1205px #FFF; }
-
-#title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px; }
-
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
 
 @keyframes animStar {
   from {
@@ -8589,7 +8570,8 @@ footer.footer {
     background-color: rgba(10, 10, 10, 0.2); }
 
 #page-Show .hero {
-  padding: 3rem; }
+  padding: 3rem;
+  background: radial-gradient(#4C2251, #1B0C25); }
   #page-Show .hero .previous {
     border: 2px solid rgba(0, 209, 178, 0.8);
     padding: 1.6em;
@@ -8608,13 +8590,10 @@ footer.footer {
     font-family: "Lato", sans-serif; }
     #page-Show .hero h1 span {
       display: block;
-      font-weight: 600;
+      font-weight: 700;
       font-family: "Signika Negative", sans-serif;
-      letter-spacing: .4rem; }
-
-#page-Show .section.show {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 1px);
-  background-size: 18px 18px; }
+      letter-spacing: .6rem;
+      opacity: .5; }
 
 @media screen and (min-width: 1216px) {
   #page-Show .first-img {

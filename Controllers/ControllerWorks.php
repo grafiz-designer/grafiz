@@ -24,6 +24,7 @@ class ControllerWorks extends Controller
     if(count($params) > 1){
       $action = array_shift($params);
       $id = array_shift($params);
+
       if(method_exists($this, $action)){
         $this->$action($id);
       }
@@ -48,7 +49,7 @@ class ControllerWorks extends Controller
   public function show($id){
     // affiche un work avec son id
     $this->_workManager = new WorksManager();
-    // pr avoir accès direct au tableau sans passer par a clé [0]
+    // pr avoir accès direct au tableau sans passer par la clé [0]
     $work = $this->_workManager->getWork($id)[0];
   
     $this->title = $work->getCategorie().' | '.$work->getNom(). parent::TEXT_COMMUN;
@@ -58,6 +59,7 @@ class ControllerWorks extends Controller
     $this->page = "Show";
     $this->file = 'Views/viewShow.php';
     $this->renderSimple(array('work' => $work));
+   
     
   }
 

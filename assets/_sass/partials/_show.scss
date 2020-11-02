@@ -6,6 +6,8 @@
   ////////////////////////////// HERO
   .hero{
     padding: 3rem;
+    background: radial-gradient(#4C2251, #1B0C25);
+
     .previous{
       // position: fixed;
       // top: 12vh;
@@ -31,10 +33,11 @@
       // color:$primary;
       span{
         display: block;
-        font-weight: 600;
+        font-weight: 700;
         font-family: $skills-font;
         // color:$grey-dark ;
-        letter-spacing: .4rem;
+        letter-spacing: .6rem;
+        opacity: .5;
   
         
       }
@@ -42,11 +45,6 @@
   }
     ////////////////////////////// FIN DU HERO
 
-    .section.show{
-      background-image: radial-gradient(rgba(0, 0, 0, .5), transparent 1px);
-      background-size: 18px 18px;
-
-    }
 
     .first-img{
       

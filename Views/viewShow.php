@@ -1,10 +1,17 @@
 <section class="hero is-black">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+
         <div class="hero-body">
-                
+               
                 <!-- <div class="container">  -->
                         <!-- <div class=""> -->
                                 <div class="columns is-vcentered">
                                         <!-- <div class="column is-1"></div> -->
+
+
+
                                         <div class="column is-1">
                                                 <a href="/grafiz-site/works">
                                                         <span class="previous icon is-large">
@@ -13,11 +20,12 @@
                                                 </a>
                                         </div>
                                         <div class="column has-text-centered">
+                          
                                                 <!-- TITRE DE LA PAGE -->
                                                 <!-- <div>  -->
                                                         <h1 class="">
                                                                 <?= ucfirst($work->getNom()); ?>
-                                                                <span class="title is-4 mt-1 has-text-grey"><?= strtoupper($work->getCategorie()); ?></span>
+                                                                <span class="title is-4 mt-1"><?= strtoupper($work->getCategorie()); ?></span>
                                                         </h1>
                                                         
                                                         
