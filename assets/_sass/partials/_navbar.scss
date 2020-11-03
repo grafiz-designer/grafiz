@@ -25,6 +25,15 @@
 
   }
 
+  .login{
+    @media #{$tablet-size}{
+        // display: block;
+        // width: 100%;
+        // font-size: 1rem !important;
+        // margin-top: 0.5rem !important;
+    }
+  }
+
     // le logo en haut à gauche
     .navbar-brand{
         svg{

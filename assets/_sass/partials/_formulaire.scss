@@ -106,6 +106,9 @@
  
   }
   @media #{$tablet-size}{
+    &{
+      width: 90%;
+    }
     label{ font-size: 1.4rem; }
   }
   

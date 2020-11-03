@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+
+#page-Admin{
+
+  .section.login{
+    
+    .container.form{
+      
+      &.is-connected{
+        display: none;
+      }
+      // le conteneur des 2 buttons
+      .field.submit{
+        justify-content: space-between;
+      }
+
+    }
+
+    input[type="submit"], input[type="button"]{
+      margin-top: 1rem !important;
+    }
+
+    .container.form, .logout{
+      max-width: 400px;
+    }
+     .is-hidden{
+       display: block;
+     }
+    
+  }
+  
+  .section.contact{
+    span{
+      font-weight: lighter;
+      color: $primary-opaque;
+    }
+  }
+}
+
+
+  
+  

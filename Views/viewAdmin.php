@@ -1,16 +1,21 @@
 
 
-<section class="section is-medium login">
+<section class="section is-small login">
 
 
-  <!-- <hr>  -->
+  <!-- la bannière qui indique si la connexion Admin est faite ou pas -->
+  <?php if($_SESSION): ?>
+    <div class="notification <?= $_SESSION['color'] ?>">
+      <?= $_SESSION['msg'] ?>
+  </div>
+  <?php endif; ?>
+
+  <!-- <p class='title is-size-3-mobile is-size-1-tablet has-text-centered'>Espace Admin</p> -->
+
   
-  <p class='title is-size-2-mobile is-size-1-tablet has-text-centered'>Espace Admin</p>
 
-  
-
-  <div class="container form <?php if(isset($class)) echo $class; ?>">
-    <form action="#" method="POST">
+  <div class="container form <?php if(isset($class)) echo $class; ?> <?php if(isset($_SESSION['pseudo']))echo 'is-hidden'; ?>">
+    <form action="/grafiz-site/admin/login" method="POST">
       
       <!-- ******* NOM ********** -->
       <div class="field">
@@ -33,24 +38,24 @@
         </p>
       </div>
       <!-- ******* BUTTON ********** -->
-      <!-- <div class="field is-grouped">
-        <p class="control">
-          <button class="button is-primary" type="submit">Connexion</button>
-        </p>
-        <p class="control">
-          <button class="button is-danger">Déconnexion</button>
-        </p>
-      </div> -->
+      <div class="field submit">
+        <div class="control">
+          <input type='submit' class="button is-success is-fullwidth" value="Connexion">
+        </div>
 
-      <div class="buttons">
-        <button class="button is-success is-fullwidth">Connexion</button>
-        <button class="button is-danger is-fullwidth">Déconnexion</button>
   
 </div>
       
     </form>
+    
   </div>
-  
+  <div class="container logout is-block">
+      
+         <a href='/grafiz-site/admin'>
+          <input type="button" class="button is-danger is-fullwidth logout" value= "Déconnexion">
+         </a>
+   
+
 </section>
 
 

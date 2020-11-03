@@ -218,7 +218,26 @@ header.header{
         }
 
 
+        //////////////// LE HERO POUR LES WORKS //////////////////////////////////////// 
 
+        h1.hero-work {
+            font-size: 3rem;
+            font-weight: 900;
+            font-family: $skills-font2;
+            // color:$primary;
+            span{
+              display: block;
+              font-weight: 700;
+              font-family: $skills-font;
+              color:$white;
+              letter-spacing: .6rem;
+              opacity: .5;
+        
+              
+            }
+          }
+        //////////////// FIN DU HERO POUR LES WORKS //////////////////////////////////////// 
+          
 
 
         

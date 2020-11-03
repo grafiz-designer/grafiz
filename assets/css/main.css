@@ -7812,39 +7812,39 @@ hr.small {
 
 @keyframes shakes {
   10% {
-    transform: translate(2px, 1px); }
-  100% {
-    transform: translate(0, 0); }
-  20% {
-    transform: translate(3px, 3px); }
-  100% {
-    transform: translate(0, 0); }
-  30% {
-    transform: translate(4px, 3px); }
-  100% {
-    transform: translate(0, 0); }
-  40% {
-    transform: translate(1px, 1px); }
-  100% {
-    transform: translate(0, 0); }
-  50% {
     transform: translate(3px, 4px); }
   100% {
     transform: translate(0, 0); }
-  60% {
+  20% {
+    transform: translate(1px, 2px); }
+  100% {
+    transform: translate(0, 0); }
+  30% {
+    transform: translate(4px, 5px); }
+  100% {
+    transform: translate(0, 0); }
+  40% {
+    transform: translate(1px, 2px); }
+  100% {
+    transform: translate(0, 0); }
+  50% {
     transform: translate(4px, 4px); }
   100% {
     transform: translate(0, 0); }
+  60% {
+    transform: translate(4px, 3px); }
+  100% {
+    transform: translate(0, 0); }
   70% {
-    transform: translate(5px, 3px); }
+    transform: translate(1px, 4px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(5px, 5px); }
+    transform: translate(4px, 2px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(5px, 4px); }
+    transform: translate(1px, 1px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -8178,6 +8178,17 @@ header.header {
     @media screen and (min-width: 1408px) {
       header.header .arrow {
         bottom: 40px; } }
+  header.header h1.hero-work {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Lato", sans-serif; }
+    header.header h1.hero-work span {
+      display: block;
+      font-weight: 700;
+      font-family: "Signika Negative", sans-serif;
+      color: white;
+      letter-spacing: .6rem;
+      opacity: .5; }
   header.header section:last-child {
     overflow: hidden; }
     header.header section:last-child .wave.is-hidden {
@@ -8314,6 +8325,8 @@ header.header {
     border-radius: 3px;
     background-color: #fafafa; }
   @media screen and (min-width: 769px) {
+    .section.form {
+      width: 90%; }
     .section.form label {
       font-size: 1.4rem; } }
 
@@ -8370,15 +8383,22 @@ footer.footer {
   footer.footer svg {
     width: 10rem; }
 
-#page-User .section.login .container.form {
-  max-width: 450px; }
-  #page-User .section.login .container.form.is-connected {
-    display: none; }
-  @media screen and (min-width: 769px) {
-    #page-User .section.login .container.form button {
-      width: auto !important; } }
+#page-Admin .section.login .container.form.is-connected {
+  display: none; }
 
-#page-User .section.contact span {
+#page-Admin .section.login .container.form .field.submit {
+  justify-content: space-between; }
+
+#page-Admin .section.login input[type="submit"], #page-Admin .section.login input[type="button"] {
+  margin-top: 1rem !important; }
+
+#page-Admin .section.login .container.form, #page-Admin .section.login .logout {
+  max-width: 400px; }
+
+#page-Admin .section.login .is-hidden {
+  display: block; }
+
+#page-Admin .section.contact span {
   font-weight: lighter;
   color: #00d1b2; }
 

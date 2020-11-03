@@ -47,7 +47,7 @@
             <div class="content">
                 <p class="is-size-6">
                     <strong>&copy; Trafixel 2020 |</strong> Tout droit réservés | Mentions légales - 
-                    <a href="/grafiz-site/user">login</a>
+                    <a href="/grafiz-site/admin">login</a>
                 </p>
             </div>
         </div>

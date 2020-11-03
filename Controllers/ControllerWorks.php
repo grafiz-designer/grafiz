@@ -58,7 +58,7 @@ class ControllerWorks extends Controller
     
     $this->page = "Show";
     $this->file = 'Views/viewShow.php';
-    $this->renderSimple(array('work' => $work));
+    $this->render(array('work' => $work));
    
     
   }

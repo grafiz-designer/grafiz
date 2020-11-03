@@ -62,87 +62,47 @@ abstract class Controller
     * 
     * @return string
     */
-    public function generateHeroTitle(): string
+    public function generateHeroTitle($data = null): string
     {
-
         if($this->page !== 'Accueil'){
-            
-            // je ne rajoute pas de span 'my' sur le titre 'about' et 'contact'
-            if(($this->page == 'Works') || ($this->page == 'Tutos')){
-                $span = "<span>my</span>";
-            }else{
-                $span = null;
-                
-            }
-            
-            ob_start();
-            ?>
-            <div class="container-title">
-            <?= $span; ?>
-            <h1 class="is-spaced has-text-white separate">
-            <?= $this->page; ?>
-            </h1>
-            </div>
-            <!-- <hr class="small"> -->
-            <style>.wave-container{display: none;}</style>
-            
-            <?php
-            
-            $heroTitle = ob_get_clean();
-            
-            
-            
-            // sinon c'est le hero de la page d'accueil
-        }else{
-            
-            ob_start();
-            
-            ?>
-            <div class="columns">
-            <div class="column container-logo has-text-centered is-7-tablet">
-            <h1 class="is-shakes is-spaced">
-            <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?>
-            </h1>
-            </div>
-            
-                <div class="column">
-                    <div class="columns container-jobs is-multiline is-gapless">
-                        <div class="column is-12 mb-1">
-                            <h2 class="jobs subtitle">Motion</h2>
-                        </div>
-                        <div class="column is-12 mb-1">
-                            <h2 class="jobs subtitle">Graphisme</h2>
-                        </div>
-                        <div class="column is-12 mb-4">
-                            <h2 class="jobs subtitle">Illustration</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <?php
-            
-            $heroTitle = ob_get_clean();
-            
-        }
         
-        return $heroTitle;
+            if($this->page !== 'Show'){
+                
+                // sinon c'est la page About ou Contact
+                 if(($this->page == 'Works') || ($this->page == 'Tutos')){
+                    //  echo 'ovuv';
+                    $span = "<span>my</span>";
+                }
+                    $hero = "commons/hero/hero.php";
+            
+            }else{
+                $work = $data['work'];
+                $hero = "commons/hero/heroWork.php";
+            }
+
+         
+        // sinon c'est le hero de la page d'accueil
+        }else{
+            $hero = "commons/hero/heroAccueil.php";
+        }
+        // debug($span);
+        // debug($hero);
+        ob_start();
+        require VIEW. $hero;
+        return $heroTitle = ob_get_clean();
+
     }
     
     
     
 
-    
-
-    
-    
-    
-    
+  
     
     // crée une fonction qui va générer et afficher la vue de tous les articles
     public function render($data = null){
+        // debug($data);
         $this->heightHero = $this->generateHeightHero();
-        $this->heroTitle = $this->generateHeroTitle();
+        $this->heroTitle = $this->generateHeroTitle($data);
  
         //définir le contenu à envoyer
         $content = $this->generateFile($this->file, $data);
