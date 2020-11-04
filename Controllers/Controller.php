@@ -22,11 +22,17 @@ abstract class Controller
 
     protected const TEXT_COMMUN = " | Grafiz - graphic designer Paris";
     
+    //permet de déconnecter la session Admin à partir de n'importe quelle page
+    public function logout(){
+        debug($_SERVER['HTTP_REFERER']);
+        session_destroy();
+        $uri = $_SERVER['HTTP_REFERER'];
+        header('Location: '. $uri);
+
+      }
     
     
-    
-    /**
-    * Méthode abstraite correspondant à l'action par défaut
+    /* Méthode abstraite correspondant à l'action par défaut
     * Oblige les classes dérivées à implémenter cette action par défaut
     */
     protected abstract function index();

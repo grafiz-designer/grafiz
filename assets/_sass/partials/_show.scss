@@ -95,18 +95,19 @@
   }
 
   .media{
-    // flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
     @media #{$tablet-size}{
-      // background-color: red;
-      // transform: translateX(20px);
+      flex-direction: inherit;
     }
     .media-left{
       // display: flex;
       transform: translateX(-.5rem);
-      
+
+        // icon Adobe
         figure.image{
-          width: 4rem;
-          height: 4rem;
+          width: 3rem;
+          height: 3rem;
           @media #{$tablet-size}{
             // width: 5rem !important;
             // height: 5rem !important;

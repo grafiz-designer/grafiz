@@ -15,19 +15,20 @@ class ControllerAbout extends Controller
   protected $heroTitle;
 
 
-  public function __construct($url){
+  public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
 
-    if (isset($url) && count($url) > 1) {
-      header('Location: /grafiz-site/about');
-      throw new \Exception("Page introuvable", 1);
-      exit;
-    }
-    else {
+    if ($param) {
+      $action = array_shift($param);
+      if(method_exists($this, $action)){
+        $this->$action();
+      }
+    }else {
       $this->index();
     }
   }
+  
 
 
   public function index(){

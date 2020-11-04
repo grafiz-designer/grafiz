@@ -7812,23 +7812,23 @@ hr.small {
 
 @keyframes shakes {
   10% {
-    transform: translate(3px, 4px); }
+    transform: translate(1px, 4px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(1px, 2px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(4px, 5px); }
+    transform: translate(3px, 2px); }
   100% {
     transform: translate(0, 0); }
   40% {
-    transform: translate(1px, 2px); }
+    transform: translate(4px, 4px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(4px, 4px); }
+    transform: translate(4px, 5px); }
   100% {
     transform: translate(0, 0); }
   60% {
@@ -7836,15 +7836,15 @@ hr.small {
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(1px, 4px); }
+    transform: translate(5px, 4px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(4px, 2px); }
+    transform: translate(2px, 5px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(1px, 1px); }
+    transform: translate(2px, 2px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -7992,7 +7992,7 @@ nav.is-fixed-top {
     padding: 0; }
   nav.is-fixed-top .navbar-item {
     color: white; }
-    nav.is-fixed-top .navbar-item:hover {
+    nav.is-fixed-top .navbar-item:hover, nav.is-fixed-top .navbar-item.link-active {
       background: #00d1b2; }
     nav.is-fixed-top .navbar-item a {
       line-height: 0.8;
@@ -8179,7 +8179,6 @@ header.header {
       header.header .arrow {
         bottom: 40px; } }
   header.header h1.hero-work {
-    font-size: 3rem;
     font-weight: 900;
     font-family: "Lato", sans-serif; }
     header.header h1.hero-work span {
@@ -8187,8 +8186,11 @@ header.header {
       font-weight: 700;
       font-family: "Signika Negative", sans-serif;
       color: white;
-      letter-spacing: .6rem;
+      letter-spacing: .2rem;
       opacity: .5; }
+      @media screen and (min-width: 769px) {
+        header.header h1.hero-work span {
+          letter-spacing: .5rem; } }
   header.header section:last-child {
     overflow: hidden; }
     header.header section:last-child .wave.is-hidden {
@@ -8641,20 +8643,23 @@ footer.footer {
   #page-Show .description article {
     padding: 1.25rem; }
 
-#page-Show .media .media-left {
-  transform: translateX(-0.5rem); }
-  #page-Show .media .media-left figure.image {
-    width: 4rem;
-    height: 4rem; }
-
-#page-Show .media strong {
-  font-weight: inherit; }
-
-#page-Show .media .media-content b {
-  font-size: 1rem; }
-
-#page-Show .media .media-content .toto {
-  margin-right: 50px; }
+#page-Show .media {
+  flex-direction: column;
+  overflow: hidden; }
+  @media screen and (min-width: 769px) {
+    #page-Show .media {
+      flex-direction: inherit; } }
+  #page-Show .media .media-left {
+    transform: translateX(-0.5rem); }
+    #page-Show .media .media-left figure.image {
+      width: 3rem;
+      height: 3rem; }
+  #page-Show .media strong {
+    font-weight: inherit; }
+  #page-Show .media .media-content b {
+    font-size: 1rem; }
+  #page-Show .media .media-content .toto {
+    margin-right: 50px; }
 
 #page-Show .content ul {
   margin-left: 1em; }
@@ -8873,12 +8878,21 @@ footer.footer {
       display: flex;
       align-items: center; }
       #page-About .section.workflow .skill img {
-        width: 6rem;
+        width: 20vw;
+        max-width: 90px;
         height: auto;
-        margin: 0 auto; }
+        margin: 0 auto 1vw; }
+        @media screen and (min-width: 769px) {
+          #page-About .section.workflow .skill img {
+            width: 6rem;
+            margin-bottom: 2vw; } }
         @media screen and (min-width: 1024px) {
           #page-About .section.workflow .skill img {
-            width: 8rem; } }
+            width: 6rem; } }
+        @media screen and (min-width: 1408px) {
+          #page-About .section.workflow .skill img {
+            width: 7rem;
+            max-width: 150px; } }
       #page-About .section.workflow .skill img.bulma {
         width: 6.5rem; }
   #page-About .section.interest span {

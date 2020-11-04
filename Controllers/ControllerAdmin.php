@@ -2,7 +2,7 @@
 namespace Controllers;
 use Models\ContactManager;
 use Models\UserManager;
-
+use App\Form;
 
 
 
@@ -31,9 +31,6 @@ class ControllerAdmin extends Controller
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
-        // debug($this->$param());
-      }else{
-
       }
     }else{
       $this->index();
@@ -55,8 +52,7 @@ class ControllerAdmin extends Controller
   // si le formulaire a été soumis
   public function login(){
   
-    if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) 
-    && isset($_POST['pass']) && !empty($_POST['pass'])){
+    if(Form::secureForm($_POST)){
      
       $this->_loginManager = new UserManager();
       $admin = $this->_loginManager->getUser();
@@ -91,16 +87,7 @@ class ControllerAdmin extends Controller
     
   }
 
-  public function logout(){
-    "echo vs etes deconnecté";
-    session_destroy();
-    // unset($_SESSION['pseudo']);
-    // unset($_SESSION['pass']);
-    // unset($_SESSION['msg']);
-    // unset($_SESSION['color']);
-    header('Location: /grafiz-site/admin');
-    exit;
-  }
+
 
 
   

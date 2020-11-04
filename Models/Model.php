@@ -57,9 +57,12 @@ abstract class Model
       $var = $req->fetchAll();
     }
 
-    return $var;
     $req->closeCursor();
+    return $var;
+    
   }
+
+
   
   
 

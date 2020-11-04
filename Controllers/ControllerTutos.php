@@ -16,19 +16,23 @@ class ControllerTutos extends Controller
   protected $heroTitle;
 
   
-  public function __construct($url){
+  public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
     $this->description = 'toto le beau';
     $this->heightHero = $this->generateHeightHero();
     $this->heroTitle = $this->generateHeroTitle();
-
-    if (isset($url) && count($url) > 1) {
-      throw new \Exception("Page introuvable", 1);
-    }
-    else {
+  
+    if ($param) {
+      
+      $action = array_shift($param);
+      if(method_exists($this, $action)){
+        $this->$action();
+      }
+    }else {
       $this->index();
     }
+  
   }
 
 

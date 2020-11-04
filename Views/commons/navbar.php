@@ -19,7 +19,7 @@
 
             <div class="login is-danger is-medium ml-4 mt-3 has-text-danger has-text-weight-bold">
               <?php if(isset($isLogin)) echo $isLogin; ?>
-            <a class="delete has-background-danger is-medium" href='/grafiz-site/admin/logout'></a>
+            <a class="delete has-background-danger is-medium" href=<?php echo "/grafiz-site/".$this->page."/logout"; ?>></a>
           </div>
 
           <?php endif; ?>
@@ -38,11 +38,11 @@
         <div class="navbar-menu" id="menu">
 
           <div class="navbar-end">
-            <a href="/grafiz-site/accueil" class="navbar-item is-size-5">Accueil</a><hr>
-            <a href="/grafiz-site/works" class="navbar-item is-size-5">Works</a><hr>
-            <a href="/grafiz-site/about" class="navbar-item is-size-5">About</a><hr>
-            <a href="/grafiz-site/tutos" class="navbar-item is-size-5">Tutos</a><hr>
-            <a href="/grafiz-site/contact" class="navbar-item is-size-5">Contact</a><hr>
+            <a href="/grafiz-site/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a><hr>
+            <a href="/grafiz-site/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a><hr>
+            <a href="/grafiz-site/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a><hr>
+            <a href="/grafiz-site/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a><hr>
+            <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a><hr>
             
             <div class="navbar-item has-text-centered-desktop">
               <a href="#">

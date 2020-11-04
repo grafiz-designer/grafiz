@@ -37,7 +37,7 @@
           </span>
         </p>
       </div>
-      <!-- ******* BUTTON ********** -->
+      <!-- ******* CONNEXION ********** -->
       <div class="field submit">
         <div class="control">
           <input type='submit' class="button is-success is-fullwidth" value="Connexion">
@@ -49,9 +49,11 @@
     </form>
     
   </div>
+
+  <!-- ******* DECONNEXION ********** -->
   <div class="container logout is-block">
       
-         <a href='/grafiz-site/admin'>
+         <a href='/grafiz-site/admin/logout'>
           <input type="button" class="button is-danger is-fullwidth logout" value= "Déconnexion">
          </a>
    

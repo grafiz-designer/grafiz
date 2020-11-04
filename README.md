@@ -37,3 +37,10 @@ le site de grafiz
 *mettre isactive quang on click sur un lien du menu*
 
 *remplacer les doules quotes(") par les simples quotes(') car plus lourde en performance*
+
+*voir les 'alt' des icons imgs du workflow*
+
+*se servir de la class Form pr le forumaire de la connexion Admin*
+
+
+*resoudre le pb du "W" majuscule sur $this->page dans le controller des Works*

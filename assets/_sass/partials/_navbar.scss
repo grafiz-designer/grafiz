@@ -66,11 +66,12 @@
                 color: #fff;
                 background-color: $primary;
             
-            }
-            
+            }        
+        }
+
 
         // la couleur au survol des liens sur desktop
-        }.navbar .navbar-end > .navbar-item:hover{
+        .navbar .navbar-end > .navbar-item:hover{
             background-color: darken($primary, 20);
             border-bottom: 3px solid lighten($primary, 30);
         }
@@ -86,7 +87,7 @@
         // navbar-item c'est les liens des menu 
         .navbar-item{
             color: $white;
-            &:hover{
+            &:hover, &.link-active{
    
                 background: $primary-opaque;
             }

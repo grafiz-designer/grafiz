@@ -18,7 +18,7 @@
 
 <!-- SECTION FORMULAIRE -->
 <section class="section form is-medium">
-    <form action="#" method="POST" id="myForm" name="myForm">
+    <form action="/grafiz-site/contact/send" method="POST" id="myForm" name="myForm">
         
         <!-- ******* NOM ********** -->
         
@@ -110,7 +110,7 @@
                 <div class="column">
                     <div class="field">
                         <div class="control">
-                            <button class="button is-dark" type="submit">Envoyer le message</button>
+                            <input class="button" value="Envoyer le message" type="submit">
                         </div>
                     </div>
                 </div>

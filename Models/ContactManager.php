@@ -7,12 +7,10 @@ class ContactManager extends Model
 {
 
 
-    public function getContact(){
+    public function getContacts(){
       return $this->getAll('contact', "Contact");
     }
-
-
-
+    
     
     public function insertContact(){
 
@@ -26,8 +24,6 @@ class ContactManager extends Model
     }
   
 
-
-
     public function sendEmail(){
 
       $this->to = 'trafixel.creation@gmail.com';
@@ -38,8 +34,15 @@ class ContactManager extends Model
       $this->headers = 'From:'.$this->email."\r\n";
       $this->headers = 'MIME-version: 1.0'."\r\n";
       $this->headers = 'Content-type: text/html; charset=utf-8'."\r\n";
-  
       mail($this->to,$this->sujet,$this->message,$this->headers);
+    }
+
+
+    public function getContactsByMail(){
+      $this->getBdd();
+      $var = [];
+      $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
+      $req->execute();
     }
  
 

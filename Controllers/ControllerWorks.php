@@ -21,16 +21,24 @@ class ControllerWorks extends Controller
     
     $this->title = $this->page. parent::TEXT_COMMUN;
 
-    if(count($params) > 1){
-      $action = array_shift($params);
-      $id = array_shift($params);
+    if($params){
+      if(array_search('logout', $params)){
+        $this->logout();
+      }else{
+        $action = array_shift($params);
+        $id = array_shift($params);
 
-      if(method_exists($this, $action)){
+        if(method_exists($this, $action)){
         $this->$action($id);
       }
+      }
+
+      
     }else{
       $this->index();
     }
+
+  
 }
 
 
@@ -56,7 +64,7 @@ class ControllerWorks extends Controller
     $this->metaDescription = $work->getDescription()[0];
 
     
-    $this->page = "Show";
+    // $this->page = "Show";
     $this->file = 'Views/viewShow.php';
     $this->render(array('work' => $work));
    
