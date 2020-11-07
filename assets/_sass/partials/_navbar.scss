@@ -87,9 +87,13 @@
         // navbar-item c'est les liens des menu 
         .navbar-item{
             color: $white;
-            &:hover, &.link-active{
+            &:hover{
    
                 background: $primary-opaque;
+            }
+            // quand la page est activé
+            &.link-active{
+                background:rgba($primary-opaque, .3);
             }
             a{
                 // réajuste la hauteur des icones

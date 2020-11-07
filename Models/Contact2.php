@@ -17,8 +17,7 @@ class Contact
     $this->message = $message;
   }
   
-  
-  
+
   public function insertContact()
   {
     $bdd = new \PDO('mysql:host=localhost;dbname=grafiz;charset=utf8', 'root', '', array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION));

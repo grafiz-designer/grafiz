@@ -42,5 +42,8 @@ le site de grafiz
 
 *se servir de la class Form pr le forumaire de la connexion Admin*
 
+*pr le moment la couleur acive sur le lien de l anavbar est en condition php mais il faut essayer en JS pr voir si ca fai moins ramer*
 
 *resoudre le pb du "W" majuscule sur $this->page dans le controller des Works*
+
+*optimiser le référencement avec des balises HTML dans le texte en BDD concernant les works*

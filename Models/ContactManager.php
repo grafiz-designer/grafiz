@@ -10,40 +10,40 @@ class ContactManager extends Model
     public function getContacts(){
       return $this->getAll('contact', "Contact");
     }
+    public function getContactsByEmail(){
+      return $this->getAllGroupBy('contact', 'Contact');
+    }
+ 
     
-    
-    public function insertContact(){
-
-      $req = $bdd->prepare('INSERT INTO contact(nom, email, sujet, message) VALUES(:nom, :email, :sujet, :message)');
+    public function insertContact($post){
+      
+      $this->getBdd();
+      $req = self::$_bdd->prepare('INSERT INTO contact(nom, email, sujet, message, date_creation) VALUES(:nom, :email, :sujet, :message, :date_creation)');
       $req->execute(array(
-        'nom' => $this->nom,
-        'email' => $this->email,
-        'sujet' => $this->sujet,
-        'message' => $this->message
+        'nom' => $post['nom'],
+        'email' => $post['email'],
+        'sujet' => $post['sujet'],
+        'message' => $post['message'],
+        'date_creation' => date('d/m/Y, H:i:s')
       ));
     }
   
 
-    public function sendEmail(){
+    public function sendEmail($post){
 
-      $this->to = 'trafixel.creation@gmail.com';
-      $this->email = strip_tags($email);
-      $this->sujet = strip_tags($sujet);
-      $this->message = strip_tags($message);
+      $to = 'trafixel.creation@gmail.com';
+      $email = strip_tags($post['email']);
+      $sujet = strip_tags($post['sujet']);
+      $message = strip_tags($post['message']);
   
-      $this->headers = 'From:'.$this->email."\r\n";
-      $this->headers = 'MIME-version: 1.0'."\r\n";
-      $this->headers = 'Content-type: text/html; charset=utf-8'."\r\n";
-      mail($this->to,$this->sujet,$this->message,$this->headers);
+      $headers[] = 'From:'.$post['email'];
+      $headers[] = 'MIME-version: 1.0';
+      $headers[] = 'Content-type: text/html; charset=utf-8';
+      mail($to,$sujet,$message,implode("\r\n", $headers));
     }
 
 
-    public function getContactsByMail(){
-      $this->getBdd();
-      $var = [];
-      $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
-      $req->execute();
-    }
+
  
 
 }

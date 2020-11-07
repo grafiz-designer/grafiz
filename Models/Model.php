@@ -63,6 +63,28 @@ abstract class Model
   }
 
 
+  public function getAllGroupBy($table, $obj = null){
+    $this->getBdd();
+    // la requete permet de regrouper les emails ensemble de maniere decroissantes et ID DESC permet de mettre les derniers message en premier
+    $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY email DESC, id DESC');
+    $req->execute();
+
+    if($obj != null){
+      while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
+        $objPath = "Models\\".$obj;
+
+        // var contiendra les données sous forme d'objets
+        $var[] = new $objPath($data);
+        // debug($var);
+      }
+    }else{
+      $var = $req->fetchAll();
+    }
+    $req->closeCursor();
+    return $var;
+  }
+
+
   
   
 

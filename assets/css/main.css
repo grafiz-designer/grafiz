@@ -7812,39 +7812,39 @@ hr.small {
 
 @keyframes shakes {
   10% {
-    transform: translate(1px, 4px); }
+    transform: translate(4px, 2px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(3px, 3px); }
+    transform: translate(5px, 3px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(3px, 2px); }
+    transform: translate(4px, 2px); }
   100% {
     transform: translate(0, 0); }
   40% {
-    transform: translate(4px, 4px); }
+    transform: translate(1px, 5px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(4px, 5px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   60% {
-    transform: translate(4px, 3px); }
+    transform: translate(2px, 4px); }
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(5px, 4px); }
+    transform: translate(1px, 4px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(2px, 5px); }
+    transform: translate(3px, 4px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(2px, 2px); }
+    transform: translate(2px, 1px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -7992,8 +7992,10 @@ nav.is-fixed-top {
     padding: 0; }
   nav.is-fixed-top .navbar-item {
     color: white; }
-    nav.is-fixed-top .navbar-item:hover, nav.is-fixed-top .navbar-item.link-active {
+    nav.is-fixed-top .navbar-item:hover {
       background: #00d1b2; }
+    nav.is-fixed-top .navbar-item.link-active {
+      background: rgba(0, 209, 178, 0.3); }
     nav.is-fixed-top .navbar-item a {
       line-height: 0.8;
       margin: 0 .2rem; }
