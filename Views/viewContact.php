@@ -1,7 +1,6 @@
 <section class="section is-medium contact is-primary">
-  
-  
-  
+
+  <?php if(isset($_SESSION['couleur'])) debug($_SESSION['couleur']); ?>
   <div class="container">
     
 

@@ -10,6 +10,7 @@ class Contact
   private $sujet;
   private $message;
   private $date_creation;
+  private $color;
 
 
   public function __construct(array $data){
@@ -53,6 +54,11 @@ public function setDate_creation($date)
     $this->date_creation = $date;
 }
 
+public function setColor($color)
+{
+    $this->color = $color;
+}
+
 
 
 
@@ -60,36 +66,40 @@ public function setDate_creation($date)
  * GETTERS
  */
 
-public function getId(int $id)
+public function getId()
 {
     return $this->id;
 }
 
-public function getNom(string $nom)
+public function getNom()
 {
     return $this->nom;
 }
 
-public function getEmail(string $email)
+public function getEmail()
 {
     return $this->email;
 }
 
-public function getSujet(string $sujet)
+public function getSujet()
 {
     return $this->sujet;
 }
 
-public function getMessage(string $message)
+public function getMessage()
 {
     return $this->message;
 }
 
-public function getDateCreation(string $date)
+public function getDateCreation()
 {
     return $this->date_creation;
 }
 
+public function getColor()
+{
+    return $this->color;
+}
 
 
 

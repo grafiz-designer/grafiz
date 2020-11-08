@@ -4,7 +4,7 @@
 
 
   <!-- la bannière qui indique si la connexion Admin est faite ou pas -->
-  <?php if($_SESSION): ?>
+  <?php if(isset($_SESSION['msg'])): ?>
     <div class="notification <?= $_SESSION['color'] ?>">
       <?= $_SESSION['msg'] ?>
   </div>
@@ -62,34 +62,31 @@
 
 
 
-
+<?php if(isset($_SESSION['contacts'])): ?>
 
 <section class="section contact">
   <div class="container">
-    <?php
-      $i = 1;
-      while ($i <= 4) { ?>
-        <article class="message is-dark">
-          <div class="message-header">
-            <ul>
-              <li>id : <span>1</span></li>
-              <li>nom : <span>Jean</span></li>
-              <li>email : <span>Jean917@hotmail.com</span></li>
-              <li>sujet : <span>création de logotype pour une marque de voiture</span></li>
+    <?php foreach($_SESSION['contacts'] as $contacts => $value): ?>
+        <article class="message">
+          <div class="message-header has-text-black" style="background-color: <?= $value->getColor(); ?>">
+            <ul class="has-text-black">
+              <li>date : <span><?= $value->getDateCreation(); ?></span></li>
+              <li>id : <span><?= $value->getId(); ?></span></li>
+              <li>nom : <span><?= $value->getNom(); ?></span></li>
+              <li>email : <span><?= $value->getEmail(); ?></span></li>
+              <li>sujet : <span><?= $value->getSujet(); ?></span></li>
             </ul>
-          <button class="delete is-small" aria-label="delete"></button>
+          <a href='/grafiz-site/admin/delete/<?= $value->getId(); ?>'>
+            <button class="delete is-medium" aria-label="delete"></button>
+          </a>
           </div>
       
-          <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolore culpa, facere fugiat voluptas voluptatem doloremque eos totam, ipsum dolorum, aperiam vitae nemo facilis dolor nesciunt quae reiciendis iusto? Minima delectus ex, laborum, dolore nobis incidunt rem iusto itaque asperiores molestiae quaerat dolorem adipisci similique ratione neque tempora eum quia.
-          </div>
+          <div class="message-body"><?= $value->getMessage(); ?></div>
         </article>
-        <?php 
-        $i++;
-        } ?>
-    
+    <?php endforeach; ?>
   </div>
 </section>
+<?php endif; ?>
 
 
 <!-- ******* TABLE ********** -->

@@ -23,14 +23,13 @@ class ControllerAdmin extends Controller
   public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = 'Grafiz - Admin';
-    // $this->description = 'toto le beau';
-    // $this->heightHero = $this->generateHeightHero();
     $this->heroTitle = $this->generateHeroTitle();
 
     if ($param){
       $action = array_shift($param);
+      $id = array_shift($param);
       if(method_exists($this, $action)){
-        $this->$action();
+        $this->$action($id);
       }
     }else{
       $this->index();
@@ -52,7 +51,7 @@ class ControllerAdmin extends Controller
   // si le formulaire a été soumis
   public function login(){
   
-    if(Form::secureForm($_POST)){
+    if(Form::isValid($_POST)){
      
       $this->_loginManager = new UserManager();
       $admin = $this->_loginManager->getUser();
@@ -63,19 +62,26 @@ class ControllerAdmin extends Controller
       $isPassCorrect = password_verify($_POST['pass'], $pass);
 
       if($isPseudoCorrect && $isPassCorrect){
- 
+
+        $contactManager = new ContactManager();
+  
+        $contacts = $contactManager->getContactsByEmail();
+        $_SESSION['contacts'] = $contacts;
+
         $_SESSION['pseudo'] = $_POST['pseudo'];
         $_SESSION['msg'] = "Bonjour Grafiz vous êtes connecté";
         $_SESSION['color'] = "is-primary";
+        
         // je redirige vers la page Admin pr éviter le renvoi du formulaire quand j'actualise la page
         header('Location: /grafiz-site/admin');
         // exit;
    
       }else{
       
-        header('Location: /grafiz-site/admin');
+        
         $_SESSION['msg'] = "Mauvais identifiant ou mot de passe";
         $_SESSION['color'] = "is-danger";
+        header('Location: /grafiz-site/admin');
         // exit;
         // $_SESSION['msg'] = "Mauvais identifiant ou mot de passe";
         // $_SESSION['color'] = "is-danger";
@@ -85,6 +91,20 @@ class ControllerAdmin extends Controller
     
     $this->renderSimple();
     
+  }
+
+  public function delete($id){
+    $contactManager = new ContactManager();
+    $contactManager->deleteContact($id);
+
+    // après avoir suppr en BDD, je mets à jour la session car c'est elle qui contient tous les contacts 
+    $contacts = $contactManager->getContactsByEmail();
+    $_SESSION['contacts'] = $contacts;
+
+   
+    
+    // je redirige vers la page Admin pr éviter le renvoi du formulaire quand j'actualise la page
+    header('Location: /grafiz-site/admin');
   }
 
 

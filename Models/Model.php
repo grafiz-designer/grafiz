@@ -104,9 +104,17 @@ abstract class Model
     $req->closeCursor();
   }
 
+
   
-  
-  
+
+
+  public function find(int $id)
+  {
+      return $this->requete("SELECT * FROM {$this->table} WHERE id = $id")->fetch();
+  }
+
+
+
   
   /**
   * récupère un nombre précis d'items
@@ -143,11 +151,12 @@ abstract class Model
   * @param integer $id
   * @return void
   */
-  protected function delete(int $id): void
+  protected function delete($table, int $id): void
   {
-    // 2. On exécute la suppression
-    $query = $this->pdo->prepare("DELETE FROM {$this->table} WHERE id = :id");
-    $query->execute(['id' => $id]);
+    $this->getBdd();
+    $req = self::$_bdd->prepare("DELETE FROM ". $table . " WHERE id = :id");
+    $req->execute(['id' => $id]);
+    $req->closeCursor();
   }
   
 

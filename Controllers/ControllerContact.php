@@ -56,8 +56,8 @@ class ControllerContact extends Controller
       $contactManager = new ContactManager();
       $contactManager->insertContact($reponse['post']);
       $contactManager->sendEmail($reponse['post']);
-      $contacts = $contactManager->getContactsByEmail();
-      debug($contacts);
+      header('Location: /grafiz-site/contact');
+      
       
 
 
