@@ -15,27 +15,27 @@
 
 
     <div class="columns map has-text-centered is-gapless">
-        <div class="column">
+        <div class="column is-one-fifth">
             <a href="#">
                 <p class="is-size-6-mobile is-size-5-tablet has-text-weight-semibold">Accueil</p>
             </a>
         </div>
-        <div class="column">
+        <div class="column is-one-fifth">
             <a href="/grafiz-site/works">
                 <p class="is-size-6-mobile is-size-5-tablet has-text-weight-semibold">Works</p>
             </a>
         </div>
-        <div class="column">
+        <div class="column is-one-fifth">
             <a href="/grafiz-site/about">
                 <p class="is-size-6-mobile is-size-5-tablet has-text-weight-semibold">About</p>
             </a>
         </div>
-        <div class="column">
+        <div class="column is-one-fifth">
             <a href="/grafiz-site/tutos">
                 <p class="is-size-6-mobile is-size-5-tablet has-text-weight-semibold">Tutos</p>
             </a>    
         </div>
-        <div class="column">
+        <div class="column is-one-fifth">
             <a href="/grafiz-site/contact">
                 <p class="is-size-6-mobile is-size-5-tablet has-text-weight-semibold">Contact</p>
             </a>

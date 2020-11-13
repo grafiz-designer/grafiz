@@ -38,6 +38,7 @@ class ControllerAccueil extends Controller
 
   public function index(){
     $this->works();
+    unset($_SESSION['contact']);
   }
 
 

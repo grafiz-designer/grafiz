@@ -4,7 +4,12 @@
 #page-Admin{
 
   .section.login{
-    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // @media #{$desktop-size}{
+    //   min-height: 50vh;
+    // }
     .container.form{
       
       &.is-connected{
@@ -36,6 +41,8 @@
       // color: $primary-opaque;
     }
   }
+
+
 }
 
 

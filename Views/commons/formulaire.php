@@ -1,6 +1,5 @@
 <!-- ******************************* FORMULAIRE ************************* -->
 
-
 <!-- SECTION TITRE DU FORMULAIRE -->
 <section class="section title-form is-medium has-background-dark">
     <!-- <div class="container is-fluid"> -->
@@ -17,7 +16,14 @@
 
 
 <!-- SECTION FORMULAIRE -->
-<section class="section form is-medium">
+<section class="section form is-medium" id="ancre-form">
+    <?php if(isset($_SESSION['contact'])): ?>
+        <div class="notification <?= $_SESSION['contact']['color-contact'] ?>">
+            <p><?= $_SESSION['contact']['msg-contact']; ?></p>
+        </div>
+    <?php endif;?>
+
+
     <form action="/grafiz-site/contact/send" method="POST" id="myForm" name="myForm">
         
         <!-- ******* NOM ********** -->

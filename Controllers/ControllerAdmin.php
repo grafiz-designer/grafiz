@@ -42,6 +42,7 @@ class ControllerAdmin extends Controller
     // $this->login();
 
     $this->renderSimple();
+    unset($_SESSION['contact']);
   }
 
 
@@ -69,8 +70,8 @@ class ControllerAdmin extends Controller
         $_SESSION['contacts'] = $contacts;
 
         $_SESSION['pseudo'] = $_POST['pseudo'];
-        $_SESSION['msg'] = "Bonjour Grafiz vous êtes connecté";
-        $_SESSION['color'] = "is-primary";
+        $_SESSION['msg-admin'] = "Bonjour Grafiz vous êtes connecté";
+        $_SESSION['color-admin'] = "is-primary";
         
         // je redirige vers la page Admin pr éviter le renvoi du formulaire quand j'actualise la page
         header('Location: /grafiz-site/admin');
@@ -79,8 +80,8 @@ class ControllerAdmin extends Controller
       }else{
       
         
-        $_SESSION['msg'] = "Mauvais identifiant ou mot de passe";
-        $_SESSION['color'] = "is-danger";
+        $_SESSION['msg-admin'] = "Mauvais identifiant ou mot de passe";
+        $_SESSION['color-admin'] = "is-danger";
         header('Location: /grafiz-site/admin');
         // exit;
         // $_SESSION['msg'] = "Mauvais identifiant ou mot de passe";

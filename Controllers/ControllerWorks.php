@@ -42,13 +42,20 @@ class ControllerWorks extends Controller
 }
 
 
+
   public function index(){
+    
+    // session_destroy();
     // affiche tous les works 
     $this->_workManager = new WorksManager();
     $works = $this->_workManager->getWorks();
 
     $this->file = 'Views/viewWorks.php';
     $this->render(array('works' => $works), 'Views/template.php');
+    // $this->stopSession();
+    unset($_SESSION['contact']);
+    
+    
   }
 
 
@@ -64,7 +71,7 @@ class ControllerWorks extends Controller
     $this->metaDescription = $work->getDescription()[0];
 
     
-    // $this->page = "Show";
+    $this->page = "Show";
     $this->file = 'Views/viewShow.php';
     $this->render(array('work' => $work));
    

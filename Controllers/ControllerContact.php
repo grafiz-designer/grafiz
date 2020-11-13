@@ -39,8 +39,8 @@ class ControllerContact extends Controller
 
   public function index(){
 
-
     $this->render();
+    unset($_SESSION['contact']);
   }
   
 
@@ -52,43 +52,33 @@ class ControllerContact extends Controller
   public function send(){
     // apres avoir sécurisé le form, j'extrais les valeurs en variables
     $reponse = Form::isValid($_POST);
-    if($reponse['success']){
+    // session_destroy();
+    if($reponse['success'] == true){
       $contactManager = new ContactManager();
       $contactManager->insertContact($reponse['post']);
       $contactManager->sendEmail($reponse['post']);
-      header('Location: /grafiz-site/contact');
-      
+      $_SESSION['contact'] = $reponse;
+      // $_POST = array();
+      // debug($GLOBALS);
+      // debug($GLOBALS['_POST']);
+      //  $toto = $reponse;
+      // $this->render();
+      header('Location: /grafiz-site/contact#ancre-form');
+     
+      // exit;
       
 
 
 
     }else{
-      debug($reponse['msg']);
+      // debug($reponse);
+      $_SESSION['contact'] = $reponse;
+      // $_SESSION['contact']['post'] = null;
+      header('Location: /grafiz-site/contact#ancre-form');
+      
     }
 
-    // if(strlen($nom) <= 25 && preg_match("#^([a-zA-Z0-9'ïàâéèêôùûçÀÂÉÈÔÙÛÇ[:blank:]-]{1,75})$#", $nom)){
-    //   $this->$msg = 'longueur bonne';
-      
-    //   // je rajoute un regex pr améliorer la validation d'email
-    //   if(filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $email)){
-  
-    //     $this->$success = true;
-    //     $this->$msg = 'tous les champs sont correctes';
-      
-    //     $this->_contactManager = new ContactManager();
-    //     $contact->insertContact();
-    //     $contact->sendEmail();
-  
-    //     $this->$msg = 'message envoyé';
-        
-    //   }else{
-    //     $this->$msg = 'Adresse email incorrect';
-    //   }
-    // }else{
-    //   $this->$msg = 'Votre nom est incorrect';
-    // }
-    // header('Location: /grafiz-site/contact');
-    // exit;
+
   }
   
 }

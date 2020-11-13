@@ -13,7 +13,7 @@
 
     <section class="hero is-medium has-text-centered">
       <div class="hero-body">
-        <div class='container'>
+        <div class='container container-hero-works is-relative'>
           
           <?= $this->heroTitle; ?>
           

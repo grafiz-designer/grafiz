@@ -160,6 +160,13 @@ abstract class Controller
             
         }
     }
+
+    // public function stopSession(){
+    //     if(isset($_SESSION['contact'])){
+    //       $_SESSION['contact'] = null;
+    //     }
+      
+    //   }
     
     
     

@@ -23,8 +23,9 @@
                         <li>
                         
                         
-                                <figure>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path  fill="#39CEB6"d="M18.89,4.68a9.18,9.18,0,0,1,3.72,6.75,9.32,9.32,0,0,1-3.26,7.21,11.77,11.77,0,0,1-7.64,2.43,11.2,11.2,0,0,1-7.57-2.42,7.78,7.78,0,0,1-2.65-6.89C1.94,9.4,4,7.5,5.93,6A13.36,13.36,0,0,1,12,3,9.28,9.28,0,0,1,18.89,4.68Z"/>
+                                <figure class="shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="toto" d="M18.89,4.68a9.18,9.18,0,0,1,3.72,6.75,9.32,9.32,0,0,1-3.26,7.21,11.77,11.77,0,0,1-7.64,2.43,11.2,11.2,0,0,1-7.57-2.42,7.78,7.78,0,0,1-2.65-6.89C1.94,9.4,4,7.5,5.93,6A13.36,13.36,0,0,1,12,3,9.28,9.28,0,0,1,18.89,4.68Z"/>
+                                                
                                         </svg>
                                         <figcaption class='is-size-7 is-size-5-tablet has-text-weight-semibold'>Couleur</figcaption>
                                 </figure>
@@ -78,9 +79,9 @@
                                 </figure>
                                 <hr class="small">
                         </header>
+
                         
-                        
-                        <div class="columns is-multiline is-variable is-7">
+                        <div class="columns is-multiline is-variable is-vcentered is-7">
                                 <div class="column is-12-mobile is-12-tablet is-6-desktop">
                                         <!-- <div class="content"> -->
                                                 <ul class="graphisme">
@@ -133,9 +134,9 @@
                                 <div class="column has-text-centered">
                                        <div class="design-graphique">
                                                 <a href="#" class="radius">
-                                                        <figure class="is-relative">
-                                                        <img class="" src="<?php echo ASSETS;?>/img/Affiche/affiche-prevention.jpg" alt="#blabla" async>
-                                                                <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">exemple de projet graphique</figcaption>
+                                                        <figure class="is-relative gif-container">
+                                                        <img class="gif-graphisme" src="<?php echo ASSETS;?>/gif/tout-min.gif" alt="#blabla" async>
+                                                                <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">exemple de projets graphique</figcaption>
 
                                                         </figure>
                                                 </a>
@@ -182,20 +183,25 @@
                                         <hr class="small">
                         
                         </header>
-                        
-                        
-                        <div class="columns is-multiline is-variable is-7">
 
-                                <div class="column has-text-centered">
-                                        <div>
-                                                 <figure class="image square">
-                                                         <img class="" src="<?php echo ASSETS;?>/img/Affiche/heineken.jpg" alt="#blabla" async>
-                                                         
-                                                         <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">exemple de projet graphique</figcaption>
-                                                 </figure>
-                                        </div>
-                                         
-                                 </div>
+
+                        <!-- dddd -->
+
+                         <!-- dddd -->
+                        <div class="columns is-multiline is-variable is-vcentered is-7">
+
+                        <div class="column has-text-centered">
+                                       <div>
+                                                <a href="#" class="">
+                                                        <figure class="is-relative gif-container">
+                                                        <img class="gif-illu" src="<?php echo ASSETS;?>/gif/tout-min.gif" alt="exemple de projets graphique" async>
+                                                                <!-- <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">processus de dessin</figcaption> -->
+
+                                                        </figure>
+                                                </a>
+                                       </div>
+                                
+                        </div>
 
                                 <div class="column is-12-mobile is-12-tablet is-6-desktop">
                                         <!-- <div class="content"> -->
@@ -241,14 +247,13 @@
         </div>
 </section>   
                 
-                <!-- *************************** WEB **************************************************** -->
+<!-- *************************** WEB **************************************************** -->
+
  <section class="section is-medium web" id="ancre-web">
 
         <div class="container">
 
                 <article>
-                        
-                        
                         <header class="has-text-centered">
                                 <figure class="is-relative">
                                         <i class="fas fa-4x fa-mobile-alt mb-3"></i>
@@ -265,7 +270,7 @@
                         
                         
                         <div class="columns is-vcentered is-multiline is-variable is-7">
-                                <div class="column is-12-mobile is-12-tablet is-6-desktop">
+                                <div class="column is-12-mobile is-12-tablet is-7-desktop">
                                         <!-- <div class="content"> -->
                                                 <ul class="web">
                                                         <li class="mb-5"><strong class="title is-5">Newsletter</strong>
@@ -312,13 +317,15 @@
                                 
                                 </div>
                                 <div class="column has-text-centered">
-                                        <div>
-                                                <figure>
-                                                        <img class="img" src="<?php echo ASSETS;?>/img/Affiche/heineken.jpg" alt="#" async>
-                                                        <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">exemple de projet graphique</figcaption>
-                                                </figure>
-                                        </div>
-                                        
+                                       <div class="design-graphique">
+                                                <a href="#" class="radius">
+                                                        <figure class="is-relative gif-container">
+                                                        <img class="gif-web" src="<?php echo ASSETS;?>/gif/tout-min.gif" alt="#blabla" async>
+                                                                <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">processus d'intégration Web</figcaption>
+
+                                                        </figure>
+                                                </a>
+                                       </div>
                                 </div>
 
 

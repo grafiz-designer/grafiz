@@ -9,5 +9,5 @@
     
   </main>
 
+  
 
-  <?php require ROOT. '/Views/commons/footer.php';?>

@@ -47,3 +47,7 @@ le site de grafiz
 *resoudre le pb du "W" majuscule sur $this->page dans le controller des Works*
 
 *optimiser le référencement avec des balises HTML dans le texte en BDD concernant les works*
+
+*mettre tous les éléments qui sont position absolute les centré grace aux mixins*
+
+*vérifier tous les alt des images*

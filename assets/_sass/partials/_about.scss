@@ -1,14 +1,8 @@
 @charset "utf-8";
 
 #page-About{
-  
-
-
   padding-top: 1rem;
-
   
-
-    // font-family: $skills-font3;
 
   /************************* PREMIERE SECTION *******************************/
 
@@ -71,7 +65,12 @@
 
   } 
 
-
+  @keyframes col {
+    0% {fill:red}
+    25% {fill:$primary-opaque; transform: scale(1.05); transform-origin: center;}
+    50% {fill:purple}
+    75% {fill:orange}
+    }
     // c'est le premier <ul> de la page
     ul.shape{
       display: flex;
@@ -80,6 +79,12 @@
          text-align: center;
          margin: 2vw;
        }
+       figure.shape svg .toto{
+
+        // fill: red !important;
+        animation: col 3s linear infinite;
+       }
+
      
     }
 
@@ -119,6 +124,10 @@
     // ".section.is-medium" créé des padding-top et bottom seulement à partir de la taille desktop donc j'interviens pour la taille tablette avec un padding de 6rem
     @media #{$tablet-size}{
       padding: 6rem 2.5rem;
+    }
+
+    img{
+      // max-height: 500px !important;
     }
     
   }
@@ -246,10 +255,31 @@
   .img{
     object-fit: cover;
     width: 100%;
-    
+     
     @media #{$tablet-size}{
       height: 100%;
       width: auto;
+    }
+  }
+  .gif-container{
+    display:block;
+    max-width:286px;
+    height: 384px;
+    margin: 0 auto;
+    overflow:hidden;
+    // border: 1px solid red;
+    
+    img{
+      max-width: 864px;
+      position: absolute;
+      top:0;
+    }
+    @media #{$tablet-size}{
+      max-width:448px;
+      height: 600px;
+      img{
+        max-width: 1350px;
+      }
     }
   }
   
@@ -275,10 +305,12 @@
 
   .design-graphique{
     img{
-      max-height: 600px !important;
+      // max-height: 600px !important;
     }
   }
-
+  .gif-graphisme{
+    left: 0;
+  }
 
 
 
@@ -305,29 +337,15 @@
       
     }
 
-    img{
-      max-width: 630px;
-      margin: 0 auto;
+
+    .gif-illu{
+      left: -289px;
+      @media #{$tablet-size}{
+        left: calc(-1350px / 3 - 1px);
+        // object-fit: contain;
+      }
     }
-    // la Lettrine
-    // p.letter:first-letter{
-    //   color: $grey-dark;
-    //   text-shadow:3px 3px 3px rgba($grey-dark, $alpha: .3);  
-    //   font-size: 4em;
-    //   font-weight: bold;
-    //   float: left;
-    //   padding-top: 4px; 
-    //   padding-right: 10px; 
-    //   line-height: 3.5rem;
 
-    //   @media #{$tablet-size}{
-    //     font-size: 6em;
-    //     padding-top: 10px; 
-    //     // line-height: 12.5rem;
-    //     // // color: $primary-opaque;
-    //   }
-
-    // }
 
     p:first-child{
       // font-size: 1.8rem;
@@ -346,9 +364,13 @@
 
   /********************  Section Web  *************************/
   .section.web{
-    img{
-      max-height: 500px !important;
+    .gif-web{
+      left: -576px;
+      @media #{$tablet-size}{
+        left: calc(-1350px * 66 / 100);
+      }
     }
+
   }
  
 

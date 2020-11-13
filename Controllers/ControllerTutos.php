@@ -38,6 +38,7 @@ class ControllerTutos extends Controller
 
   public function index(){
     $this->render();
-  }
+    unset($_SESSION['contact']);
   
+}
 }

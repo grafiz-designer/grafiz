@@ -1,12 +1,10 @@
-
-
 <section class="section is-small login">
 
 
   <!-- la bannière qui indique si la connexion Admin est faite ou pas -->
-  <?php if(isset($_SESSION['msg'])): ?>
-    <div class="notification <?= $_SESSION['color'] ?>">
-      <?= $_SESSION['msg'] ?>
+  <?php if(isset($_SESSION['msg-admin'])): ?>
+    <div class="notification <?= $_SESSION['color-admin']; ?>">
+      <?= $_SESSION['msg-admin'] ?>
   </div>
   <?php endif; ?>
 
@@ -42,12 +40,10 @@
         <div class="control">
           <input type='submit' class="button is-success is-fullwidth" value="Connexion">
         </div>
-
-  
-</div>
+      </div>
       
+
     </form>
-    
   </div>
 
   <!-- ******* DECONNEXION ********** -->
@@ -89,55 +85,7 @@
 <?php endif; ?>
 
 
-<!-- ******* TABLE ********** -->
-<!-- <section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-10">
-      <table class="table is-bordered is-striped">
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>nom</th>
-            <th>email</th>
-            <th>sujet</th>
-            <th>message</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>jean</td>
-            <td>jean@hotmail.com</td>
-            <td>logotype</td>
-            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorem recusandae ducimus veritatis commodi eaque at totam dignissimos numquam fugit! Ex est non facilis quo nam, recusandae harum magni nisi.</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>marie</td>
-            <td>marie@hotmail.com</td>
-            <td>carte de visites</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit autem mollitia aspernatur nisi porro itaque ratione, ipsum similique totam sapiente. Nemo cupiditate enim inventore eum sed similique ipsum suscipit, autem maxime, tempore et placeat, alias voluptatum dignissimos. Voluptatem explicabo mollitia delectus reprehenderit quaerat cupiditate. Voluptate, consequuntur culpa, iusto ab vitae unde suscipit quas saepe a doloribus maiores? Enim cum commodi velit vero expedita numquam quod necessitatibus incidunt dicta rerum. Incidunt voluptates possimus aut est quidem sit libero magnam, consequuntur odit nobis enim accusamus. Delectus suscipit tempora esse. Provident, quidem atque nesciunt sit voluptate incidunt quos doloribus nisi rerum similique!</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>luc</td>
-            <td>luc@hotmail.com</td>
-            <td>illustration</td>
-            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorem recusandae ducimus veritatis commodi eaque at totam dignissimos numquam fugit! Ex est non facilis quo nam, recusandae harum magni nisi.</td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td>marie</td>
-            <td>marie@hotmail.com</td>
-            <td>carte de visites</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit autem mollitia aspernatur nisi porro itaque ratione, ipsum similique totam sapiente. Nemo cupiditate enim inventore eum sed similique ipsum suscipit, autem maxime, tempore et placeat, alias voluptatum dignissimos. Voluptatem explicabo mollitia delectus reprehenderit quaerat cupiditate. Voluptate, consequuntur culpa, iusto ab vitae unde suscipit quas saepe a doloribus maiores? Enim cum commodi velit vero expedita numquam quod necessitatibus incidunt dicta rerum. Incidunt voluptates possimus aut est quidem sit libero magnam, consequuntur odit nobis enim accusamus. Delectus suscipit tempora esse. Provident, quidem atque nesciunt sit voluptate incidunt quos doloribus nisi rerum similique!</td>
-          </tr>
-        </tbody>
-      </table>
-      
-    </div>
-  </div>
-</section> -->
+
 
 
 

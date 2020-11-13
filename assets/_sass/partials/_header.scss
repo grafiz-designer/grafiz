@@ -131,7 +131,7 @@ header.header{
             align-content: start;
             position: relative;
             @media #{$tablet-size}{
-                font-size: 4rem;
+                font-size: 6rem;
             }
             @media #{$desktop-size}{
                 font-size: 6rem;
@@ -147,6 +147,9 @@ header.header{
             font-weight: 700;
             // font-family: "Pacifico"; // ou Courgette
             color: rgba(255, 255, 255 ,.7);
+            @media #{$tablet-size}{
+                font-size: 2.5rem;
+            }
             @media #{$desktop-size}{
                 font-size: 2.5rem;
             }
@@ -219,22 +222,66 @@ header.header{
 
 
         //////////////// LE HERO POUR LES WORKS //////////////////////////////////////// 
+        .container-hero-works{
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .arrow-back{
+            opacity: .7;
+            font-size: 2rem;
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translate(-5px, -50%);
+            // animation: bounceX 1s ease-in infinite;
+            &:hover{
+                opacity: 1;
+                color: $primary-opaque;
+                // animation: none;
+            }
+            @media #{$tablet-size}{
+                font-size: 2.8rem;
+                left: 6vw;
+              }
+              @media #{$desktop-size}{
+                // font-size: 2.8rem;
+                left: 2vw;
+              }
+              @media #{$widescreen-size}{
+                font-size: 3.2rem;
+                left: 2rem;
+              }
+              @media #{$fullhd-size}{
+                // font-size: 3.5rem;
+                left: 2rem;
+              }
+
+        }
 
         h1.hero-work {
-            // font-size: 1.6rem;
+            flex: 2;
+            // position relative pr résoudre un bug d'aligmenent avec l'arrow
+            display: inline;
+            // position:relative;
+            bottom: .3rem;
             font-weight: 900;
             font-family: $skills-font2;
-            
+            letter-spacing: .1rem;
             span{
               display: block;
-            //   font-size: 1rem;
               font-weight: 700;
               font-family: $skills-font;
               color:$white;
               letter-spacing: .2rem;
+              line-height: .5rem;
               opacity: .5;
               @media #{$tablet-size}{
                 letter-spacing: .5rem;
+                line-height: 1rem;
+              }
+              @media #{desktop-size}{
+                
               }
               
             }

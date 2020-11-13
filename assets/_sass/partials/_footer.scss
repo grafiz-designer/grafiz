@@ -9,20 +9,20 @@ footer.footer {
     // padding-left: 30%;
     // padding-right: 30%;
     
-    background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
+    // background-image: url("../img/Illustration/Illustration_vectorielle/cartographie-margin-none.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    &::after{
-        content: "";
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 150pxx   ;
-        background: red;
-        top: 0;
-    }
+    // &::after{
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 150pxx   ;
+    //     background: red;
+    //     top: 0;
+    // }
     
     .columns.map {
         // background-color: red;
