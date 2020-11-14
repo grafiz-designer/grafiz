@@ -11,7 +11,7 @@
       <div class="container">
         <!-- c'est le menu coté gauche toujours visible  -->
         <div class="navbar-brand">
-          <a class="navbar-item has-text-left" href="/grafiz-site/accueil">
+          <a class="logo navbar-item has-text-left" href="/grafiz-site/accueil">
             <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?> 
           </a>
 
@@ -38,11 +38,16 @@
         <div class="navbar-menu" id="menu">
 
           <div class="navbar-end">
-            <a href="/grafiz-site/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a><hr>
-            <a href="/grafiz-site/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a><hr>
-            <a href="/grafiz-site/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a><hr>
-            <a href="/grafiz-site/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a><hr>
-            <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a><hr>
+            <a href="/grafiz-site/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a>
+            <!-- <hr> -->
+            <a href="/grafiz-site/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a>
+            <!-- <hr> -->
+            <a href="/grafiz-site/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a>
+            <!-- <hr> -->
+            <a href="/grafiz-site/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a>
+            <!-- <hr> -->
+            <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a>
+            <!-- <hr> -->
             
             <div class="navbar-item has-text-centered-desktop">
               <a href="#" title="facebook">

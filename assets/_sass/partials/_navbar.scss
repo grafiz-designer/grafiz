@@ -69,10 +69,32 @@
         padding: 0;
     }
 
+    // c'est le menu en accordeon une fois affiché
+    .navbar-menu.is-active{
+        .navbar-item, .navbar-item:last-child{
+            // color: red;
+            background-color: $primary-opaque;
+            
+        }
+        .navbar-item{
+            &:hover{
+                color: $primary-opaque;
+                background-color: #ffffff;
+                a:hover{
+                    color: $grey-darker;
+                }
+            }
+        }
+
+
+
+    }
+
 
         // navbar-item c'est les liens des menu 
         .navbar-item{
             color: $white;
+     
             &:hover{
    
                 background: $primary-opaque;
@@ -91,10 +113,12 @@
                 display: inline-block;
                 position: relative;
             }
-            &:last-child{
+            // les social icons et le logo font pareil au suvol
+            &:last-child, &.logo:hover{
                 background-color: transparent;
-                a:hover{
+                a:hover, svg{
                     color: $primary-opaque;
+                    fill: $primary-opaque;
                 }
             }
     
@@ -120,11 +144,19 @@ nav.navbar.to-the-top{
     background-color: $primary-opaque;
     box-shadow : 0px 4px 4px 4px rgba(0, 0, 0, .3);
     
+
+
+
+    
     .navbar-end .navbar-item{
         color: #ffffff;
-        &:hover{ background-color: $primary-dark; }
-        &:last-child{ 
-            background-color: transparent; 
+        &:hover{ 
+            background-color: #ffffff; 
+            color: $primary-opaque;
+        }
+        &:last-child:hover{ 
+            // background-color: transparent;
+            color: white;
             a:hover{ color: $grey-darker; }
         }
     }

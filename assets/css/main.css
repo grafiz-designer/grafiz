@@ -7816,11 +7816,11 @@ hr.small {
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(1px, 4px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(2px, 5px); }
+    transform: translate(4px, 2px); }
   100% {
     transform: translate(0, 0); }
   40% {
@@ -7828,23 +7828,23 @@ hr.small {
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(2px, 2px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   60% {
-    transform: translate(1px, 2px); }
+    transform: translate(5px, 5px); }
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(1px, 5px); }
+    transform: translate(2px, 5px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(2px, 1px); }
+    transform: translate(4px, 4px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(2px, 2px); }
+    transform: translate(5px, 4px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -7982,6 +7982,13 @@ nav.navbar {
       border-bottom: 3px solid rgba(107, 255, 233, 0.8); } }
   nav.navbar .navbar-menu {
     padding: 0; }
+  nav.navbar .navbar-menu.is-active .navbar-item, nav.navbar .navbar-menu.is-active .navbar-item:last-child {
+    background-color: #00d1b2; }
+  nav.navbar .navbar-menu.is-active .navbar-item:hover {
+    color: #00d1b2;
+    background-color: #ffffff; }
+    nav.navbar .navbar-menu.is-active .navbar-item:hover a:hover {
+      color: #363636; }
   nav.navbar .navbar-item {
     color: white; }
     nav.navbar .navbar-item:hover {
@@ -7994,10 +8001,11 @@ nav.navbar {
     nav.navbar .navbar-item.is-size-4 {
       display: inline-block;
       position: relative; }
-    nav.navbar .navbar-item:last-child {
+    nav.navbar .navbar-item:last-child, nav.navbar .navbar-item.logo:hover {
       background-color: transparent; }
-      nav.navbar .navbar-item:last-child a:hover {
-        color: #00d1b2; }
+      nav.navbar .navbar-item:last-child a:hover, nav.navbar .navbar-item:last-child svg, nav.navbar .navbar-item.logo:hover a:hover, nav.navbar .navbar-item.logo:hover svg {
+        color: #00d1b2;
+        fill: #00d1b2; }
   nav.navbar .is-active {
     transition: all 1s ease-in; }
 
@@ -8008,10 +8016,11 @@ nav.navbar.to-the-top {
   nav.navbar.to-the-top .navbar-end .navbar-item {
     color: #ffffff; }
     nav.navbar.to-the-top .navbar-end .navbar-item:hover {
-      background-color: #005245; }
-    nav.navbar.to-the-top .navbar-end .navbar-item:last-child {
-      background-color: transparent; }
-      nav.navbar.to-the-top .navbar-end .navbar-item:last-child a:hover {
+      background-color: #ffffff;
+      color: #00d1b2; }
+    nav.navbar.to-the-top .navbar-end .navbar-item:last-child:hover {
+      color: white; }
+      nav.navbar.to-the-top .navbar-end .navbar-item:last-child:hover a:hover {
         color: #363636; }
   nav.navbar.to-the-top .navbar-brand svg {
     fill: #363636; }
