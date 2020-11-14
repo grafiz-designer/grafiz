@@ -1,29 +1,23 @@
 @charset "utf-8";  
 
     // la navbar par défaut
-    nav.is-fixed-top{
+    nav.navbar{
         
     //   background-color: transparent;
     background-color: rgba(#ffffff, 0);
-      z-index: 1001;
-      
-      // la navbar rajoute la class '.is-scroll' lors du scroll
-      &.is-scroll{
-      background-color: rgba(255, 255, 255, 1);
-      box-shadow: 0px 3px 4px 4px rgba(0, 0, 0, .2);
-      animation: top-in-basic .3s;
-      }
+    //   z-index: 1001;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      transition: top 0.2s;
 
       hr{ 
           margin: 0;
       }
   
-  
-  @keyframes top-in-basic{
-      0%{ transform: translateY(-2000px); }
-      100%{ transform: translateY(0px); }
 
-  }
 
   .login{
     @media #{$tablet-size}{
@@ -40,20 +34,12 @@
             width: 20vw;
             max-width: 100px;
             height: auto;
+            fill: #ffffff;
+            // fill: $logo-color;
         }
- 
     }
+    
 
-         // couleur du logo svg après le scroll
-         .is-scroll{
-            .cls-1{
-                fill: $grey-dark;
-            }
-            // couleur du menu burger après le scroll
-            .navbar-burger{
-                background-color: $primary;
-            }
-        }
 
 
     //les liens de la navbar deviennent noir après le scroll 
@@ -63,7 +49,7 @@
         .navbar.is-scroll .navbar-end > .navbar-item{
             color: $grey-dark;
             &:hover{
-                color: #fff;
+                color: red;
                 background-color: $primary;
             
             }        
@@ -122,10 +108,31 @@
         }
 
 
-        
-
-
-
-
-
   }
+
+
+
+
+
+//  TOUTES LES REGLES POUR CHANGER LA COULEURS DES ELEMENTS DE LA NAVBAR VIA LA CLASS "to-the-top"
+nav.navbar.to-the-top{
+    top: 0 !important;
+    background-color: $primary-opaque;
+    box-shadow : 0px 4px 4px 4px rgba(0, 0, 0, .3);
+    
+    .navbar-end .navbar-item{
+        color: #ffffff;
+        &:hover{ background-color: $primary-dark; }
+        &:last-child{ 
+            background-color: transparent; 
+            a:hover{ color: $grey-darker; }
+        }
+    }
+
+    // le logo en haut à gauche
+    .navbar-brand{
+        svg{
+            fill: $grey-darker;
+        }
+    }
+}

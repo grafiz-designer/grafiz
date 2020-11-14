@@ -250,7 +250,7 @@
       }
     }
   }
-  
+
   
   .img{
     object-fit: cover;
@@ -267,7 +267,18 @@
     height: 384px;
     margin: 0 auto;
     overflow:hidden;
-    // border: 1px solid red;
+    figcaption{
+      color: $white;
+      position: absolute;
+      
+      bottom: 0;
+      left: 50%;
+      background-color: $primary;
+      margin: auto;
+      transform: translateX(-50%);
+      width: 100%;
+      line-height: 2.2rem;
+    }
     
     img{
       max-width: 864px;
@@ -367,7 +378,7 @@
     .gif-web{
       left: -576px;
       @media #{$tablet-size}{
-        left: calc(-1350px * 66 / 100);
+        left: calc(-902px);
       }
     }
 

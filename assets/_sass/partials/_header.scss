@@ -73,7 +73,7 @@ header.header{
             width: 50vw;
             min-width: 150px;
             max-width: 280px;
-
+            fill: $logo-color;
             position: relative;
             top: 5px;
             animation: blink 2s infinite ease;
@@ -83,9 +83,7 @@ header.header{
             @media #{$desktop-size}{
                 max-width: 440px;
             }
-            @media #{$fullhd-size}{
-                // width: 100vw;
-            }   
+
         }
 
         .container-jobs{
@@ -97,7 +95,7 @@ header.header{
 
 
         h2.jobs{
-            color: $white;
+            color: $logo-color;
             font-weight: 700;
             font-size: 1.6rem;
             @media #{$desktop-size}{

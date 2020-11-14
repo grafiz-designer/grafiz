@@ -12,63 +12,77 @@ window.addEventListener("DOMContentLoaded", (event) => {
     contact();
 
 
-    
-    /***************
-     * SCROLL ANIMATION
-     ***************/
 
-    AOS.init();
+
+
 
        /***************
      * SCROLL NAVBAR
      ***************/
     let header = select('header.header');
     
-    let navbar = header.firstElementChild;
-    log(navbar);
-    let scrollY = window.scrollY;
-    window.addEventListener('scroll', function(e){
-        
-        if(this.scrollY >= 70){
-          
-    //   navbar.classList.remove('is-fixed-top');
-         navbar.classList.add('is-scroll');
+    let navbar = select('.navbar');
+
+    var prevScrollPos = window.pageYOffset;
+
+    
+    window.onscroll = function(){
+        var currentScrollPos = window.pageYOffset;
+        // log(prevScrollPos + " -> " + currentScrollPos);
+        if (prevScrollPos > currentScrollPos){
+
+            navbar.classList.add('to-the-top');
+
         }else{
-            navbar.classList.remove('is-scroll');
+            navbar.classList.remove('to-the-top');
+            navbar.style.top = "-52px";
+        
         }
-    });
-   
+        prevScrollPos = currentScrollPos;
 
+        // Dès que la navbar revient tout en haut elle devient transparente
+        if(currentScrollPos < 5){
+            navbar.classList.remove('to-the-top');
+            navbar.style.top = "0";
 
-
-
-
-
-    /***************
-     * MENU BURGER
-     ***************/
-
-    let links = selectAll('.navbar-end a.navbar-item');
-    log(links);
-    for(let i = 0; i < links.length; i++){
-        links[i].addEventListener('click', (event) => {
-            // event.preventDefault();
-
-            
-        });
+        }
     }
 
-    let headers = selectAll('.accordion-header');
+
+
+
    
 
-    headers.forEach(function(header){
-        log(headers);
-        header.addEventListener('click', (ev) => {
-            event = ev.target || ev.srcElement;
-            header.nextElementSibling.classList.toggle('is-active');
+
+
+
+
+
+    /********************************************
+     * AFFICHE LE MENU BURGER
+     ********************************************/
+
+    // let links = selectAll('.navbar-end a.navbar-item');
+    // log(links);
+    // for(let i = 0; i < links.length; i++){
+    //     links[i].addEventListener('click', (event) => {
+    //         // event.preventDefault();
+
+            
+    //     });
+    // }
+
+    // let headers = selectAll('.accordion-header');
+   
+
+    // headers.forEach(function(header){
+    //     log(headers);
+    //     header.addEventListener('click', (ev) => {
+    //         event = ev.target || ev.srcElement;
+    //         header.nextElementSibling.classList.toggle('is-active');
         
-        })
-    })
+    //     })
+    // })
 
 
 
@@ -103,37 +117,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-      /***************
-     * WORKS 
-     ***************/
-    
-    
-    //pour rajouter un background gris sur les imgs sauf celle qui est survolée
-    let item, 
-        itemsWork = selectAll('section.works a'),
-        cards = selectAll('section.works .card'),
-        columns = selectAll('section.works .columns')[0];
-        
-        log(columns);
-   
-   
-    for(let i = 0; i < itemsWork.length; i++){
-
-        itemsWork[i].addEventListener('mouseenter', function(event){
-
-            item = event.target || event.srcElement;
-            log(item.firstElementChild);
-            
-            for(let i = 0; i < itemsWork.length; i++){
-                itemsWork[i].firstElementChild.classList.add('scale');
-                
-                        
-            }
-            item.firstElementChild.classList.remove('scale');
-            
-        }); 
-        
-    }
 
 
 

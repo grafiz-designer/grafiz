@@ -53,7 +53,7 @@ $logo-color:#FDF0CC;
 $primary: rgba(hsl(171, 100%, 41%), 0.8);
 $primary-opaque: hsl(171, 100%, 41%);
 $primary-clair: rgba($primary, .2);
-$primary-dark: darken($primary-opaque, 15);
+$primary-dark: darken($primary-opaque, 25);
 // $grey-dark == #4a4a4a
 $navbar-background-color: #fff;
 

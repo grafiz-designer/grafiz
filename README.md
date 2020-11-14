@@ -51,3 +51,5 @@ le site de grafiz
 *mettre tous les éléments qui sont position absolute les centré grace aux mixins*
 
 *vérifier tous les alt des images*
+
+*rectifier les routes pr etre sur de ne jamais tomber sur une erreur de page*

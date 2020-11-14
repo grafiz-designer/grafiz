@@ -170,7 +170,7 @@
                         
                         <header class="has-text-centered">
                               
-                                        <figure class="is-relative">
+                                        <figure class="">
                                                 <i class="fas fa-4x fa-pencil-alt"></i>
 
                                                 <figcaption class="is-relative">
@@ -195,7 +195,7 @@
                                                 <a href="#" class="">
                                                         <figure class="is-relative gif-container">
                                                         <img class="gif-illu" src="<?php echo ASSETS;?>/gif/tout-min.gif" alt="exemple de projets graphique" async>
-                                                                <!-- <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">processus de dessin</figcaption> -->
+                                                                <figcaption class="is-size-6-mobile is-size-5-tablet is-italic">processus de dessin</figcaption>
 
                                                         </figure>
                                                 </a>

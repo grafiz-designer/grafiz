@@ -102,13 +102,6 @@
                 </div>
             </div>
 
-             <!-- ******* captcha ********** -->
-            
-            <!-- <div class="columns">
-                <div class="column">
-                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LfF_F0UAAAAAAa8j2xkCtuw339aw-ShR64oxJoG" data-theme="light" data-type="image" data-size="normal" data-badge="bottomright" data-tabindex="0"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfF_F0UAAAAAAa8j2xkCtuw339aw-ShR64oxJoG&amp;co=aHR0cHM6Ly9qZ3RobXMuY29tOjQ0Mw..&amp;hl=en&amp;type=image&amp;v=ADnAC3ZykfbIOflWgrKNsVVT&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=z995o3ra5shg" width="304" height="78" role="presentation" name="a-ya9lh8vysvz0" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-                </div>
-            </div> -->
             
             <!-- ******* Submit ********** -->
             
@@ -116,7 +109,7 @@
                 <div class="column">
                     <div class="field">
                         <div class="control">
-                            <input class="button" value="Envoyer le message" type="submit">
+                            <input class="button is-primary" value="Envoyer le message" type="submit">
                         </div>
                     </div>
                 </div>

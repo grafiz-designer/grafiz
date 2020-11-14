@@ -3,10 +3,10 @@
         $class = 'is-connected';
 }; ?>
     
-    
+
     <!-- is-spaced rajoute par défaut une marge de 1rem pour top et bottom et 2rem pour left et right -->
     <!-- is-fixed-top pr fiwer la nav meme au scroll -->
-    <nav class="navbar is-spaced is-fixed-top" role="navigation">
+    <nav class="navbar" role="navigation">
       
       <div class="container">
         <!-- c'est le menu coté gauche toujours visible  -->
@@ -45,21 +45,27 @@
             <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a><hr>
             
             <div class="navbar-item has-text-centered-desktop">
-              <a href="#">
+              <a href="#" title="facebook">
                 <span class="icon is-medium">
                   <i class="fab fa-lg fa-facebook-square"></i>
                 </span>
               </a>
               
-              <a href="#">
+              <a href="#" title="instagram">
                 <span class="icon is-medium">
                   <i class="fab fa-lg fa-instagram"></i>
                 </span>
               </a>
               
-              <a href="#">
+              <a href="#" title="behance">
                 <span class="icon is-medium">
-                  <i class="fab fa-lg fa-twitter-square"></i>
+                  <i class="fab fa-lg fa-behance-square"></i>
+                </span>
+              </a>
+
+              <a href="#" title="dribble">
+                <span class="icon is-medium">
+                  <i class="fab fa-lg fa-dribbble"></i>
                 </span>
               </a>
             </div>

@@ -56,7 +56,7 @@
     <div class="columns has-text-centered">
         <div class="column">
             <div class="content">
-                    <a href="https://bulma.io">
+                    <a href="https://bulma.io" title="framework Bulma">
                         <img class="badge" src="<?=ASSETS;?>/img/bulma.png" alt="Made with Bulma and me" width="256" height="48">
                     </a>
                     <p class="is-inline-tablet">and me à Paris</p>
@@ -70,16 +70,40 @@
             <!-- <p class="is-size-6-mobile">suivez moi :</p>  -->
                 <ul>
                     <li class="is-inline">
-                        <a href=""><img src="<?=ASSETS;?>/icons/logo-facebook.svg" class="icon is-large" alt=""></a>
+                        <a href="#" title="facebook">
+                            <span class="icon is-large">
+                                <i class="fab fa-3x fa-facebook-square"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                    <li class="is-inline">
+                        <a href="#" title="linkedin">
+                            <span class="icon is-large">
+                                <i class="fab fa-3x fa-linkedin"></i>
+                            </span>
+                        </a>
                     </li>
                     <li class="is-inline">
-                        <a href=""><img src="<?=ASSETS;?>/icons/logo-dribbble.svg" class="icon is-large" alt=""></a>
+                        <a href="#" title="dribble">
+                            <span class="icon is-large">
+                                <i class="fab fa-3x fa-dribbble"></i>
+                            </span>
+                        </a>
                     </li>
                     <li class="is-inline">
-                        <a href=""><img src="<?=ASSETS;?>/icons/logo-twitter.svg" class="icon is-large"  alt=""></a>
+                        <a href="#" title="behance">
+                            <span class="icon is-large">
+                                <i class="fab fa-3x fa-behance-square"></i>
+                            </span>
+                        </a>
                     </li>
                     <li class="is-inline">
-                        <a href=""><img src="<?=ASSETS;?>/icons/logo-facebook.svg" class="icon is-large" alt=""></a>
+                        <a href="#" title="instagram">
+                            <span class="icon is-large">
+                                <i class="fab fa-3x fa-instagram-square"></i>
+                            </span>
+                        </a>
                     </li>
             </ul>
         </div>

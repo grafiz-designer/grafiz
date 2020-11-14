@@ -14,15 +14,9 @@ footer.footer {
     background-repeat: no-repeat;
     background-size: cover;
     
-    // &::after{
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 150pxx   ;
-    //     background: red;
-    //     top: 0;
-    // }
+    svg{
+        fill: $primary-dark;
+    }
     
     .columns.map {
         // background-color: red;
@@ -61,6 +55,9 @@ footer.footer {
     li{ 
         list-style-type: none; 
         margin: 2%;
+        i{
+            color: $primary-dark;
+        }
     }
     
     .arrow{
