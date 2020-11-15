@@ -156,7 +156,7 @@ nav.navbar.to-the-top{
         }
         &:last-child:hover{ 
             // background-color: transparent;
-            color: white;
+            color: $primary-opaque;
             a:hover{ color: $grey-darker; }
         }
     }
