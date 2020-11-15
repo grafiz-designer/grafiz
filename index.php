@@ -12,7 +12,6 @@ require "_config.php";
 require ROOT . "/vendor/autoload.php";
 
 
-
 $router = new Router();
 $router->start();
 

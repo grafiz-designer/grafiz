@@ -43,6 +43,7 @@ abstract class Model
     $var = [];
     $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
     $req->execute();
+
     if($obj != null){
       //on crée la variable data qui
       //va contenir les données

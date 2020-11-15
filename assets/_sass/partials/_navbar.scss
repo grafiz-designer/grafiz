@@ -15,6 +15,9 @@
 
       hr{ 
           margin: 0;
+          height: 1px;
+          background:$grey-dark;
+
       }
   
 
@@ -73,7 +76,7 @@
     .navbar-menu.is-active{
         .navbar-item, .navbar-item:last-child{
             // color: red;
-            background-color: $primary-opaque;
+            background-color: $grey-darker;
             
         }
         .navbar-item{
@@ -141,7 +144,7 @@
 //  TOUTES LES REGLES POUR CHANGER LA COULEURS DES ELEMENTS DE LA NAVBAR VIA LA CLASS "to-the-top"
 nav.navbar.to-the-top{
     top: 0 !important;
-    background-color: $primary-opaque;
+    background-color: #ffffff;
     box-shadow : 0px 4px 4px 4px rgba(0, 0, 0, .3);
     
 
@@ -149,10 +152,10 @@ nav.navbar.to-the-top{
 
     
     .navbar-end .navbar-item{
-        color: #ffffff;
+        color: $grey-darker;
         &:hover{ 
-            background-color: #ffffff; 
-            color: $primary-opaque;
+            background-color: $grey-darker; 
+            color: #fff;
         }
         &:last-child:hover{ 
             // background-color: transparent;
@@ -165,6 +168,9 @@ nav.navbar.to-the-top{
     .navbar-brand{
         svg{
             fill: $grey-darker;
+        }
+        .navbar-burger{
+            color:$grey-darker;
         }
     }
 }

@@ -66,7 +66,7 @@
 
 
     <div class="columns">
-        <div class="column has-text-centered">
+        <div class="column social has-text-centered">
             <!-- <p class="is-size-6-mobile">suivez moi :</p>  -->
                 <ul>
                     <li class="is-inline">

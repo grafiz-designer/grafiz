@@ -39,15 +39,15 @@
 
           <div class="navbar-end">
             <a href="/grafiz-site/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a>
-            <!-- <hr> -->
+            <hr>
             <a href="/grafiz-site/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a>
-            <!-- <hr> -->
+            <hr>
             <a href="/grafiz-site/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a>
-            <!-- <hr> -->
+            <hr>
             <a href="/grafiz-site/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a>
-            <!-- <hr> -->
+            <hr>
             <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a>
-            <!-- <hr> -->
+            <hr>
             
             <div class="navbar-item has-text-centered-desktop">
               <a href="#" title="facebook">

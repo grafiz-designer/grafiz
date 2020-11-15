@@ -15,7 +15,7 @@ footer.footer {
     background-size: cover;
     
     svg{
-        fill: $primary-dark;
+        fill: #ffffff;
     }
     
     .columns.map {
@@ -23,29 +23,13 @@ footer.footer {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
-        // margin-left: 20%;
-        // margin-right: 20%;
+        p:hover{ color: $primary-dark; }
 
-        // @media #{$tablet-size}{
-        //     margin-left: 6rem;
-        //     margin-right: 6rem;
-        // }
-        // @media #{$desktop-size}{
-        //     margin-left: 12rem;
-        //     margin-right: 12em;
-        // }
-        // @media #{$widescreen-size}{
-        //     margin-left: 18rem;
-        //     margin-right: 18rem;
-        // }
-        // @media #{$fullhd-size}{
-        //     margin-left: 22rem;
-        //     margin-right: 22rem;
-        // }
     }
     // le text s'aligne verticalement à partir de la tablette
     p.is-inline-tablet, .badge{
         vertical-align: middle;
+        
     }
 
     *{ color:#fff; }
@@ -92,6 +76,15 @@ footer.footer {
     // Le logo dans le footer
     svg{
         width: 10rem;
+    }
+    // les social icons
+    .social i{
+        transition: transform .5s;
+        &:hover{
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+        
     }
     
 }

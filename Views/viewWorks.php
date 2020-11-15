@@ -17,7 +17,7 @@
                         <a href="/grafiz-site/Works/show/<?= $value->getId(). '/'. $nom; ?>">
                                 <div class="card">
 
-                                <?php $class = ($value->getCategorie() == 'retouche') ? 'retouche' : ''; ?>
+                                <?php $class = ($value->getCategorie() == 'retouche') ? 'retouche' : '';?>
                                 
                                         <div class="card-image">
                                                

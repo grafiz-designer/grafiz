@@ -23,7 +23,7 @@ class WorksManager extends Model
   public function getSpecificWorks($works, $obj){
     $this->getBdd();
     $var = [];
-    $req = self::$_bdd->query("SELECT * FROM . $works WHERE id IN (14, 27, 9, 22, 37, 15)");
+    $req = self::$_bdd->query("SELECT * FROM . $works WHERE id IN (37, 14, 9, 22, 27, 15)");
     $req->execute();
 
     while ($data = $req->fetch(PDO::FETCH_ASSOC)) {

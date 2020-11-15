@@ -56,9 +56,9 @@ class ContactManager extends Model
   }    
 
   public function setColor(){
-    $red=rand(0,255);
-    $green=rand(0,255);
-    $blue=rand(0,255);
+    $red=rand(20,220);
+    $green=rand(20,220);
+    $blue=rand(20,220);
     $color="rgb($red,$green,$blue)";
     return $color;
   }

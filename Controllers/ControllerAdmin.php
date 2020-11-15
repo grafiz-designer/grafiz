@@ -51,12 +51,12 @@ class ControllerAdmin extends Controller
 
   // si le formulaire a été soumis
   public function login(){
-  
+
     if(Form::isValid($_POST)){
      
       $this->_loginManager = new UserManager();
       $admin = $this->_loginManager->getUser();
-      // debug($admin[0]);
+
       extract($admin[0]);
 
       $isPseudoCorrect = ($_POST['pseudo'] === $pseudo) ? true : false;

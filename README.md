@@ -53,3 +53,7 @@ le site de grafiz
 *vérifier tous les alt des images*
 
 *rectifier les routes pr etre sur de ne jamais tomber sur une erreur de page*
+*animer le crayon de la page d'accueil*
+*faire les nouveaux works suivants -> macMo, justBnatur et actualisé getMusicOnly*
+*exporter les tables Works, Contact et User*
+*melanger les catégories des works (branding, packshot...) pr la page works*
