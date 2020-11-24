@@ -1,7 +1,7 @@
 <div class="columns">
   <div class="column container-logo has-text-centered is-7-tablet">
     <h1 class="is-shakes is-spaced">
-      <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?>
+      <img class="logo-hero" src="<?= ASSETS. '/SVG/logo-grafiz.svg'; ?>" alt="">
     </h1>
   </div>
   

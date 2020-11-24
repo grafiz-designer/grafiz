@@ -1,7 +1,4 @@
 {
-    "require": {
-        "fzaninotto/faker": "^1.9"
-    },
     "autoload": {
         "files": [
             "App/helpers.php"

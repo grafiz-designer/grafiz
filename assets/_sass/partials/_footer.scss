@@ -14,9 +14,7 @@ footer.footer {
     background-repeat: no-repeat;
     background-size: cover;
     
-    svg{
-        fill: #ffffff;
-    }
+ 
     
     .columns.map {
         // background-color: red;
@@ -74,8 +72,9 @@ footer.footer {
     }
 
     // Le logo dans le footer
-    svg{
+    .logo{
         width: 10rem;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(103%) contrast(101%);
     }
     // les social icons
     .social i{

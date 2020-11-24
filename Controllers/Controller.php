@@ -1,10 +1,5 @@
 <?php
 namespace Controllers;
-
-
-
-
-
 abstract class Controller
 {   
     // fichier vue
@@ -19,106 +14,61 @@ abstract class Controller
     protected $heightHero;
     // le titre dans le héro de la page
     protected $heroTitle;
-
     protected const TEXT_COMMUN = " | Grafiz - graphic designer Paris";
-    
     //permet de déconnecter la session Admin à partir de n'importe quelle page
     public function logout(){
-        debug($_SERVER['HTTP_REFERER']);
         session_destroy();
         $uri = $_SERVER['HTTP_REFERER'];
         header('Location: '. $uri);
-
       }
-    
-    
     /* Méthode abstraite correspondant à l'action par défaut
     * Oblige les classes dérivées à implémenter cette action par défaut
     */
     protected abstract function index();
     
-    
-    
-    
-    
     /**
     * Définit la hauteur du héro qui est la même sur toutes les pages sauf celle de la 'home'
-    * 
     * @return string
     */
-    public function generateHeightHero(): string
-    {
+    public function generateHeightHero(): string{
         return $heightHero = ($this->page == 'Accueil') ? 'is-large' : 'is-medium';
     }
-    
-
-
-
-    
-    public function generateClassCSS()
-    {
-        
-    }
-    
-    
-
 
     /**
     * Définit le titre principal dans le header selon le controlleur en question
-    * 
     * @return string
     */
-    public function generateHeroTitle($data = null): string
-    {
+    public function generateHeroTitle($data = null): string{
         if($this->page !== 'Accueil'){
-        
             if($this->page !== 'Show'){
-                
                 // sinon c'est la page About ou Contact
                  if(($this->page == 'Works') || ($this->page == 'Tutos')){
-                    //  echo 'ovuv';
                     $span = "<span>my</span>";
                 }
                     $hero = "commons/hero/hero.php";
-            
             }else{
                 $work = $data['work'];
                 $hero = "commons/hero/heroWork.php";
             }
-
-         
         // sinon c'est le hero de la page d'accueil
         }else{
             $hero = "commons/hero/heroAccueil.php";
         }
-        // debug($span);
-        // debug($hero);
         ob_start();
         require VIEW. $hero;
         return $heroTitle = ob_get_clean();
-
     }
-    
-    
-    
 
-  
-    
     // crée une fonction qui va générer et afficher la vue de tous les articles
     public function render($data = null){
-        // debug($data);
         $this->heightHero = $this->generateHeightHero();
         $this->heroTitle = $this->generateHeroTitle($data);
- 
         //définir le contenu à envoyer
         $content = $this->generateFile($this->file, $data);
         //template
         $view = $this->generateFile('Views/template.php', array('title' => $this->title, 'content' => $content));
         echo $view;
     }
-
-
-
 
     // génère la vue sans header et ni footer 
     public function renderSimple($data = null){
@@ -127,10 +77,6 @@ abstract class Controller
         $view = $this->generateFile('Views/templateSimple.php', array('content' => $content));
         echo $view;
     }
-    
-    
-
-
     
     private function generateFile($file, $data = null){
         if (file_exists($file)) {
@@ -147,28 +93,13 @@ abstract class Controller
         return ob_get_clean();
     }
     
-    
-
-
-    
     private function generateFileSimple($file){
         if (file_exists($file)) {
             require $file;
         }
         else {
             throw new \Exception("Fichier ".$file." introuvable", 1);
-            
         }
     }
-
-    // public function stopSession(){
-    //     if(isset($_SESSION['contact'])){
-    //       $_SESSION['contact'] = null;
-    //     }
-      
-    //   }
-    
-    
-    
     
 }

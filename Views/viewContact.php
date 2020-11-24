@@ -1,13 +1,6 @@
 <section class="section is-medium contact is-primary">
-
-
   <div class="container">
-    
-
-      
-      
     <div class="columns is-multiline">
-      
       <div class="column is-11 is-offset-1">
         <h2 class='title is-3 has-text-centered mb-5'>Le déroulement d'un projet</h2>
       </div>
@@ -55,16 +48,7 @@
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
     </div>
-    
-    
-
-    
   </div><!-- end of container -->
   
 </section>

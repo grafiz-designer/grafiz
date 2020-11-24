@@ -1,7 +1,5 @@
 <?php
 namespace Models;
-
-
 class Contact
 {
   private $id;
@@ -11,10 +9,7 @@ class Contact
   private $message;
   private $date_creation;
   private $color;
-
-
   public function __construct(array $data){
-    // hydratation
     foreach ($data as $key => $value) {
         $method = 'set'.ucfirst($key);
         if (method_exists($this, $method)) {
@@ -22,50 +17,16 @@ class Contact
         }
     }
 }
+public function setId(int $id){$this->id = $id;}
+public function setNom(string $nom){$this->nom = $nom;}
+public function setEmail(string $email){$this->email = $email;}
+public function setSujet(string $sujet){$this->sujet = $sujet;}
+public function setMessage(string $message){$this->message = $message;}
+public function setDate_creation($date){$this->date_creation = $date;}
+public function setColor($color){
+    $this->color = $color;}
 
-
-public function setId(int $id)
-{
-    $this->id = $id;
-}
-
-public function setNom(string $nom)
-{
-    $this->nom = $nom;
-}
-
-public function setEmail(string $email)
-{
-    $this->email = $email;
-}
-
-public function setSujet(string $sujet)
-{
-    $this->sujet = $sujet;
-}
-
-public function setMessage(string $message)
-{
-    $this->message = $message;
-}
-
-public function setDate_creation($date)
-{
-    $this->date_creation = $date;
-}
-
-public function setColor($color)
-{
-    $this->color = $color;
-}
-
-
-
-
-/**
- * GETTERS
- */
-
+/*** GETTERS */
 public function getId()
 {
     return $this->id;

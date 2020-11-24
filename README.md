@@ -1,14 +1,14 @@
 # grafiz-site
 le site de grafiz
 
-*composer install* => charge l'autoload et les packages
-
+//// EN DEVELOPPEMENT :
+*composer install* => charge l'autoload et les packages*
 *npm start* => surveille la compilation de SASS
-
 *composer dump-autoload -o* => mettre à jour l'autoloading
 
-
-
+//// EN PRODUCTION :
+*npm run purify => supprime le css inutilisé + compression. (il faut modifier le chemin pr le css -> assets/_sass/css/min.css)*
+*utliser les CDN pr Fontawesome, Bulma...*
 
 *-----------A FAIRE :*
 
@@ -40,11 +40,7 @@ le site de grafiz
 
 *voir les 'alt' des icons imgs du workflow*
 
-*se servir de la class Form pr le forumaire de la connexion Admin*
-
 *pr le moment la couleur acive sur le lien de l anavbar est en condition php mais il faut essayer en JS pr voir si ca fai moins ramer*
-
-*resoudre le pb du "W" majuscule sur $this->page dans le controller des Works*
 
 *optimiser le référencement avec des balises HTML dans le texte en BDD concernant les works*
 
@@ -57,3 +53,7 @@ le site de grafiz
 *faire les nouveaux works suivants -> macMo, justBnatur et actualisé getMusicOnly*
 *exporter les tables Works, Contact et User*
 *melanger les catégories des works (branding, packshot...) pr la page works*
+*compresser les images*
+*créer les comptes sur les réseaux(dribble etc.)*
+*faire une boucle php pr les icons du workflow*
+*compresser jpeg et utliser jpegopt pr suppr les informations inutiles*

@@ -55,26 +55,15 @@
   }
 
   .section.home-works{
-    @extend %card-component;
-
-    a.button{
-
-      // width: 18rem;
-    }
-    
-   
+    @extend %card-component;   
   }
-
+// SERVICES
   .section.home-services{
-
     background-image: radial-gradient(rgba($primary-opaque, .5), transparent 1px);
     background-size: 18px 18px;
-
-    
     position: relative;
     background-color: $primary-clair;
-    // color: white;
-    // padding-top: 1rem;
+
 
     &:before{
       content: "";
@@ -89,6 +78,40 @@
       background-size: cover;
     }
 
+    .illustration i.pencil{
+      animation: 1s pencil-move ease-in infinite;
+    }
+    .illustration i.icon-shadow{
+      top: 2%;
+      animation: 1s shadow-pencil-move ease-in infinite;
+    }
+    .illustration i.pencil:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      width: 0px;
+      height: 7px;
+      background-color: $primary-opaque;
+      animation: 1s trait ease-in infinite;
+    }
+    @keyframes pencil-move {
+      0%{transform: translate(0px, 0px);}
+      50% {transform: translate(46px, 0px);}
+    }
+    @keyframes shadow-pencil-move {
+      0% {left: 50%;}
+      50% {left: 67%;}
+    }
+    @keyframes trait {
+      0% { width: 0px; left: 0px;}
+      50% { width: 50px;  left: -50px;}
+      // 100% { width: 50px;  left: 0px;}
+    
+    }
+
+   
     i{
       color: $black-ter;
       position: relative;
@@ -166,7 +189,6 @@
     }
     
   }
-
 
 
 

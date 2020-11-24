@@ -74,7 +74,7 @@ class ControllerAdmin extends Controller
         $_SESSION['color-admin'] = "is-primary";
         
         // je redirige vers la page Admin pr éviter le renvoi du formulaire quand j'actualise la page
-        header('Location: /grafiz-site/admin');
+        header('Location: /grafiz/admin');
         // exit;
    
       }else{
@@ -82,7 +82,7 @@ class ControllerAdmin extends Controller
         
         $_SESSION['msg-admin'] = "Mauvais identifiant ou mot de passe";
         $_SESSION['color-admin'] = "is-danger";
-        header('Location: /grafiz-site/admin');
+        header('Location: /grafiz/admin');
         // exit;
         // $_SESSION['msg'] = "Mauvais identifiant ou mot de passe";
         // $_SESSION['color'] = "is-danger";
@@ -105,7 +105,7 @@ class ControllerAdmin extends Controller
    
     
     // je redirige vers la page Admin pr éviter le renvoi du formulaire quand j'actualise la page
-    header('Location: /grafiz-site/admin');
+    header('Location: /grafiz/admin');
   }
 
 

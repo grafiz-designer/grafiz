@@ -8,24 +8,9 @@
     padding: 8rem 1rem !important;
   }
   
-  // &::before{
-  //   content: '';
-  //   background: url("../img/Illustration/cartographie-margin-none.jpg");
-  //   background-size: cover;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   opacity: 0.3;
-  //   z-index: -1;  
-  // }
-
 
   p{
     color:$white;
-    // color:$primary-opaque;
-    // line-height: 3.8rem;
     font-weight: 600;
     span.color{
       display: inline-block;
@@ -36,9 +21,8 @@
   span{
     display: block;
     margin-top: .8rem;
-    // color: $primary-opaque;
     i{
-      margin-left: .7rem;
+      margin-left: 1rem;
       font-size: 2rem;
       @media #{$desktop-size}{
         font-size: 2.6rem;
@@ -48,32 +32,28 @@
   .arrow{
     color: $primary-opaque;
     position: absolute;
-    bottom: -20px;
-    font-size: 3rem;
-    left: calc(50% - 1.5rem);
-    // transform: translate(0%, 40%);
+    bottom: -10px;
+    font-size: 2.4rem;
+    left: calc(50% - 1.2rem);
     animation: bounce .5s ease-in infinite alternate;
-
   }
-
-
-    
     @media #{$tablet-size}{
       span.contact{
         margin-top: 1.8rem;
       }
       .arrow{
-        bottom: 25px;
-        font-size: 3.2rem;
-        left: calc(50% - 1.6rem);
+        bottom: 40px;
+        font-size: 3rem;
+        left: calc(50% - 1.5rem);
       }
     }
     @media #{$desktop-size}{
       span.contact{
         margin-top: 2.6rem;
+        i{ margin-left: 1.8rem; }
       }
       .arrow{
-        bottom: 20px;
+        bottom: 40px;
         font-size: 3rem;
         left: calc(50% - 1.5rem);
       }
@@ -84,30 +64,21 @@
 
 
 ////////////////////  FORMULAIRE  ///////////////////////////
-
-
-
 .section.form{
   max-width: 950px;
   margin: 0 auto;
  
   
   label{
-    // color: $grey-darker;
-    // font-family: $skills-font3;
     font-weight: 700;
-    // font-size: 1.2rem;
   }
 
   input:not([type="submit"]), textarea{
     border-radius: 3px;
-    // box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
     background-color: #fafafa;
  
   }
-  // input[type="submit"]{
-  //   background-color: red;
-  // }
+  
   @media #{$tablet-size}{
     &{
       width: 90%;

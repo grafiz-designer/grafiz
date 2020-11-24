@@ -1,35 +1,18 @@
 <?php
 namespace Models;
 use PDO;
-
-
 class ContactManager extends Model
 {
-
-
-    public function getContacts(){
-      return $this->getAll('contact', "Contact");
-    }
-    public function getContactsByEmail(){
-      return $this->getAllGroupBy('contact', 'Contact');
-    }
-    public function deleteContact($id){
-      $this->delete('contact', $id);
-    }
- 
-    
+    public function getContacts(){return $this->getAll('contact', "Contact");}
+    public function getContactsByEmail(){return $this->getAllGroupBy('contact', 'Contact');}
+    public function deleteContact($id){$this->delete('contact', $id);}
     public function insertContact($post){
-      
-   
       $colorExists = $this->setColorContact('contact', $post['email']);
       if($colorExists){
         $post['color'] = $colorExists['color'];
       }else{
         $post['color'] = $this->setColor();
       }
-      // $_SESSION['color'] = $colorExists;
-     
-      
       $req = self::$_bdd->prepare('INSERT INTO contact(nom, email, sujet, message, date_creation, color) VALUES(:nom, :email, :sujet, :message, :date_creation, :color)');
       $req->execute(array(
         'nom' => $post['nom'],
@@ -38,14 +21,9 @@ class ContactManager extends Model
         'message' => $post['message'],
         'date_creation' => date('d/m/Y, H:i:s'),
         'color' => $post['color']
-        
       ));
     }
-
-
-      /**
-   * vérifie si un user exist à un champ précis
-   */
+  /*** vérifie si un user exist à un champ précis */
   public function setColorContact($table, $email){
     $this->getBdd();
     $req = self::$_bdd->prepare("SELECT * FROM " .$table. " WHERE email = ?");
@@ -63,9 +41,7 @@ class ContactManager extends Model
     return $color;
   }
   
-
     public function sendEmail($post){
-
       $to = 'trafixel.creation@gmail.com';
       $email = strip_tags($post['email']);
       $sujet = strip_tags($post['sujet']);
@@ -76,12 +52,5 @@ class ContactManager extends Model
       $headers[] = 'Content-type: text/html; charset=utf-8';
       mail($to,$sujet,$message,implode("\r\n", $headers));
     }
-
-
-
-
-
- 
-
 }
 

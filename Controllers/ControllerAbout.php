@@ -1,9 +1,6 @@
 <?php
 namespace Controllers;
 use Views\View;
-
-
-
 class ControllerAbout extends Controller
 {
   private $_workManager;
@@ -13,12 +10,9 @@ class ControllerAbout extends Controller
   protected $metaDescription = 'Découvrez mes domaines d\'expertises autour du graphisme, l\'illustration et l\'intégration Web';
   protected $heightHero;
   protected $heroTitle;
-
-
   public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
-
     if ($param) {
       $action = array_shift($param);
       if(method_exists($this, $action)){
@@ -29,14 +23,9 @@ class ControllerAbout extends Controller
     }
   }
   
-
-
   public function index(){
-
     $this->render();
     unset($_SESSION['contact']);
   }
-
-
   
 }

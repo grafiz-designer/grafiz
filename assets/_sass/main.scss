@@ -1,24 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Signika+Negative:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;615;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-// my variables...
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-
-
 $skills-font : 'Signika Negative', sans-serif;
 $skills-font2 : 'Lato', sans-serif;
 $skills-font3 : 'Montserrat', sans-serif;
@@ -31,23 +12,14 @@ $skills-font9 : 'Raleway', sans-serif;
 $skills-font10 : 'Poppins ', sans-serif;
 $larg: 700;
 $space: 0rem;
-// $size-1 : 7rem;
-// $size-2 : 4.4rem;
-// $size-3 : 3rem;
-// $size-4 : 2rem;
-// $size-5 : 1.5rem;
-
 
 $section-padding: 3rem 1rem;
 
-// customize variables bulma here...
 $title-spaced-mobile: 3.5rem;
 $title-spaced-tablet: 5rem;
 $title-spaced-desktop: 7rem;
 $title-spaced-widescreen: 9rem;
 $title-spaced-fullhd: 11rem;
-// $column-gap: 0.15rem;
-
 
 $logo-color:#FDF0CC;
 $primary: rgba(hsl(171, 100%, 41%), 0.8);
@@ -56,7 +28,6 @@ $primary-clair: rgba($primary, .2);
 $primary-dark: darken($primary-opaque, 25);
 // $grey-dark == #4a4a4a
 $navbar-background-color: #fff;
-
 
 $progress-bar-illustrator:#FF7C00;
 $progress-bar-indesign: #E4469C;
@@ -71,22 +42,14 @@ $progress-bar-bulma: $primary-opaque;
 $progress-bar-bootstrap: rgb(91, 66, 130);
 
 
-
-
-// $footer-color: white;
 $navbar-burger-color : #fff;
 $footer-background-color: none;
 // POUR MODIFIER LA COULEUR DE LA NAVBAR
 // $navbar-background-color: ;
-
-
 $table-cell-border : 1px solid black;
 $table-cell-padding : .8rem 1rem;
 $table-head-background-color : $primary-opaque;
 $table-head-cell-color : white;
-
-//*********************************************
-
 
 @import "../../node_modules/bulma/bulma.sass";
 @import "partials/responsive";
@@ -98,7 +61,6 @@ $table-head-cell-color : white;
 @import "partials/formulaire";
 @import "partials/footer";
 @import "partials/admin";
-
 
 @import "partials/accueil";
 @import "partials/works";

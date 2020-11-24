@@ -1,9 +1,5 @@
 <?php
 namespace Controllers;
-
-
-
-
 class ControllerTutos extends Controller
 {
   private $_workManager;
@@ -15,16 +11,13 @@ class ControllerTutos extends Controller
   protected $heightHero;
   protected $heroTitle;
 
-  
   public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
     $this->description = 'toto le beau';
     $this->heightHero = $this->generateHeightHero();
     $this->heroTitle = $this->generateHeroTitle();
-  
     if ($param) {
-      
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
@@ -32,13 +25,10 @@ class ControllerTutos extends Controller
     }else {
       $this->index();
     }
-  
   }
-
 
   public function index(){
     $this->render();
     unset($_SESSION['contact']);
-  
-}
+  }
 }

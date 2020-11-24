@@ -11,15 +11,15 @@
       <div class="container">
         <!-- c'est le menu coté gauche toujours visible  -->
         <div class="navbar-brand">
-          <a class="logo navbar-item has-text-left" href="/grafiz-site/accueil">
-            <?php require ROOT . "/assets/img/SVG/logo-grafiz.php";?> 
+          <a class="navbar-item has-text-left" href="/grafiz/accueil">
+            <img class="logo" src=<?= ASSETS. "/SVG/logo-grafiz.svg";?> alt="logo Grafiz">
           </a>
 
           <?php if(isset($isLogin)): ?>
 
             <div class="login is-danger is-medium ml-4 mt-3 has-text-danger has-text-weight-bold">
               <?php if(isset($isLogin)) echo $isLogin; ?>
-            <a class="delete has-background-danger is-medium" href=<?php echo "/grafiz-site/".$this->page."/logout"; ?>></a>
+            <a class="delete has-background-danger is-medium" href=<?= "/grafiz/".$this->page."/logout";?>></a>
           </div>
 
           <?php endif; ?>
@@ -38,15 +38,15 @@
         <div class="navbar-menu" id="menu">
 
           <div class="navbar-end">
-            <a href="/grafiz-site/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a>
+            <a href="/grafiz/accueil" class="navbar-item is-size-5 <?php if($this->page == 'Accueil') echo 'link-active'; ?>">Accueil</a>
             <hr>
-            <a href="/grafiz-site/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a>
+            <a href="/grafiz/works" class="navbar-item is-size-5 <?php if($this->page == 'Works') echo 'link-active'; ?>">Works</a>
             <hr>
-            <a href="/grafiz-site/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a>
+            <a href="/grafiz/about" class="navbar-item is-size-5 <?php if($this->page == 'About') echo 'link-active'; ?>">About</a>
             <hr>
-            <a href="/grafiz-site/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a>
+            <a href="/grafiz/tutos" class="navbar-item is-size-5 <?php if($this->page == 'Tutos') echo 'link-active'; ?>">Tutos</a>
             <hr>
-            <a href="/grafiz-site/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a>
+            <a href="/grafiz/contact" class="navbar-item is-size-5 <?php if($this->page == 'Contact') echo 'link-active'; ?>">Contact</a>
             <hr>
             
             <div class="navbar-item has-text-centered-desktop">
@@ -55,6 +55,7 @@
                   <i class="fab fa-lg fa-facebook-square"></i>
                 </span>
               </a>
+              
               
               <a href="#" title="instagram">
                 <span class="icon is-medium">
@@ -71,6 +72,7 @@
               <a href="#" title="dribble">
                 <span class="icon is-medium">
                   <i class="fab fa-lg fa-dribbble"></i>
+                 
                 </span>
               </a>
             </div>
@@ -79,3 +81,4 @@
         </div>
       </div>
     </nav>
+

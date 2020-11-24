@@ -411,9 +411,16 @@
         max-width: 90px;
         height: auto;
         margin: 0 auto 1vw;
+        &.bulma{
+          width: 15vw;
+          max-width: 4rem;
+        }
         @media #{$tablet-size}{
           width: 6rem;
           margin-bottom: 2vw;
+          &.bulma{
+            max-width: 4.4rem;
+          }
         }
         @media #{$desktop-size}{
           width: 6rem;
@@ -421,12 +428,13 @@
         @media #{$fullhd-size}{
           width: 7rem;
           max-width: 150px;
+          &.bulma{
+            max-width: 5.5rem;
+          }
         }
         
       }
-      img.bulma{
-        width: 6.5rem;
-      }
+  
     }
   }
     /********************  Section Interests  *************************/
@@ -443,17 +451,13 @@
         color: white;
       }
       i{
-        font-size: 1.8rem;
+        font-size: 7vw * 0.8;
       }
 
 
       @media #{$tablet-size}{
-        span{
-          width: 7rem;
-          height: 7rem;
-        }
         i{
-          font-size: 2.2rem;
+          font-size: 36px;
         }
         .column:first-child{
           margin-bottom: 2rem;
@@ -461,21 +465,11 @@
       }
 
       @media #{$desktop-size}{
-        span{
-          width: 7rem;
-          height: 7rem;
-        }
-        i{
-          font-size: 2.2rem;
-        }
+        p{ font-size: 1.4rem !important; margin-top: .5rem;}
         .column:first-child{
           margin-bottom: 2.6rem;
         }
-
       }
-
-        
-
       
       p{
         color: $grey-dark;

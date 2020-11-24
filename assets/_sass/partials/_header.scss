@@ -3,13 +3,10 @@
 @import "background";
 
 header.header{
+    font-size: 0; // résoud un bug d'espacement sous la vague
     position: relative;
     overflow: hidden;
- 
-    // background: $primary-opaque;
-    // background-color: #1B0C25;
     background: radial-gradient(#4C2251, #1B0C25);
-   
     // règle pr corriger un bug des étoiles qui ne se centrent pas
     #stars-container{
         @media screen and (min-width: 2012px){
@@ -17,10 +14,8 @@ header.header{
             max-width: 2000px;
             margin: 0 auto;
         }
-
     }
     color: #fff;
-
     &:before{
         content: "";
         position: absolute;
@@ -33,9 +28,8 @@ header.header{
         opacity: .2;
         background-repeat: no-repeat;
         background-size: cover;
-        // animation: transition-img 14s linear alternate infinite;
         filter: blur(0px);
-        
+    
     }
 
  
@@ -67,15 +61,14 @@ header.header{
             }
             
         }
-        // "svg" et ".cls-1 "représentent tous les deux le logo svg mais il y a un bug quand je modifie la taille sur .cls-1
-        // la taille du logo principal
-        svg{
+   
+        .logo-hero{
             width: 50vw;
             min-width: 150px;
             max-width: 280px;
-            fill: $logo-color;
             position: relative;
             top: 5px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(103%) contrast(101%);
             animation: blink 2s infinite ease;
             @media #{$tablet-size}{
                 max-width: 340px;
@@ -95,7 +88,7 @@ header.header{
 
 
         h2.jobs{
-            color: $logo-color;
+            color: $white;
             font-weight: 700;
             font-size: 1.6rem;
             @media #{$desktop-size}{
@@ -143,7 +136,6 @@ header.header{
             align-self: start;
             font-size: 1.8rem;
             font-weight: 700;
-            // font-family: "Pacifico"; // ou Courgette
             color: rgba(255, 255, 255 ,.7);
             @media #{$tablet-size}{
                 font-size: 2.5rem;
@@ -151,56 +143,26 @@ header.header{
             @media #{$desktop-size}{
                 font-size: 2.5rem;
             }
-            // color: rgba($primary-dark, .5);
-            // &:before{
-            //     content: "";
-            //     // @include is-Y-centered;
-            //     position: absolute;
-            //     display: inline-block;
-            //     top: 50%;
-            //     transform: translate(0, -25%);
-
-            //     left: -40%;
-            //     width: 17%;
-            //     height: 17%;
-            //     background-color: rgba(255, 255, 255 ,.7);
-            // }
+            
         }
     }
 
 
 
-
-    .curved{
-        svg{
-              
-            position: absolute;
-            display: block;
-            height: auto;
-            width: 100%;
-            // corrige un bug d'espacement de la vague
-            bottom: -70px;
-            z-index: 1;
-        }
-    }
-
-
-    
 }
-
 
         // la flèche animée
         .arrow{
             position: absolute;
-            bottom: 4px;
+            bottom: -5px;
             text-align: center;
             width: 100%;
             height: auto;
-            i{
-                font-size: 2.1rem;
-            }
+            color: $primary-opaque;
+            // background-color: red;
+            z-index: 5000;
+            i{font-size: 2.1rem;}
             animation: bounce .5s ease-in infinite alternate;
-
             @media #{$tablet-size}{
                 &{
                     bottom: 45px;
@@ -232,18 +194,15 @@ header.header{
             left: 1rem;
             top: 50%;
             transform: translate(-5px, -50%);
-            // animation: bounceX 1s ease-in infinite;
             &:hover{
                 opacity: 1;
                 color: $primary-opaque;
-                // animation: none;
             }
             @media #{$tablet-size}{
                 font-size: 2.8rem;
                 left: 6vw;
               }
               @media #{$desktop-size}{
-                // font-size: 2.8rem;
                 left: 2vw;
               }
               @media #{$widescreen-size}{
@@ -251,7 +210,6 @@ header.header{
                 left: 2rem;
               }
               @media #{$fullhd-size}{
-                // font-size: 3.5rem;
                 left: 2rem;
               }
 
@@ -261,7 +219,6 @@ header.header{
             flex: 2;
             // position relative pr résoudre un bug d'aligmenent avec l'arrow
             display: inline;
-            // position:relative;
             bottom: .3rem;
             font-weight: 900;
             font-family: $skills-font2;
@@ -284,13 +241,9 @@ header.header{
               
             }
           }
-        //   @media #{$fullhd-size}
         //////////////// FIN DU HERO POUR LES WORKS //////////////////////////////////////// 
           
 
-
-        
-   
     // //le cercle
     // .chevron{
     //     //flex me permet de centrer facilement son enfant(le chevron)
@@ -346,144 +299,213 @@ header.header{
         
     // }
 
-    // la vague
-    section:last-child{
-    
-        overflow: hidden;
 
-  
-        .wave.is-hidden{
-            animation: bou all 3s ease;
+      .cloud{
+        position: absolute;
+        bottom: -12px;
+        display: inline-block;
+        background-position: 0px -10px;
+        background-repeat: repeat no-repeat;
+        background: url(../../assets/SVG/toto2.svg);
+        width: 100vw;
+        height: calc(100vw / 6.40);
+        max-height: 55px;
+        animation: animate 8s linear infinite;
+        z-index: 0;
+      }
+
+      .cloud:before{
+        content: '';
+        width: 100vw;
+        height: calc(100vw / 6.40);
+        max-height: 55px;
+        background: url(../../assets/SVG/cloud5.svg);
+        display: inline-block;
+        position: absolute;
+        bottom: 2px;
+        // left: 0;
+        opacity: .8;
+        background-repeat: repeat-x;
+        animation: animate-reverse 12s linear infinite;
+      }
+      @media #{$tablet-size}{
+        .cloud{
+          bottom: -1px;
+          max-height: 85px;
+          animation: animate 20s linear infinite;
         }
-
-        @keyframes bou{
-            0%{ transform: translateY(0px); }
-            100%{ transform: translateY(-500px); }
+        .cloud:before{
+          bottom: 11px;
+          max-height: 68px;
+          animation: animate-reverse 35s linear infinite;
         }
-
-        .wave {
-            position: absolute;
-            bottom: -15px;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url("../img/wave.png");
-            background-size: 1000px 100px;
-            transition: all 2s;
-
-            &.wave1{
-                animation: animate 15s linear infinite;
-                z-index: 1000;
-                opacity: 1;
-                animation-delay: 0s;
-                bottom: 0px;
-                
-              
-            }
-            &.wave2{
-                animation: animate2 6s linear infinite;
-                z-index: 999;
-                opacity: 0.7;
-                animation-delay: 5s;
-                bottom: 15px;
-            }
-            &.wave3{
-                animation: animate 4s linear infinite;
-                z-index: 998;
-                opacity: 0.5;
-                animation-delay: -2s;
-                bottom: 20px;
-            }
-            &.wave4{
-                animation: animate2 5s linear infinite;
-                z-index: 997;
-                opacity: 0.3;
-                animation-delay: -5s;
-                bottom: 20px;
-            }
-      
-
-            @media screen and (max-width: 1024px){
-                
-                background-size: 100% 10vw;
-                width: 100%;
-                height: 10vw;
-                bottom: 0px;
-
-                &.wave1{
-                    bottom: -15px;
-                    animation: animate2 15s linear infinite;
-                  
-                }
-                &.wave2{
-                    bottom: -10px;
-                    animation: animate2 6s linear infinite;
-                  
-                }
-                &.wave3{
-                    bottom: 0px;
-                    animation: animate 4s linear infinite;
-                  
-                }
-                &.wave4{
-                    bottom: 0px;
-                    animation: animate2 5s linear infinite;
-                  
-                }
-                @keyframes animate {
-                    0%{
-                       background-position: 0;
-                    }
-                    100%{
-                        background-position:100%;
-                    }
-                }
-                @keyframes animate2 {
-                    0%{
-                        background-position: 0;
-                    }
-                    100%{
-                        background-position: 100%;
-                    }
-                }
-
-
-            }
-            
-
-
+      }
+      @media #{$desktop-size}{
+        .cloud{
+          bottom: -17px;
+          max-height: 120px;
+          animation: animate 20s linear infinite;
         }
-
-
-        
-
-
-       
-
+        .cloud:before{
+          bottom: 13px;
+          max-height: 82px;
+        }
+      }
 
 
 
         @keyframes animate {
             0%{
-               background-position: 0;
+       
+               background-position-x: 0px;
             }
             100%{
-                background-position: 1000px;
+           
+                background-position-x: 100vw;
             }
         }
-        @keyframes animate2 {
-            0%{
-                background-position: 0;
-            }
-            100%{
-                background-position: -1000px;
-            }
-        }
+        @keyframes animate-reverse {
+          0%{
+             background-position-x: 100vw;
+          }
+          100%{
+              background-position-x: 0px;
+          }
+      }
+
+
+    // la vague
+    // section:last-child{
+    
+    //     overflow: hidden;
+
+  
+    //     .wave.is-hidden{
+    //         animation: bou all 3s ease;
+    //     }
+
+    //     @keyframes bou{
+    //         0%{ transform: translateY(0px); }
+    //         100%{ transform: translateY(-500px); }
+    //     }
+
+    //     .wave {
+    //         position: absolute;
+    //         bottom: -15px;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100px;
+    //         background: url("../img/wave.png");
+    //         background-size: 1000px 100px;
+    //         transition: all 2s;
+
+    //         &.wave1{
+    //             animation: animate 15s linear infinite;
+    //             z-index: 1000;
+    //             opacity: 1;
+    //             animation-delay: 0s;
+    //             bottom: 0px;
+                
+              
+    //         }
+    //         &.wave2{
+    //             animation: animate2 6s linear infinite;
+    //             z-index: 999;
+    //             opacity: 0.7;
+    //             animation-delay: 5s;
+    //             bottom: 15px;
+    //         }
+    //         &.wave3{
+    //             animation: animate 4s linear infinite;
+    //             z-index: 998;
+    //             opacity: 0.5;
+    //             animation-delay: -2s;
+    //             bottom: 20px;
+    //         }
+    //         &.wave4{
+    //             animation: animate2 5s linear infinite;
+    //             z-index: 997;
+    //             opacity: 0.3;
+    //             animation-delay: -5s;
+    //             bottom: 20px;
+    //         }
+      
+
+    //         @media screen and (max-width: 1024px){
+                
+    //             background-size: 100% 10vw;
+    //             width: 100%;
+    //             height: 10vw;
+    //             bottom: 0px;
+
+    //             &.wave1{
+    //                 bottom: -15px;
+    //                 animation: animate2 15s linear infinite;
+                  
+    //             }
+    //             &.wave2{
+    //                 bottom: -10px;
+    //                 animation: animate2 6s linear infinite;
+                  
+    //             }
+    //             &.wave3{
+    //                 bottom: 0px;
+    //                 animation: animate 4s linear infinite;
+                  
+    //             }
+    //             &.wave4{
+    //                 bottom: 0px;
+    //                 animation: animate2 5s linear infinite;
+                  
+    //             }
+    //             @keyframes animate {
+    //                 0%{
+    //                    background-position: 0;
+    //                 }
+    //                 100%{
+    //                     background-position:100%;
+    //                 }
+    //             }
+    //             @keyframes animate2 {
+    //                 0%{
+    //                     background-position: 0;
+    //                 }
+    //                 100%{
+    //                     background-position: 100%;
+    //                 }
+    //             }
+
+
+    //         }
+            
+
+
+    //     }
+
+
+        
+
+    //     @keyframes animate {
+    //         0%{
+    //            background-position: 0;
+    //         }
+    //         100%{
+    //             background-position: 1000px;
+    //         }
+    //     }
+    //     @keyframes animate2 {
+    //         0%{
+    //             background-position: 0;
+    //         }
+    //         100%{
+    //             background-position: -1000px;
+    //         }
+    //     }
      
 
 
 
-     }
+    //  }
 
     /**
     clouds

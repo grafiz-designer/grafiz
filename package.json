@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "le site de grafiz",
   "main": "assets/sass/style.scss",
+ 
   "scripts": {
     "css-build": "node-sass assets/_sass/main.scss assets/css/main.css",
     "css-deploy": "npm run css-build && npm run css-postcss",
@@ -11,7 +12,8 @@
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel assets/_javascript --out-dir assets/lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "purify": "purifycss assets/css/main.css assets/lib/*.js Views/*.php Views/commons/*.php Views/commons/hero/*.php --min --info --out assets/css/min.css",
+    "start": "npm-run-all --parallel  css-watch js-watch"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,10 @@
     "babel-preset-es2015-ie": "^6.7.0",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0"
+    "npm-watch": "^0.7.0",
+    "postcss-cli": "^7.1.0",
+    "purgecss": "^3.0.0",
+    "purify-css": "^1.2.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",

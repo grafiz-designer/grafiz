@@ -19,19 +19,27 @@ window.addEventListener("DOMContentLoaded", event => {
 
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        // log(prevScrollPos + " -> " + currentScrollPos);
+        let reponseWidth = window.matchMedia("(max-width:1023px)").matches;
+        log(reponseWidth);
         if (prevScrollPos > currentScrollPos) {
 
             navbar.classList.add('to-the-top');
         } else {
-            navbar.classList.remove('to-the-top');
-            navbar.style.top = "-52px";
+            // si la largeur est < à desktop alors je laisse définitivement la navbar, car sans cela la croix du menu burger disparaissait qaund je scrollai vers le bas
+            if (!reponseWidth) {
+                navbar.classList.remove('to-the-top');
+                navbar.style.top = "-52px";
+            } else {
+                select('.navbar-brand').classList.add('has-background-grey-darker');
+            }
         }
         prevScrollPos = currentScrollPos;
 
         // Dès que la navbar revient tout en haut elle devient transparente
         if (currentScrollPos < 5) {
             navbar.classList.remove('to-the-top');
+            // j'enlève le BG gris de la navbar une fois remonté en haut
+            select('.navbar-brand').classList.remove('has-background-grey-darker');
             navbar.style.top = "0";
         }
     };
