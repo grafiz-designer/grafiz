@@ -66,8 +66,8 @@
 ////////////////////  FORMULAIRE  ///////////////////////////
 .section.form{
   max-width: 950px;
+  width: 95vw;
   margin: 0 auto;
- 
   
   label{
     font-weight: 700;
@@ -75,6 +75,7 @@
 
   input:not([type="submit"]), textarea{
     border-radius: 3px;
+    // font-size: 1rem;
     background-color: #fafafa;
  
   }

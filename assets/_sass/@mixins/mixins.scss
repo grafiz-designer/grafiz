@@ -15,9 +15,17 @@
   transform: translateY(-50%);
 }
 
+@mixin is-centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
 
 
-// mixin typo "before, after" 
+
+// mixin typo "before, after" pr les retouches portrait 
 @mixin retouche{
   position: relative;
    
@@ -26,7 +34,7 @@
     bottom: 7%;
     font-size: 1.8rem;
     color: #fff;
-    font-family: $skills-font5;
+    font-family: $skills-font3;
     font-weight: 800;
     background: rgba(#000, .6);
     padding: 0 2.5rem;
@@ -66,7 +74,6 @@
 // mixin tutos
 @mixin icon-tuto{
   svg{
-    // fill: $grey-dark;
     fill: $primary;
     max-height: 150px;
   }

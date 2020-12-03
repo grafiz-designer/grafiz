@@ -22,7 +22,7 @@ class Work
     public function setClient(string $client){$this->client = $client;}
     public function setDescription(string $description){
         // si la chaine commence par un premier 'tiret' alors explode va renvoyer une valeur vide comme 1ère clé du tableau
-        $li = explode("- ", $description);
+        $li = explode('- ', $description);
         $this->description = $li;
     }
     /*** définie le chemin des icones logiciels */
@@ -33,8 +33,8 @@ class Work
             // si il existe plusieurs icons on rajoute une clé dans l'array 
                 foreach($arrayIcons as $key => $icon){
                     $this->icon_path[] = array(
-                        "name" => $icon,
-                        'path' => ASSETS. "/img/icons/". $icon. '.svg'
+                        'name' => $icon,
+                        'path' => ASSETS. '/icons/'. $icon. '.svg'
                     );
                 }
         }
@@ -45,7 +45,7 @@ class Work
     }
     /*** définie le chemin absolue des imgs */
     public function setImgs_path(string $paths){
-        $url = ASSETS . "/img/";
+        $url = ASSETS . '/img/OPTIMIZED/';
         $virgule = strpos($paths, ',');
         if ($virgule === false){
             $arr[] = $url . $paths;
@@ -60,6 +60,6 @@ class Work
         } 
     }
     public function setImg_show($path){
-        $this->img_show = ASSETS . "/img/" . $path;
+        $this->img_show = ASSETS . '/img/OPTIMIZED/' . $path;
     }
 }

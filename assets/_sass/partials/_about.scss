@@ -103,10 +103,10 @@
  
 
 
-      @media #{$desktop-size}{
-        // margin-top: 1rem;
-        margin-bottom: 3rem !important;
-      }
+      // @media #{$desktop-size}{
+      //   // margin-top: 1rem;
+      //   margin-bottom: 3rem !important;
+      // }
     }
 
   /**************************  PREMIERE SECTION END />  ******************************/
@@ -120,15 +120,30 @@
 
   // les articles représentent les sections "Design graphique", "Illustration", "Web"
   .section{
-
     // ".section.is-medium" créé des padding-top et bottom seulement à partir de la taille desktop donc j'interviens pour la taille tablette avec un padding de 6rem
     @media #{$tablet-size}{
       padding: 6rem 2.5rem;
     }
 
-    img{
-      // max-height: 500px !important;
+
+    aside{
+      font-style: italic;
+      p{ 
+        margin-left: .5rem; 
+        margin-top: 3rem; 
+        text-align: center;
+        @media #{$tablet-size}{
+          text-align: left;
+          // margin-left: 12rem;
+          margin-right: 5vw;
+        }
+      }
+      a.article-graphisme{
+        text-decoration: underline $primary;
+        font-weight: bold;
+      }
     }
+
     
   }
 
@@ -142,17 +157,14 @@
       border-radius: 25px 0 25px 0;
       opacity: .15;
       z-index: -1;
-      position: absolute;
+      @include is-X-centered;
       top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
       width: 150px;
       height: 28px;
     }
     
     @media #{$tablet-size}{
       font-size: 6rem !important;
-      // margin-bottom: 5rem !important;
       &:before{
         top: 65%;
         left: 50%;
@@ -199,10 +211,6 @@
     }
 
     
-   
-
-
-
     // les titres de niveau 2 -> 'identité visuelle', 'retouche photo' ...
     .graphisme>li,
     .illustration>li,
@@ -219,8 +227,6 @@
 
   
   
-
-
   ul{
     strong.title{
       // font-family: $skills-font9;
@@ -270,12 +276,10 @@
     figcaption{
       color: $white;
       position: absolute;
-      
+      // @include is-X-centered;
       bottom: 0;
-      left: 50%;
       background-color: $primary;
       margin: auto;
-      transform: translateX(-50%);
       width: 100%;
       line-height: 2.2rem;
     }
@@ -293,13 +297,6 @@
       }
     }
   }
-  
-
-  // .section.illustration,
-  // .section.skills{
-  //   background-image: radial-gradient(rgba(0, 0, 0, .5), transparent 1px);
-  //   background-size: 18px 18px;
-  // }
 
    /************************* CSS COMMUN END /> *******************************/
   
@@ -314,23 +311,14 @@
 
   /********************  Section Design Graphique  *************************/
 
-  .design-graphique{
-    img{
-      // max-height: 600px !important;
-    }
-  }
   .gif-graphisme{
     left: 0;
   }
 
 
-
-  
   /********************  Section Illustration  *************************/
   
   .section.illustration{
-
-    
     background-color: $primary-clair;
     position: relative;
     width: 100%;
@@ -345,30 +333,18 @@
         color: $primary-dark;
         color: $primary-dark;
       }
-      
     }
-
 
     .gif-illu{
       left: -289px;
       @media #{$tablet-size}{
         left: calc(-1350px / 3 - 1px);
-        // object-fit: contain;
       }
     }
 
-
     p:first-child{
-      // font-size: 1.8rem;
-      // line-height: 2.2rem;
       margin-bottom: 3rem !important;
     }
-    // .text-shadow{
-    //   color: $grey-dark;
-    //   opacity: .1;
-     
-    // }
-
   }
   
 

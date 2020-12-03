@@ -7,7 +7,7 @@ class ControllerAccueil extends Controller
   private $_view;
   protected $file;
   protected $title;
-  protected $page = "Accueil";
+  protected $page = 'Accueil';
   protected $metaDescription = "Graphiste freelance basé sur Paris en Ile-de-France, spécialiste en communication visuelle, je vous accompagne et je me charge de la conception d'éléments graphique tel que des logotypes, charte graphique, typographies, packagings, affiches, illustrations et de la création de Web Design (UI Design)";
   protected $heightHero;
   protected $heroTitle;
@@ -20,6 +20,8 @@ class ControllerAccueil extends Controller
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
+      }else{
+        header('Location: /grafiz/accueil');
       }
     }else {
       $this->index();

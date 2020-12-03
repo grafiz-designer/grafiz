@@ -6,6 +6,7 @@ header.header{
     font-size: 0; // résoud un bug d'espacement sous la vague
     position: relative;
     overflow: hidden;
+    color: #fff;
     background: radial-gradient(#4C2251, #1B0C25);
     // règle pr corriger un bug des étoiles qui ne se centrent pas
     #stars-container{
@@ -15,23 +16,7 @@ header.header{
             margin: 0 auto;
         }
     }
-    color: #fff;
-    &:before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../img/Illustration/cartographie-margin-none.jpg");
-        // je réduis l'opacité afin de voir le fond bleur
-        opacity: .2;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: blur(0px);
     
-    }
-
  
     #galaxy{
         height: 100%;
@@ -114,11 +99,11 @@ header.header{
      
         h1, h2{
             font-family: $skills-font; // Montserrat bold
-            letter-spacing: $space;
+            // letter-spacing: $space;
         }
         h1{
             font-size: 4rem;
-            font-weight: $larg;
+            font-weight: 700;
             align-content: start;
             position: relative;
             @media #{$tablet-size}{
@@ -159,7 +144,6 @@ header.header{
             width: 100%;
             height: auto;
             color: $primary-opaque;
-            // background-color: red;
             z-index: 5000;
             i{font-size: 2.1rem;}
             animation: bounce .5s ease-in infinite alternate;
@@ -185,22 +169,24 @@ header.header{
         .container-hero-works{
             justify-content: flex-start;
             align-items: center;
+            .column.arrow-container{
+              padding: 0;
+            }
         }
 
         .arrow-back{
             opacity: .7;
-            font-size: 2rem;
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translate(-5px, -50%);
+            font-size: 2.2rem;
+            
             &:hover{
+                cursor: pointer;
                 opacity: 1;
                 color: $primary-opaque;
             }
             @media #{$tablet-size}{
                 font-size: 2.8rem;
                 left: 6vw;
+                margin-left: 3rem;
               }
               @media #{$desktop-size}{
                 left: 2vw;
@@ -220,19 +206,19 @@ header.header{
             // position relative pr résoudre un bug d'aligmenent avec l'arrow
             display: inline;
             bottom: .3rem;
-            font-weight: 900;
-            font-family: $skills-font2;
-            letter-spacing: .1rem;
+            font-weight: 700;
+            font-family: $skills-font;
+            // letter-spacing: .1rem;
             span{
               display: block;
               font-weight: 700;
               font-family: $skills-font;
               color:$white;
-              letter-spacing: .2rem;
+              letter-spacing: .3rem;
               line-height: .5rem;
               opacity: .5;
               @media #{$tablet-size}{
-                letter-spacing: .5rem;
+                letter-spacing: .4rem;
                 line-height: 1rem;
               }
               @media #{desktop-size}{
@@ -243,74 +229,19 @@ header.header{
           }
         //////////////// FIN DU HERO POUR LES WORKS //////////////////////////////////////// 
           
-
-    // //le cercle
-    // .chevron{
-    //     //flex me permet de centrer facilement son enfant(le chevron)
-    //     display: flex;
-    //     width: 8vw;
-    //     height: 8vw;
-    //     max-width: 78px;
-    //     max-height: 78px;
-    //     position: absolute;
-    //     bottom: 0;
-    //     left : 90%;
-    //     transform : translate(-50%, -5px);
-    //     border-radius: 50%;
-    //     margin-bottom: 13%;
-    //     animation: pulse 2.3s infinite;
-    
-    // }
-
-    // //le chevron
-    // .chevron::before{
-    //     content: '';
-    //     //margin:auto est un raccourci pr centrer grace a son parent flex
-    //     margin: auto;
-    //     left: 50%;
-    //     display: inline-block;
-    //     transform: translateY(-60%);
-    //     border-color:#fff;
-    //     border-style: solid;
-    //     border-width: 0 4px 4px 0;
-    //     transform: rotate(45deg);
-    //     height: 28%;
-    //     width: 28%;
-        
-    // }
-    // .chevron:hover{
-    //     cursor: pointer;
-    // }
-  
-    // @keyframes pulse {
-    //     0%{ transform: translate(-50%, -5px);
-    //         border: 2px solid transparent;
-    //     }
-    //     25%{
-    //         transform: translate(-50%, -3px);
-           
-    //     }
-    //     50%{ transform: translate(-50%, 10px);
-            
-    //     }
-    //     100%{ transform: translate(-50%, -5px);
-    //         border: 2px solid #fff;
-    //     }
-        
-    // }
-
+ 
 
       .cloud{
         position: absolute;
-        bottom: -12px;
+        bottom: -19px;
         display: inline-block;
         background-position: 0px -10px;
         background-repeat: repeat no-repeat;
-        background: url(../../assets/SVG/toto2.svg);
+        background: url(../../assets/SVG/OPTIMIZED/cloud4.svg);
         width: 100vw;
         height: calc(100vw / 6.40);
-        max-height: 55px;
-        animation: animate 8s linear infinite;
+        max-height: 50px;
+        animation: animate 20s linear infinite;
         z-index: 0;
       }
 
@@ -319,14 +250,14 @@ header.header{
         width: 100vw;
         height: calc(100vw / 6.40);
         max-height: 55px;
-        background: url(../../assets/SVG/cloud5.svg);
+        background: url(../../assets/SVG/OPTIMIZED/cloud5.svg);
         display: inline-block;
         position: absolute;
         bottom: 2px;
         // left: 0;
         opacity: .8;
         background-repeat: repeat-x;
-        animation: animate-reverse 12s linear infinite;
+        animation: animate-reverse 20s linear infinite;
       }
       @media #{$tablet-size}{
         .cloud{
@@ -335,7 +266,7 @@ header.header{
           animation: animate 20s linear infinite;
         }
         .cloud:before{
-          bottom: 11px;
+          bottom: 15px;
           max-height: 68px;
           animation: animate-reverse 35s linear infinite;
         }
@@ -344,7 +275,7 @@ header.header{
         .cloud{
           bottom: -17px;
           max-height: 120px;
-          animation: animate 20s linear infinite;
+          animation: animate 25s linear infinite;
         }
         .cloud:before{
           bottom: 13px;
@@ -374,181 +305,10 @@ header.header{
       }
 
 
-    // la vague
-    // section:last-child{
-    
-    //     overflow: hidden;
-
-  
-    //     .wave.is-hidden{
-    //         animation: bou all 3s ease;
-    //     }
-
-    //     @keyframes bou{
-    //         0%{ transform: translateY(0px); }
-    //         100%{ transform: translateY(-500px); }
-    //     }
-
-    //     .wave {
-    //         position: absolute;
-    //         bottom: -15px;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100px;
-    //         background: url("../img/wave.png");
-    //         background-size: 1000px 100px;
-    //         transition: all 2s;
-
-    //         &.wave1{
-    //             animation: animate 15s linear infinite;
-    //             z-index: 1000;
-    //             opacity: 1;
-    //             animation-delay: 0s;
-    //             bottom: 0px;
-                
-              
-    //         }
-    //         &.wave2{
-    //             animation: animate2 6s linear infinite;
-    //             z-index: 999;
-    //             opacity: 0.7;
-    //             animation-delay: 5s;
-    //             bottom: 15px;
-    //         }
-    //         &.wave3{
-    //             animation: animate 4s linear infinite;
-    //             z-index: 998;
-    //             opacity: 0.5;
-    //             animation-delay: -2s;
-    //             bottom: 20px;
-    //         }
-    //         &.wave4{
-    //             animation: animate2 5s linear infinite;
-    //             z-index: 997;
-    //             opacity: 0.3;
-    //             animation-delay: -5s;
-    //             bottom: 20px;
-    //         }
-      
-
-    //         @media screen and (max-width: 1024px){
-                
-    //             background-size: 100% 10vw;
-    //             width: 100%;
-    //             height: 10vw;
-    //             bottom: 0px;
-
-    //             &.wave1{
-    //                 bottom: -15px;
-    //                 animation: animate2 15s linear infinite;
-                  
-    //             }
-    //             &.wave2{
-    //                 bottom: -10px;
-    //                 animation: animate2 6s linear infinite;
-                  
-    //             }
-    //             &.wave3{
-    //                 bottom: 0px;
-    //                 animation: animate 4s linear infinite;
-                  
-    //             }
-    //             &.wave4{
-    //                 bottom: 0px;
-    //                 animation: animate2 5s linear infinite;
-                  
-    //             }
-    //             @keyframes animate {
-    //                 0%{
-    //                    background-position: 0;
-    //                 }
-    //                 100%{
-    //                     background-position:100%;
-    //                 }
-    //             }
-    //             @keyframes animate2 {
-    //                 0%{
-    //                     background-position: 0;
-    //                 }
-    //                 100%{
-    //                     background-position: 100%;
-    //                 }
-    //             }
-
-
-    //         }
-            
-
-
-    //     }
-
-
-        
-
-    //     @keyframes animate {
-    //         0%{
-    //            background-position: 0;
-    //         }
-    //         100%{
-    //             background-position: 1000px;
-    //         }
-    //     }
-    //     @keyframes animate2 {
-    //         0%{
-    //             background-position: 0;
-    //         }
-    //         100%{
-    //             background-position: -1000px;
-    //         }
-    //     }
-     
 
 
 
-    //  }
 
-    /**
-    clouds
-    ********/
-
-
-
-//     .clouds{
-  
-//         position: absolute;
-//   bottom: 0px;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   overflow: hidden;
-//     }
-//     .clouds img {
-
-//         position: absolute;
-//         bottom: -1rem;
-//         max-width: 100%;
-//         animation: animate calc(8s * var(--i)) linear infinite;
-//       }
-//       @keyframes animate {
-//         0% {
-//           transform: translateX(-100%);
-//         }
-//         100% {
-//           transform: translateX(100%);
-//         }
-//       }
-
-
-   
-
-
-    // @media screen and (min-width: 1024px){
-    //     &{
-    //         //header est en position absolute, je décale le décalle vers le bas de la meme hauteur que la superspos
-    //         top: 2.1rem;
-    //     }
-    // }
-        
         
 
 

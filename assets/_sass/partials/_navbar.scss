@@ -72,6 +72,10 @@
         }
         .navbar-burger span{
           height: 2px;
+          background-color: #fff;
+          &:hover{
+            background: #fff;
+          }
         }
     }
 

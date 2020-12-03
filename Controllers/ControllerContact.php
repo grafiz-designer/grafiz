@@ -10,12 +10,13 @@ class ControllerContact extends Controller
   private $_view;
   protected $file;
   protected $title;
-  protected $page = "Contact";
+  protected $page = 'Contact';
   protected $metaDescription = 'Vous pouvez me contacter pour un projet graphique, une collaboration ou toutes autres demandes';
   protected $heightHero;
   protected $heroTitle;
   public $msg = false;
   public $success = false;
+
   public function __construct($param){
     $this->file = 'Views/view'. $this->page.'.php';
     $this->title = $this->page. parent::TEXT_COMMUN;
@@ -25,6 +26,8 @@ class ControllerContact extends Controller
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
+      }else{
+        header('Location: /grafiz/contact');
       }
     }
     else {
@@ -34,6 +37,7 @@ class ControllerContact extends Controller
 
   public function index(){
     $this->render();
+    // je supprime la notification après avoir envoyé le message pour qu'elle ne reste pas après avoir refresh la page
     unset($_SESSION['contact']);
   }
 

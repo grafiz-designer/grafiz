@@ -24,9 +24,9 @@ body {
 a, a:active{
   color: inherit;
 }
-// html{
-//   // scroll-behavior: smooth;
-// }
+html{
+  scroll-behavior: smooth;
+}
 
 .curved{
   font-size: 0; // me permet de résoudre un bug d'espacement en dessous la wave
@@ -38,7 +38,6 @@ hr.small{
   width: 2rem;
   margin-left: auto;
   margin-right: auto;
-  animation: shadow-translate2 2s alternate ease-in-out infinite .5s;
   &.left{
     margin: 0;
   }

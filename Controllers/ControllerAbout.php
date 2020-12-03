@@ -6,7 +6,7 @@ class ControllerAbout extends Controller
   private $_workManager;
   private $_view;
   protected $title;
-  protected $page = "About";
+  protected $page = 'About';
   protected $metaDescription = 'Découvrez mes domaines d\'expertises autour du graphisme, l\'illustration et l\'intégration Web';
   protected $heightHero;
   protected $heroTitle;
@@ -17,6 +17,8 @@ class ControllerAbout extends Controller
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
+      }else{
+        header('Location: /grafiz/about');
       }
     }else {
       $this->index();

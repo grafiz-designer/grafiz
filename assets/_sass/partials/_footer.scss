@@ -25,7 +25,7 @@ footer.footer {
 
     }
     // le text s'aligne verticalement à partir de la tablette
-    p.is-inline-tablet, .badge{
+    p.is-inline-tablet, .badge, .w3c{
         vertical-align: middle;
         
     }
@@ -36,29 +36,28 @@ footer.footer {
     
     li{ 
         list-style-type: none; 
-        margin: 2%;
+        margin: 3%;
         i{
             color: $primary-dark;
         }
     }
-    
-    .arrow{
-        display: block;
-        position: relative;
-        
+    #arrow{
+            scroll-behavior: smooth;
     }
-    .arrow img{
+    .arrow{
+      font-size: 2.5rem;
+
+      & i{margin-bottom: 1.2rem;}
+      @media #{$tablet-size}{
+      font-size: 3rem !important;
+      & i{margin-bottom: 0rem;}
+      }
+    }
+    .arrow i{
         &:hover, &:focus{
+          color: $primary-dark;
             opacity: .8;
-            
         }
-        position: absolute;
-        height: 12vw;
-        max-height: 71px;
-        top: -45px;
-        right: 1%;
-        opacity: .4;
-        transition: all .2s ease-in;
     }
     
     p.space-word{letter-spacing: 0.01em;}
@@ -79,6 +78,9 @@ footer.footer {
     // les social icons
     .social i{
         transition: transform .5s;
+        @media #{$desktop-size}{
+          font-size: 2.5rem !important;
+        }
         &:hover{
             color: #ffffff;
             transform: scale(1.1);

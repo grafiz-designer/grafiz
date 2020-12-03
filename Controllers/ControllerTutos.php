@@ -6,7 +6,7 @@ class ControllerTutos extends Controller
   private $_view;
   protected $file;
   protected $title;
-  protected $page = "Tutos";
+  protected $page = 'Tutos';
   protected $metaDescription = 'Découvrez mes tutoriels avec des exercices sur le graphisme et le Web Design en passant par des outils tel que Adobe Photoshop, Illustrator, InDesign, Adobe XD ainsi que l\'utilisation des langages Web HTML et CSS';
   protected $heightHero;
   protected $heroTitle;
@@ -21,6 +21,8 @@ class ControllerTutos extends Controller
       $action = array_shift($param);
       if(method_exists($this, $action)){
         $this->$action();
+      }else{
+        header('Location: /grafiz/tutos');
       }
     }else {
       $this->index();

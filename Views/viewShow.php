@@ -3,32 +3,32 @@ $array = $work->imgs_path;
 // je retire la 1ère img du tableau, elle sera la 1ère image de présentation 
 $first = array_shift($array);
 ?>
-<section class="section show">
-    <div class="columns is-multiline">
-      <div class="column is-full-mobile is-12-tablet is-12-desktop is-6-widescreen first-img has-text-centered">
+<section class='section show'>
+    <div class='columns is-multiline'>
+      <div class='column is-full-mobile is-12-tablet is-12-desktop is-6-widescreen first-img has-text-centered'>
         <?php $class = ($work->categorie == 'retouche') ? 'retouche' : ''; ?>
-        <figure class="<?= $class; ?>">
-          <img src="<?= $first;?>" alt="<?= $work->nom; ?>" class=''>
+        <figure class='<?= $class; ?>'>
+          <img src='<?= $first;?>' alt='<?= $work->nom; ?>' class=''>
         </figure>
       </div>
       
-      <div class="column is-full-mobile is-12-tablet is-12-desktop is-6-widescreen is-5-fullhd description has-text-left" style="">
+      <div class='column is-full-mobile is-12-tablet is-12-desktop is-6-widescreen is-5-fullhd description has-text-left' style=''>
         <!-- Icons Adobe -->
-        <article class="media has-background-white-ter">
+        <article class='media has-background-white-ter'>
           <?php if($work->icon_path): ?>
-          <div class="media-left mb-3">
+          <div class='media-left mb-3'>
             <?php foreach($work->icon_path as $key): ?>
-            <figure class="image is-48x48 mr-2">
-              <img src="<?= $key['path'];?>" alt="logo Adobe <?= $key['name']; ?>">
+            <figure class='image is-48x48 mr-2'>
+              <img src='<?= $key['path'];?>' alt='logo Adobe <?= $key['name']; ?>'>
             </figure>
             <?php endforeach ?>  
           </div>
           <?php endif; ?>
           
-          <div class="media-content">
-            <div class="content">
-              <div class="columns">
-                <div class="column is-narrow toto">
+          <div class='media-content'>
+            <div class='content'>
+              <div class='columns'>
+                <div class='column is-narrow toto'>
                   <?php if($work->client): ?>
                   <p>
                     <b>Client : </b>
@@ -42,7 +42,7 @@ $first = array_shift($array);
                   </p> 
                 </div>
                 
-                <div class="column">
+                <div class='column'>
                   <p> 
                     <?php $description = $work->description;?>
                     <b>Description : </b>  
@@ -70,18 +70,18 @@ $first = array_shift($array);
           </div>
         </article>
       </div>
-    </div>
+    </div>                                                                              
   </div>
   
   <?php if(count($array) > 1): ?>
-  <div class="columns works is-multiline is-variable is-0-mobile">  
+  <div class='columns works is-multiline is-variable is-0-mobile'>  
     <?php
     // chaque .column positionne la 1ère image à droite et la 2eme à gauche
     foreach($array as $key): ?>
-    <div class="column item-position is-12-mobile is-12-tablet is-12-desktop is-6-widescreen has-text-centered">
-      <div class="box">
+    <div class='column item-position is-12-mobile is-12-tablet is-12-desktop is-6-widescreen has-text-centered'>
+      <div class='box'>
         <figure>
-          <img src="<?= $key;?>" alt="Image">
+          <img src='<?= $key;?>' alt='<?= 'graphisme '. $work->nom; ?>'>
         </figure>
       </div>
     </div>
@@ -89,11 +89,11 @@ $first = array_shift($array);
   </div>
 
   <?php elseif(count($array) == 1): ?>
-  <div class="columns has-text-centered">
-    <div class="column">
-      <div class="box">
+  <div class='columns has-text-centered'>
+    <div class='column'>
+      <div class='box'>
         <figure>
-          <img src="<?= $array[0];?>" alt="Image">
+          <img src='<?= $array[0];?>' alt='Image'>
         </figure>
       </div>
     </div>

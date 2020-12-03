@@ -9,35 +9,37 @@
 
   figure{
     position: relative;
-    animation: zoom 9s ease infinite;
-    
   }
 
   figcaption{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include is-centered;
     display: none;
+    width: 101%;
+    height: 101%;
     h3{
-      transition: transform .8s ease;
-      font-family: $skills-font4;
+      transition: transform .4s ease;
+      font-family: $skills-font;
       text-transform: uppercase;
       color: $grey-dark;
-      font-weight: 700;
-      @media #{$fullhd-size}{
-        font-size: 2.2rem !important;
+      font-weight: 800;
+      font-size: 5vmin;
+      @media #{$tablet-size}{
+        font-size: 1.8rem !important;
       }
     }
 
     p{
       color: $white;
-      font-weight: 600;
-      letter-spacing: .08rem;
+      font-weight: 700;
+      letter-spacing: .09rem;
       text-transform: uppercase;
-      @media #{$desktop-size}{
-        font-size: .9rem !important;
+      font-size: 3vmin;
+      width: 80%;
+      margin: 0 auto;
+
+      @media #{$tablet-size}{
+        width: 85%;
+        font-size: 1rem !important;
       }
       @media #{$fullhd-size}{
         font-size: 1.2rem !important;
@@ -56,11 +58,11 @@
         flex-direction: column;
         justify-content: center;
         background-color: rgba($primary, .9);
-        width: 101%;
-        height: 101%;
+
+  
     }
     h3, p{
-     animation: legende .3s;
+     animation: legende .2s;
     }
     // corrige un bug car :after s'affichait au survol de figcaption
     .retouche:after{
@@ -72,18 +74,11 @@
    
     
   }
-  @keyframes zoom{
-    0%{
-      transform: scale(1);
-    }
-    50%{
-      transform: scale(1.04);
-    }  
-  }
+
   
   @keyframes legende {
     0%{
-      transform: translate(0px, 50px);
+      transform: translate(0px, 50%);
     }100%{
       transform: translate(0px, 0px);
     }

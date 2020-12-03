@@ -1,55 +1,14 @@
 @charset "utf-8";
 
 $skills-font : 'Signika Negative', sans-serif;
-$skills-font2 : 'Lato', sans-serif;
 $skills-font3 : 'Montserrat', sans-serif;
-$skills-font4 : 'Work Sans', sans-serif;
-$skills-font5 : 'Courgette', sans-serif;
-$skills-font6 : 'Italianno', sans-serif;
 $skills-font7 : 'Patua One', sans-serif;
-$skills-font8 : 'Pacifico', sans-serif;
-$skills-font9 : 'Raleway', sans-serif;
-$skills-font10 : 'Poppins ', sans-serif;
-$larg: 700;
-$space: 0rem;
-
-$section-padding: 3rem 1rem;
-
-$title-spaced-mobile: 3.5rem;
-$title-spaced-tablet: 5rem;
-$title-spaced-desktop: 7rem;
-$title-spaced-widescreen: 9rem;
-$title-spaced-fullhd: 11rem;
-
-$logo-color:#FDF0CC;
+   
 $primary: rgba(hsl(171, 100%, 41%), 0.8);
 $primary-opaque: hsl(171, 100%, 41%);
 $primary-clair: rgba($primary, .2);
 $primary-dark: darken($primary-opaque, 25);
-// $grey-dark == #4a4a4a
-$navbar-background-color: #fff;
 
-$progress-bar-illustrator:#FF7C00;
-$progress-bar-indesign: #E4469C;
-$progress-bar-photoshop: #87BCF6;
-$progress-bar-lightroom: #99C4CD;
-$progress-bar-after: #BC85F3;
-$progress-bar-xd: #FF2BC2;
-$progress-bar-php: #465489;
-$progress-bar-html: rgb(228, 77, 38);
-$progress-bar-css: rgb(21, 114, 182);
-$progress-bar-bulma: $primary-opaque;
-$progress-bar-bootstrap: rgb(91, 66, 130);
-
-
-$navbar-burger-color : #fff;
-$footer-background-color: none;
-// POUR MODIFIER LA COULEUR DE LA NAVBAR
-// $navbar-background-color: ;
-$table-cell-border : 1px solid black;
-$table-cell-padding : .8rem 1rem;
-$table-head-background-color : $primary-opaque;
-$table-head-cell-color : white;
 
 @import "../../node_modules/bulma/bulma.sass";
 @import "partials/responsive";

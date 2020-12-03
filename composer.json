@@ -1,9 +1,5 @@
 {
     "autoload": {
-        "files": [
-            "App/helpers.php"
-        ],
-
         "psr-4": {
             "Models\\": "Models",
             "Controllers\\": "Controllers",

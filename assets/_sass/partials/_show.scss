@@ -9,8 +9,6 @@
     background: radial-gradient(#4C2251, #1B0C25);
 
     .previous{
-      // position: fixed;
-      // top: 12vh;
       border: 2px solid $primary;
       padding: 1.6em;
       border-radius: 50%;
@@ -29,13 +27,11 @@
     h1 {
       font-size: 3rem;
       font-weight: 900;
-      font-family: $skills-font2;
-      // color:$primary;
+      font-family: $skills-font3;
       span{
         display: block;
         font-weight: 700;
         font-family: $skills-font;
-        // color:$grey-dark ;
         letter-spacing: .6rem;
         opacity: .5;
   
@@ -52,11 +48,7 @@
       @media #{$widescreen-size}{
         text-align: right !important;
       }
-      img{
-        // padding: 1.25rem;
-      }
-      
-      
+
     }
 
     .icon{
@@ -72,8 +64,6 @@
       }
       
     }
-  
-
   
   .description{
     height: 100%;
@@ -101,18 +91,12 @@
       flex-direction: inherit;
     }
     .media-left{
-      // display: flex;
       transform: translateX(-.5rem);
 
         // icon Adobe
         figure.image{
           width: 3rem;
           height: 3rem;
-          @media #{$tablet-size}{
-            // width: 5rem !important;
-            // height: 5rem !important;
-          }
-         
         }
       
      
@@ -122,13 +106,11 @@
       font-weight: inherit;
     }
     .media-content{
+      overflow: hidden;
       b{
         font-size: 1rem;
-       
       }
       .toto{
-        // background-color: red;
-        // width: auto;
         margin-right: 50px;
     }
     }
@@ -143,7 +125,6 @@
   }
 
 img{
-  // max-height: 100%;
   width: auto;
 }
 
@@ -153,17 +134,6 @@ img{
   } 
 }
 
-  // @media #{$desktop-size}{
-  //   .item-position:nth-of-type(odd){
-  //     // background-color: red;
-  //     text-align: right !important;
-  //   }
-  //   .item-position:nth-of-type(even){
-  //     // background-color: green;
-  //     text-align: left !important;
-  //   }
-
-  // }
 
   .retouche{
     @include retouche;
