@@ -40,6 +40,7 @@
     </section>
   </article>    
   <!-- /////////////// SERVICES //////////////////// -->
+  <article>
     <section class='section is-medium home-services has-text-centered'>
       <header>
         <h2 class='title-category mb-6'>Services</h2> 

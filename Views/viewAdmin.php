@@ -35,12 +35,10 @@
     </form>
   </div>
   <!-- ******* DECONNEXION ********** -->
-  <div class='container logout is-block'>
-    <a href='/grafiz/admin/logout'>
-      <input type='button' class='button is-danger is-fullwidth logout' value= 'Déconnexion'>
-    </a>
+  <div class='container container-logout is-block'>
+    <a href='/grafiz/admin/logout' class='is-danger logout is-fullwidth'>Déconnexion</a>
+  </div>
   </section>
-  
   
   
   <?php if(isset($_SESSION['contacts'])): ?>

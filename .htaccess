@@ -5,6 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
 
+
 # protect the htaccess file
 <files .htaccess>
 order allow,deny

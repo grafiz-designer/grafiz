@@ -20,7 +20,7 @@
       
       <li>
         <figure>
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title lang='fr'>caractère typographique</title><path  fill='#4a4a4a'd='M3.93,18.76,8.87,4.47,6.94,4.29V1.8h7l6.26,17.7h0l1.75.09V22.2H14.09V19.72l1.16-.1a1.27,1.27,0,0,0,.71-.24c.12-.13.13-.35,0-.68l-.65-1.9H8.17l-.92,2.7,1.84.09V22.2H2V19.72l1-.1A1.08,1.08,0,0,0,3.93,18.76ZM11.75,5.24,8.9,14h5.71L11.85,5.24Z'/></svg>
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><title lang='fr'>caractère typographique</title><path  fill='#4a4a4a' d='M3.93,18.76,8.87,4.47,6.94,4.29V1.8h7l6.26,17.7h0l1.75.09V22.2H14.09V19.72l1.16-.1a1.27,1.27,0,0,0,.71-.24c.12-.13.13-.35,0-.68l-.65-1.9H8.17l-.92,2.7,1.84.09V22.2H2V19.72l1-.1A1.08,1.08,0,0,0,3.93,18.76ZM11.75,5.24,8.9,14h5.71L11.85,5.24Z'/></svg>
           <figcaption class='is-size-7 is-size-5-tablet has-text-weight-semibold'>Typographie</figcaption>
         </figure>
       </li>
@@ -30,7 +30,7 @@
 </section>   
 
 <div class='arrow has-text-centered'>
-  <i class='fas fa-3x fa-angle-down' aria-label='icone flèche vers le bas' ></i>
+  <i class='fas fa-3x fa-angle-down' title='icone flèche vers le bas'></i>
 </div>
 <!-- **************************  DESIGN GRAPHIQUE  ************************************* -->
 <section class='section is-medium design-graphique' id='ancre-graphisme'>
@@ -38,7 +38,7 @@
     <article>
       <header class='has-text-centered'>
         <figure class='is-relative'>
-          <i class='fas fa-4x fa-bezier-curve' aria-label='icône de la section design graphique' title='icône design graphique' ></i>
+          <i class='fas fa-4x fa-bezier-curve' title='icône design graphique' ></i>
           <figcaption class='is-relative'>
             <h2 class='title is-size-1 has-text-weight-bold'>Design graphique</h2>
           </figcaption>
@@ -95,7 +95,7 @@
           <div class='design-graphique'>
             <a href='#' class='radius'>
               <figure class='is-relative gif-container'>
-                <img class='gif-graphisme' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='animation de plusieurs projets graphiques' async>
+                <img class='gif-graphisme' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='animation de plusieurs projets graphiques'>
                 <figcaption class='is-size-6-mobile is-size-5-tablet is-italic'>exemple de projets graphique</figcaption>
               </figure>
             </a>
@@ -121,7 +121,7 @@
     <article>
       <header class='has-text-centered'>
         <figure>
-          <i class='fas fa-4x fa-pencil-alt' aria-label='icône de la section illustration' title='icône illustration'></i>
+          <i class='fas fa-4x fa-pencil-alt' title='icône illustration'></i>
           <figcaption class='is-relative'>
             <h2 class='title is-size-1-mobile is-size-1-tablet has-text-grey-dark  has-text-weight-bold'>Illustration</h2>
           </figcaption>
@@ -134,7 +134,7 @@
           <div>
             <a href='#'>
               <figure class='is-relative gif-container'>
-                <img class='gif-illu' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='animation du processus de dessin' async>
+                <img class='gif-illu' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='animation du processus de dessin'>
                 <figcaption class='is-size-6-mobile is-size-5-tablet is-italic'>processus de dessin</figcaption>
               </figure>
             </a>
@@ -181,7 +181,7 @@
     <article>
       <header class='has-text-centered'>
         <figure class='is-relative'>
-          <i class='fas fa-4x fa-mobile-alt mb-3' aria-label='icône de la section Web design' title='icône Web design'></i>
+          <i class='fas fa-4x fa-mobile-alt mb-3' title='icône Web design'></i>
           <figcaption class='is-relative'>
             <h2 class='title is-size-1-mobile is-size-1-tablet has-text-grey-dark has-text-weight-bold'>Web Design</h2>
           </figcaption>
@@ -240,7 +240,7 @@
           <div class='design-graphique'>
             <a href='#' class='radius'>
               <figure class='is-relative gif-container'>
-                <img class='gif-web' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='processus HTML et CSS' async>
+                <img class='gif-web' src='<?php echo ASSETS;?>/gif/tout-min.gif' alt='processus HTML et CSS'>
                 <figcaption class='is-size-6-mobile is-size-5-tablet is-italic'>processus d'intégration Web</figcaption>
                 
               </figure>
@@ -277,7 +277,7 @@
       $icons = ['illustrator', 'indesign', 'photoshop', 'lightroom', 'adobeXD', 'after', 'premiere', 'html5-2', 'css', 'bulma2', 'php'];
       foreach($icons as $icon){ ?>
         <div class='skill column is-4-mobile is-4-tablet'>
-          <img src='<?= ASSETS;?>/icons/OPTIMIZED/<?= $icon ?>.svg' alt='logo <?= $icon; ?>' title='logo <?= $icon; ?>'>
+          <img src='<?= ASSETS;?>/img/OPTIMIZED/icons/<?= $icon ?>.svg' alt='logo <?= $icon; ?>' title='logo <?= $icon; ?>'>
         </div>
         <?php } ?>
     </div> 
@@ -300,42 +300,42 @@
         <div class='column'>
           <div class='columns is-multiline is-mobile has-text-centered'>
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone crayon de dessin' title='crayon de dessin'>
+              <span class='icon is-large mb-2' title='crayon de dessin'>
                 <i class='fas fa-pencil-alt'></i>
               </span>
               <p class='is-size-6'>dessin</p>                      
             </div>
             
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone graphisme' title='icone dessin'>
+              <span class='icon is-large mb-2' title='icone dessin'>
                 <i class='fas fa-laptop'></i>
               </span>
               <p class='is-size-6'>graphisme</p>                      
             </div>
             
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone film' title='icone film'>
+              <span class='icon is-large mb-2' title='icone film'>
                 <i class='fas fa-film'></i>
               </span>
               <p class='is-size-6'>films</p>                      
             </div>
             
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone café' title='icone café'>
+              <span class='icon is-large mb-2' title='icone café'>
                 <i class='fas fa-mug-hot'></i>
               </span>
               <p class='is-size-6'>café</p>                      
             </div>
             
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone Musique MAO' title='icone musique MAO'>
+              <span class='icon is-large mb-2' title='icone musique MAO'>
                 <i class='fas fa-sliders-h'></i>
               </span>
               <p class='is-size-6'>MAO</p>                      
             </div>
             
             <div class='column is-6-mobile is-4-tablet'>
-              <span class='icon is-large mb-2' aria-label='icone jogging' title='icone jogging'>
+              <span class='icon is-large mb-2' title='icone jogging'>
                 <i class='fas fa-running'></i>
               </span>
               <p class='is-size-6'>jogging</p>                      
@@ -346,9 +346,5 @@
       </div>
     </div>
   </section>
-</div>
-</div>
-</section>
-</div>
-</section>
+
 

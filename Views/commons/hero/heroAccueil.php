@@ -1,7 +1,7 @@
 <div class='columns'>
   <div class='column container-logo has-text-centered is-7-tablet'>
     <h1 class='is-shakes is-spaced'>
-      <img class='logo-hero' src='<?= ASSETS. '/SVG/OPTIMIZED/logo-grafiz.svg'; ?>' alt='logo Grafiz'>
+      <img class='logo-hero' src='<?= ASSETS. '/img/OPTIMIZED/logo/logo-grafiz2.svg'; ?>' alt='logo Grafiz'>
     </h1>
   </div>
   

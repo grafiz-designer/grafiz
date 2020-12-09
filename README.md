@@ -17,21 +17,11 @@ le site de grafiz
 
 *modifer compte conexion BDD*
 
-*exporter les tables Works, Contact et User*
+*redirection http vers https*
 
 
 *-----------A FAIRE :*
 
-*faire les nouveaux works suivants -> macMo, justBnatur et actualisé getMusicOnly*
+*7-choisir la bonne couleur de thème du site*
 
-*exporter les tables Works, Contact et User*
-
-*créer les comptes sur les réseaux(dribble etc.)*
-
-*le G du logo grafiz a l'air chelou*
-
-*check le W3C pr le html*
-
-*choisir la bonne couleur de thème du site*
-
-*passer en hhtp2 et https*
+*3-crypter mdp BDD et changer mdp connexion Admin*

@@ -34,7 +34,7 @@ class Work
                 foreach($arrayIcons as $key => $icon){
                     $this->icon_path[] = array(
                         'name' => $icon,
-                        'path' => ASSETS. '/icons/'. $icon. '.svg'
+                        'path' => ASSETS. '/img/OPTIMIZED/icons/'. $icon. '.svg'
                     );
                 }
         }

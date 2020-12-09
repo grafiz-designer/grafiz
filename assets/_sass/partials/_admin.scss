@@ -15,12 +15,32 @@
       }
 
     }
+    .logout{
+      text-align: center;
+      display: inline-block;
+      height: 2.5rem;
+      width: 100%;
+      background: $red;
+      color: $white;
+     line-height: 2.5rem;
+     font-size: 1rem;
+      font-weight: 600;
+      @media #{$tablet-size}{
+        height: 3rem;
+        line-height: 3rem;
+      }
+      &:hover{
+        cursor: pointer;
+        background-color: $grey-dark;
+        // color: $white;
+      }
+    }
 
     input[type="submit"], input[type="button"]{
       margin-top: 1rem !important;
     }
 
-    .container.form, .logout{
+    .container.form, .container-logout{
       max-width: 400px;
     }
      .is-hidden{

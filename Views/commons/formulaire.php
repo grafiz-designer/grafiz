@@ -18,7 +18,7 @@
         <div class='columns is-centered'>
             <div class='column'>
                 <div class='field'>
-                    <label class='label' id='nom'>Nom</label>
+                    <label class='label'>Nom</label>
                     <div class='control has-icons-left has-icons-right'>
                         <input class='input is-medium' name='nom' id='nom' type='text' placeholder=''>
                         <span class='icon is-small is-left'>
@@ -48,8 +48,8 @@
             <div class='column'>
                 <div class='field'>
                     <!-- je veux rendre invisible le label car il y a un placeholder -->
-                    <label class='label' id='sujet'>Sujet</label>
-                    <div class='control' id='sujet'>
+                    <label class='label'>Sujet</label>
+                    <div class='control sujet'>
                         <input class='input is-medium' name='sujet' id='sujet' type='text' placeholder="ex: création d'un logo">
                     </div>
                     <small class='sujet help is-danger is-size-6'></small>

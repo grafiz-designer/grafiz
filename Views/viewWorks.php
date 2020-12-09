@@ -15,7 +15,7 @@
           <?php $class = ($value->categorie == 'retouche') ? 'retouche' : '';?>
           <div class='card-image'>
             <figure class='image is3by2 <?= $class; ?>'>
-              <img src='<?= $value->img_show; ?>' alt='<?= $value->nom; ?>' loading='lazy'>
+              <img src='<?= $value->img_show;?>' alt="<?= $value->nom;?>" loading='lazy'>
               <figcaption>
                 <h3><?= $value->categorie; ?></h3>
                 <p class='subtitle'><?= $value->nom; ?></p>

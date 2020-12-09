@@ -7806,39 +7806,39 @@ hr.small {
 
 @keyframes shakes {
   10% {
-    transform: translate(3px, 4px); }
+    transform: translate(2px, 5px); }
   100% {
     transform: translate(0, 0); }
   20% {
-    transform: translate(4px, 5px); }
+    transform: translate(1px, 5px); }
   100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(3px, 2px); }
+    transform: translate(1px, 4px); }
   100% {
     transform: translate(0, 0); }
   40% {
-    transform: translate(5px, 2px); }
+    transform: translate(4px, 1px); }
   100% {
     transform: translate(0, 0); }
   50% {
-    transform: translate(3px, 3px); }
+    transform: translate(2px, 1px); }
   100% {
     transform: translate(0, 0); }
   60% {
-    transform: translate(3px, 2px); }
+    transform: translate(3px, 4px); }
   100% {
     transform: translate(0, 0); }
   70% {
-    transform: translate(5px, 1px); }
+    transform: translate(3px, 3px); }
   100% {
     transform: translate(0, 0); }
   80% {
-    transform: translate(2px, 4px); }
+    transform: translate(4px, 4px); }
   100% {
     transform: translate(0, 0); }
   90% {
-    transform: translate(5px, 2px); }
+    transform: translate(3px, 5px); }
   100% {
     transform: translate(0, 0); } }
 
@@ -8376,10 +8376,28 @@ footer.footer {
 #page-Admin .section.login .container.form .field.submit {
   justify-content: space-between; }
 
+#page-Admin .section.login .logout {
+  text-align: center;
+  display: inline-block;
+  height: 2.5rem;
+  width: 100%;
+  background: #f14668;
+  color: white;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 600; }
+  @media screen and (min-width: 769px) {
+    #page-Admin .section.login .logout {
+      height: 3rem;
+      line-height: 3rem; } }
+  #page-Admin .section.login .logout:hover {
+    cursor: pointer;
+    background-color: #4a4a4a; }
+
 #page-Admin .section.login input[type="submit"], #page-Admin .section.login input[type="button"] {
   margin-top: 1rem !important; }
 
-#page-Admin .section.login .container.form, #page-Admin .section.login .logout {
+#page-Admin .section.login .container.form, #page-Admin .section.login .container-logout {
   max-width: 400px; }
 
 #page-Admin .section.login .is-hidden {

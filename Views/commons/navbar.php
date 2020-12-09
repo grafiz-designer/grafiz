@@ -6,7 +6,7 @@
         <!-- c'est le menu coté gauche toujours visible  -->
         <div class='navbar-brand'>
           <a class='navbar-item has-text-left' href='/grafiz/accueil'>
-            <img class='logo' src=<?= ASSETS. '/SVG/OPTIMIZED/logo-grafiz.svg';?> alt='logo Grafiz'>
+            <img class='logo' src=<?= ASSETS. '/img/OPTIMIZED/logo/logo-grafiz2.svg';?> alt='logo Grafiz'>
           </a>
 
 
@@ -45,26 +45,26 @@
             <hr>
             
             <div class='navbar-item has-text-centered-desktop'>
-              <a href='#' title='facebook'>
+              <a href='https://www.facebook.com/grafiz.loic.5' title='facebook'>
                 <span class='icon is-medium'>
                   <i class='fab fa-lg fa-facebook-square'></i>
                 </span>
               </a>
               
               
-              <a href='#' title='instagram'>
+              <a href='https://www.instagram.com/grafiz.creation/' title='instagram'>
                 <span class='icon is-medium'>
                   <i class='fab fa-lg fa-instagram'></i>
                 </span>
               </a>
               
-              <a href='#' title='behance'>
+              <a href='https://www.behance.net/grafizcreation?tracking_source=search_users_recommended%7Cgrafiz' title='behance'>
                 <span class='icon is-medium'>
                   <i class='fab fa-lg fa-behance-square'></i>
                 </span>
               </a>
 
-              <a href='#' title='dribble'>
+              <a href='https://dribbble.com/Dsigneer' title='dribble'>
                 <span class='icon is-medium'>
                   <i class='fab fa-lg fa-dribbble'></i>
                  

@@ -35,11 +35,13 @@ $first = array_shift($array);
                     <br>
                     <?= $work->client; ?>   
                     <br><br>
+                  </p> 
                     <? endif; ?>
+                    <p>
                     <b>Catégorie : </b>  
                     <br>
                     <strong><?= $work->categorie; ?></strong>
-                  </p> 
+                    </p>
                 </div>
                 
                 <div class='column'>
@@ -48,6 +50,7 @@ $first = array_shift($array);
                     <b>Description : </b>  
                     <br>
                     <!-- si la 1ère clé commence direct par une chaine vide(null) c'est qu'il n'y a pas de texte descriptif avant la liste à puces -->
+                    </p> 
                     <?php if($description[0] == null): ?>
                     <ul>
                       <?php foreach($description as $li): ?>
@@ -63,7 +66,7 @@ $first = array_shift($array);
                       <?php endforeach; ?>
                     </ul>                      
                     <?php endif; ?>
-                  </p>    
+                     
                 </div>
               </div>
             </div>
@@ -71,7 +74,7 @@ $first = array_shift($array);
         </article>
       </div>
     </div>                                                                              
-  </div>
+
   
   <?php if(count($array) > 1): ?>
   <div class='columns works is-multiline is-variable is-0-mobile'>  

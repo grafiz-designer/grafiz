@@ -2,7 +2,7 @@
   <div class='columns has-text-centered is-mobile is-vcentered'>
     <div class='column is-three-fifths is-offset-one-fifth'>
       <a href='/grafiz/accueil'>
-        <img class='logo' src='<?= ASSETS. '/SVG/logo-grafiz.svg';?>' alt='logo Grafiz'>
+        <img class='logo' src='<?= ASSETS. '/img/OPTIMIZED/logo/logo-grafiz2.svg';?>' alt='logo Grafiz'>
     </a>
     </div>
     <div class='column' style='scroll-behavior: smooth;'>
@@ -57,7 +57,7 @@
     <div class='column'>
       <div class='content'>
         <a href='https://bulma.io' title='framework Bulma'>
-          <img class='badge' src='<?=ASSETS;?>/icons/bulma.png' alt='icone Bulma' width='256' height='48' title='icone du frameworks css Bulma'>
+          <img class='badge' src='<?=ASSETS;?>/img/OPTIMIZED/icons/bulma.png' alt='icone Bulma' width='256' height='48' title='icone du frameworks css Bulma'>
         </a>
         <p class='is-inline-tablet'>and me à Paris
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -74,7 +74,7 @@
     <div class='column social has-text-centered'>
       <ul>
         <li class='is-inline'>
-          <a href='#' title='facebook'>
+          <a href='https://www.facebook.com/grafiz.loic.5' target="_blank" title='facebook'>
             <span class='icon'>
               <i class='fab fa-2x fa-facebook-square'></i>
             </span>
@@ -82,28 +82,28 @@
         </li>
         
         <li class='is-inline'>
-          <a href='#' title='linkedin'>
+          <a href='https://fr.linkedin.com/in/loic-grafiz-86426b201?trk=people-guest_people_search-card' target="_blank" title='linkedin'>
             <span class='icon'>
               <i class='fab fa-2x fa-linkedin'></i>
             </span>
           </a>
         </li>
         <li class='is-inline'>
-          <a href='#' title='dribble'>
+          <a href='https://dribbble.com/Dsigneer' target="_blank" title='dribble'>
             <span class='icon'>
               <i class='fab fa-2x fa-dribbble'></i>
             </span>
           </a>
         </li>
         <li class='is-inline'>
-          <a href='#' title='behance'>
+          <a href='https://www.behance.net/grafizcreation?tracking_source=search_users_recommended%7Cgrafiz' target="_blank" title='behance'>
             <span class='icon'>
               <i class='fab fa-2x fa-behance-square'></i>
             </span>
           </a>
         </li>
         <li class='is-inline'>
-          <a href='#' title='instagram'>
+          <a href='https://www.instagram.com/grafiz.creation/' target="_blank" title='instagram'>
             <span class='icon'>
               <i class='fab fa-2x fa-instagram-square'></i>
             </span>
